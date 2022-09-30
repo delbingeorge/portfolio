@@ -52,16 +52,7 @@ function Main() {
                         >
                             work together
                         </Link>
-                        <Link
-                            to="contact"
-                            className="action-btn-div-alink"
-                            spy={true}
-                            smooth={true}
-                            offset={10}
-                            duration={1950}
-                        >
-                          but me a coffee
-                        </Link>
+                        
                     </div>
                 </div>
             </section>
