@@ -247,25 +247,25 @@ nav {
 }
 
 .netflix-div {
-    background-image: linear-gradient(to bottom, rgba(130, 8, 8, 0.351), rgba(255, 0, 0, 0.679)),
+    background-image: linear-gradient(to bottom, rgba(130, 8, 8, 0.351), rgba(255, 0, 0, 0.836)),
         url(https://assets.nflxext.com/ffe/siteui/vlv3/45082c39-e6d5-4b02-8867-e38fe32ed3af/4b49769b-ddbc-406a-a26b-482024a66727/IN-en-20220919-popsignuptwoweeks-perspective_alpha_website_large.jpg);
 }
 
 .spotify-div {
-    background-image: linear-gradient(to bottom, rgba(0, 239, 4, 0.444), rgba(13, 255, 0, 0.778)),
+    background-image: linear-gradient(to bottom, rgba(0, 239, 4, 0.444), rgba(13, 255, 0, 0.842)),
         url(https://i0.wp.com/9to5mac.com/wp-content/uploads/sites/6/2021/09/Spotify.png?w=2000&quality=82&strip=all&ssl=1);
 }
 
-.hulu-div {
-    background-image: linear-gradient(to bottom, rgba(0, 239, 4, 0.444), rgba(13, 255, 0, 0.708)),
-        url(https://www.androidauthority.com/wp-content/uploads/2022/08/hulu-originals-1000w-563h.jpg.webp);
+.shoped-div {
+    background-image: linear-gradient(to bottom, rgba(239, 223, 0, 0.444), rgba(255, 208, 0, 0.822)),
+        url(https://i0.wp.com/9to5mac.com/wp-content/uploads/sites/6/2021/09/Spotify.png?w=2000&quality=82&strip=all&ssl=1);
     background-size: cover;
 }
 
 .bitdrag-div {
-    background-image: linear-gradient(to bottom, rgba(0, 16, 239, 0.552), rgba(0, 34, 253, 0.585)),
-        url(https://i0.wp.com/www.dailyexcelsior.com/wp-content/uploads/2022/02/technology.jpg?resize=708%2C398&ssl=1);
-    background-size: cover;
+    background-image: linear-gradient(to bottom, rgba(0, 16, 239, 0.552), rgba(0, 34, 253, 0.801)),
+        url(https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover
 }
 
 .my-skills {
@@ -381,12 +381,12 @@ footer {
 
 .overlay-div p {
     font-weight: 100;
-    font-size: 1.2rem;
+    font-size: 1rem;
     letter-spacing: 1px;
 }
 
 .overlay-btn {
-    padding: 15px 45px;
+    padding: 10px 35px;
     border-radius: 10px;
     color: var(--primary-white);
     text-decoration: none;

@@ -13,8 +13,8 @@ function Projects() {
                         <div className="one spotify-div">
                             <a href="https://delbingeorge.github.io/clonespotify/">Spotify</a>
                         </div>
-                        <div className="one hulu-div">
-                            <a href="https://bitdragon.netlify.app/">Hulu</a>
+                        <div className="one shoped-div">
+                            <a href="https://shoped.netlify.app/">Shoped</a>
                         </div>
                         <div className="one bitdrag-div">
                             <a href="https://bitdragon.netlify.app/">Bitdrag</a>
