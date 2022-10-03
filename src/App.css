@@ -3,83 +3,60 @@
     src: url(../src/media/fonts/coolvetica\ rg.otf);
 }
 
+@font-face {
+    font-family: "MarcPro";
+    src: url(../src/media/fonts/Mark-Pro-Heavy.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
     user-select: none;
     box-sizing: border-box;
-    font-family: "Coolvetica";
-    font-weight: 100;
+    font-family: "MarcPro", sans-serif;
 }
 
 :root {
     --primary-white: #f4f7ff;
     --primary-brand-color: #6e07f3;
-    --primary-black: #0a0909;
+    --primary-black: #10101a;
 }
 
-/* 
-:root {
-    --primary-white: #d9d9d9;
-    --primary-brand-color: #6e07f3;
-    --primary-black: #0a0909;
-} */
-
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
 }
 
 ::-webkit-scrollbar-track {
-    background-color: var(--primary-white);
-}
-
-::-webkit-scrollbar-thumb {
     background-color: var(--primary-black);
 }
 
-nav {
-    height: 5vh;
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 5rem;
-    padding-top: 0.5rem;
-    background-color: var(--primary-white);
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-brand-color);
 }
 
-.fa {
-    font-size: 1.5rem;
-    padding-right: 5px;
-    transition: 0.3s;
-    color: var(--primary-brand-color);
+nav {
+    height: 10vh;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 4rem;
+    padding-top: 1rem;
+    background-color: var(--primary-black);
+    color: var(--primary-white);
 }
 
 .nav-section-alink {
-    color: var(--primary-black);
-    font-size: 2rem;
-    text-align: right;
-    text-decoration: none;
-    cursor: pointer;
+    width: 120px;
+    height: 60px;
     animation: fadeUp 2s;
-}
-
-.nav-section-alink::after {
-    width: 0;
-    content: "";
-    height: 3px;
-    display: block;
-    transition: width 0.5s;
-    background: var(--primary-black);
-}
-
-.nav-section-alink:hover::after {
-    width: 100%;
-    color: rgb(0, 119, 255);
 }
 
 .section-heading {
     font-size: 2.5rem;
     text-align: center;
-    margin-bottom: 30px;
+    margin-top: 20px;
+    color: var(--primary-white);
+    margin-bottom: 5px;
+    transition: 0.6s;
 }
 
 .hero-section {
@@ -87,25 +64,45 @@ nav {
     min-height: 90vh;
     align-items: center;
     justify-content: flex-start;
-    background-color: var(--primary-white);
+    background-color: var(--primary-black);
 }
-
 .container-div {
     padding: 1rem 5rem 0 5rem;
-    animation: fadeUp 2s;
 }
 
 .hero-section-hone {
     font-weight: 100;
-    color: var(--primary-black);
+    color: var(--primary-white);
     line-height: 80px;
-    font-size: 6.6rem;
+    font-size: 6rem;
     margin-bottom: 20px;
-    letter-spacing: 4px;
+    letter-spacing: 1px;
+    animation: fadeUp 1s;
+}
+
+.landing-header-gradient {
+    background: linear-gradient(-45deg, #6e07f3, #e73c7e, #6e07f3, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 @keyframes fadeUp {
     0% {
+        opacity: 0;
         transform: translateY(30px);
     }
     100% {
@@ -113,14 +110,11 @@ nav {
     }
 }
 
-.hero-section-hone-span {
-    letter-spacing: 4px;
-    color: var(--primary-brand-color);
-}
-
 .action-btn-div {
     display: flex;
     flex-direction: column;
+    animation: fadeUp 1s;
+    font-family: "Coolvetica";
 }
 
 .action-btn-div-alink {
@@ -128,7 +122,7 @@ nav {
     font-size: 2rem;
     transition: 0.8s;
     text-decoration: underline;
-    color: var(--primary-black);
+    color: var(--primary-white);
 }
 
 .action-btn-div-alink::after {
@@ -136,7 +130,7 @@ nav {
     content: " ↗";
     font-size: 2rem;
     transition: 0.8s;
-    color: var(--primary-black);
+    color: var(--primary-white);
 }
 
 .action-btn-div-alink:hover {
@@ -150,8 +144,8 @@ nav {
 }
 
 .about-section {
-    color: var(--primary-black);
-    background-color: var(--primary-white);
+    color: var(--primary-white);
+    background-color: var(--primary-black);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -159,7 +153,6 @@ nav {
 }
 
 .about-div {
-    height: 100%;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -167,20 +160,18 @@ nav {
 }
 
 .about-section-img {
-    width: 25vw;
-    height: 60%;
+    width: 35vw;
     background-size: cover;
     border-radius: 9px;
-    margin-right: 3rem;
+    margin-right: 1rem;
 }
 
 .about-section-img img {
     width: 100%;
-    height: 100%;
     background-size: cover;
-    border-radius: 9px;
+    border-radius: 5px;
     margin-right: 3rem;
-    box-shadow: 2px 2px 20px -5px black;
+    box-shadow: rgba(0, 0, 0, 0.1) 10px 15px 25px 5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 
 .about-section-content {
@@ -195,13 +186,14 @@ nav {
 }
 
 .about-section-content p {
-    font-size: 1.25rem;
+    font-size: 1.35rem;
     line-height: 40px;
     text-align: justify;
+    font-family: sans-serif;
 }
 
 .project-section {
-    background-color: var(--primary-white);
+    background-color: var(--primary-black);
     padding: 3rem 3rem;
     display: flex;
     justify-content: center;
@@ -234,16 +226,14 @@ nav {
     transition: 0.8s;
     justify-content: center;
     border-radius: 10px;
-    box-shadow: 5px 5px 20px -5px black;
+    filter: grayscale(1);
+    text-decoration: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 2px 15px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 
 .project-div .one:hover {
     width: 25%;
-}
-
-.project-div .one a {
-    text-decoration: none;
-    color: var(--primary-white);
+    filter: none;
 }
 
 .netflix-div {
@@ -265,12 +255,12 @@ nav {
 .bitdrag-div {
     background-image: linear-gradient(to bottom, rgba(0, 16, 239, 0.552), rgba(0, 34, 253, 0.801)),
         url(https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-    background-size: cover
+    background-size: cover;
 }
 
 .my-skills {
     padding: 4rem 0;
-    background-color: var(--primary-white);
+    background-color: var(--primary-black);
 }
 
 .skill-div-main {
@@ -315,7 +305,8 @@ nav {
 
 .achievements-section {
     padding: 1rem 2rem 6rem 2rem;
-    background-color: var(--primary-white);
+    background-color: var(--primary-black);
+    color: var(--primary-white);
 }
 
 .achievements-div-main {
@@ -370,7 +361,6 @@ footer {
     align-items: center;
     justify-content: space-around;
     color: var(--primary-white);
-    /* box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 13px 17px 24px 4px rgb(0 0 0 / 22%); */
     box-shadow: 10px 11px 13px 0px rgb(0 0 0 / 22%);
 }
 
@@ -488,23 +478,26 @@ footer {
 
 @media only screen and (max-width: 768px) {
     nav {
-        padding-top: 1rem;
+        padding-top: 0.5rem;
         padding-right: 1rem;
     }
+
     .container-div {
         padding: 0 0 0 0;
     }
 
     .nav-section-alink {
-        font-size: 1.5rem;
+        width: 95px;
+        height: 50px;
     }
 
     .hero-section {
-        padding-left: 1rem;
+        padding-left: 2rem;
+        padding-bottom: 10rem;
     }
 
     .hero-section-hone {
-        font-size: 5rem;
+        font-size: 4rem;
         line-height: 60px;
     }
 
@@ -519,14 +512,10 @@ footer {
 
     .about-section {
         height: 100%;
-        color: var(--primary-black);
-        background-color: var(--primary-white);
         padding-bottom: 4rem;
     }
 
     .about-section {
-        color: var(--primary-black);
-        background-color: var(--primary-white);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -557,7 +546,6 @@ footer {
 
     .about-section-content {
         width: 100%;
-        display: flex;
         padding-left: 0;
         padding-right: 0;
         align-items: center;
@@ -579,8 +567,7 @@ footer {
     }
 
     .project-section {
-        background-color: var(--primary-white);
-        padding: 4rem 1rem;
+        padding: 0 1rem;
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -608,7 +595,6 @@ footer {
         padding: 60px 160px;
         font-size: 2.5rem;
         margin: 10px;
-        color: var(--primary-white);
         transition: 0.8s;
         border-radius: 10px;
         align-items: center;
@@ -621,36 +607,48 @@ footer {
 
     .project-div .one a {
         text-decoration: none;
-        color: var(--primary-white);
     }
 
     .my-skills {
-        padding: 2rem;
-        background-color: var(--primary-white);
+        padding: rem;
     }
 
     .skill-div .skill-div-items {
-        height: 20vh;
+        height: 15vh;
         width: 100%;
     }
+
     .skill-div .skill-div-items:hover {
-        transform: scale(1.03);
         background-image: linear-gradient(to top, rgba(1, 0, 3, 0.404), rgba(0, 0, 0, 0.664)),
             url(https://images.unsplash.com/photo-1617900906639-cab7adceb499?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
     }
 
+    .achievements-section {
+        padding: 1rem;
+    }
+
+    .achievements-div {
+        width: 350px;
+        padding: 0;
+    }
+
     .achievements-div img {
-        width: 400px;
-        padding: 2rem;
+        width: 300px;
+    }
+
+    .certificate-head {
+        font-size: 1.2rem;
+    }
+
+    .certificate-head-two {
+        font-size: 0.8rem;
     }
 
     footer {
-        background-color: var(--primary-brand-color);
         padding: 3rem 1rem 0.9rem 1rem;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        color: var(--primary-white);
     }
 
     .overlay-div {
@@ -672,18 +670,11 @@ footer {
     .overlay-btn {
         padding: 10px 30px;
         border-radius: 8px;
-        color: var(--primary-white);
         text-decoration: none;
         font-size: 1rem;
         transition: 0.8s;
         margin-top: 2rem;
         background-color: none;
-    }
-
-    .overlay-btn:hover {
-        background-color: var(--primary-brand-color);
-        color: var(--primary-white);
-        border: 2px solid var(--primary-black);
     }
 
     .footer-div-items {
@@ -705,7 +696,6 @@ footer {
     }
 
     .foot-action-btn-div a {
-        color: var(--primary-white);
         font-size: 1.3rem;
         padding-top: 4px;
         transition: 0.8s;
@@ -715,7 +705,6 @@ footer {
         content: " ↗";
         transition: 0.8s;
         font-size: 1.1rem;
-        color: var(--primary-white);
         opacity: 0;
     }
 

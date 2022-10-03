@@ -6,9 +6,11 @@ function Main() {
             <section className="hero-section">
                 <div className="container-div">
                     <h1 className="hero-section-hone">
-                        Hi, I'm<br></br>
-                        <span className="hero-section-hone-span">Del</span>
-                        bin<br></br>George
+                        <span>turning ideas into </span> <br></br>
+                        <span>creative </span>
+                        <span className="landing-header-gradient">websites</span>
+                        <br></br>
+                        <span>that inspires!</span>
                     </h1>
                     <div className="action-btn-div">
                         <Link
@@ -52,7 +54,6 @@ function Main() {
                         >
                             work together
                         </Link>
-                        
                     </div>
                 </div>
             </section>

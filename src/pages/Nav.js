@@ -1,13 +1,10 @@
 import React from "react";
-// import { Link } from "react-scroll";
+import navLogo from "../media/images/Logo.png";
 function Nav() {
     return (
         <div>
             <nav>
-                <a href=" https://www.twitter.com/dellbingeorge" className="nav-section-alink">
-                    <i className="fa fa-twitter"></i>
-                    say hi
-                </a>
+                <img className="nav-section-alink" src={navLogo} alt="Delbin Logo"></img>
             </nav>
         </div>
     );
