@@ -1,12 +1,9 @@
 @font-face {
-    font-family: "Coolvetica";
-    src: url(../src/media/fonts/coolvetica\ rg.otf);
-}
-
-@font-face {
     font-family: "MarcPro";
     src: url(../src/media/fonts/Mark-Pro-Heavy.ttf);
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 * {
     margin: 0;
@@ -56,6 +53,7 @@ nav {
     text-align: center;
     margin-top: 20px;
     color: var(--primary-white);
+    font-family: "Poppins", sans-serif;
     margin-bottom: 5px;
     transition: 0.6s;
 }
@@ -118,29 +116,33 @@ nav {
     display: flex;
     flex-direction: column;
     animation: fadeUp 1s;
-    font-family: "Coolvetica";
 }
 
 .action-btn-div-alink {
     padding-top: 4px;
     font-size: 2rem;
-    transition: 0.8s;
-    text-decoration: underline;
     color: var(--primary-white);
+    font-family: "Poppins", sans-serif;
+    transition: 0.8s;
 }
 
 .action-btn-div-alink::after {
     opacity: 0;
     content: " ↗";
     font-size: 2rem;
-    transition: 0.8s;
+    transition: 0s;
     color: var(--primary-white);
 }
 
 .action-btn-div-alink:hover {
+    background: linear-gradient(-45deg, #6d02f8, rgb(49, 76, 233), #6f00ff, rgb(52, 81, 243));
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     rotate: 0.5deg;
     cursor: pointer;
-    margin-left: 5px;
+    animation: gradient 5s infinite;
+    margin-left: 8px;
 }
 
 .action-btn-div-alink:hover::after {
@@ -160,7 +162,7 @@ nav {
         transform: translate(0, 15px);
     }
     100% {
-        transform: translate(0, -0px);
+        transform: translate(0, 0);
     }
 }
 
@@ -211,7 +213,11 @@ nav {
     font-size: 1.35rem;
     line-height: 40px;
     text-align: justify;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-family: "Poppins", sans-serif;
+}
+
+.name-span {
+    text-transform: uppercase;
 }
 
 .project-section {
@@ -306,7 +312,7 @@ nav {
 
 .skill-div .skill-div-items {
     display: flex;
-    height: 20vh;
+    height: 15vh;
     width: 25%;
     flex-direction: row;
     padding: 40px 90px;
@@ -316,8 +322,8 @@ nav {
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    background-image: url(https://images.unsplash.com/photo-1617900906639-cab7adceb499?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
     background-size: cover;
+    background-color: #080811;
     color: var(--primary-white);
     text-align: center;
     box-shadow: 12px 11px 20px -5px black;
@@ -325,8 +331,6 @@ nav {
 
 .skill-div .skill-div-items:hover {
     transform: scale(1.03);
-    background-image: linear-gradient(to top, rgba(1, 0, 3, 0.342), rgba(0, 0, 0, 0.486)),
-        url(https://images.unsplash.com/photo-1617900906639-cab7adceb499?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
 }
 
 .achievements-section {
@@ -372,8 +376,9 @@ nav {
 }
 
 footer {
+    min-height: 100vh;
     background-color: var(--primary-brand-color);
-    padding: 4rem 3rem;
+    padding: 1rem 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -411,6 +416,7 @@ footer {
     font-size: 1rem;
     transition: 0.8s;
     background-color: none;
+    text-align: center;
 }
 
 .overlay-btn:hover {
@@ -468,10 +474,11 @@ footer {
 }
 
 .foot-action-btn-div a {
+    font-family: "Poppins", sans-serif;
     color: var(--primary-white);
     font-size: 1.6rem;
-    text-decoration: underline;
-    padding-top: 10px;
+    text-decoration: none;
+    padding-top: 0;
     transition: 0.8s;
 }
 
@@ -495,12 +502,21 @@ footer {
     margin-right: 8px;
 }
 
+.creator-info-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .creator-info-div p {
-    text-align: right;
+    font-family: "Poppins", sans-serif;
     line-height: 30px;
-    padding-right: 5px;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     letter-spacing: 1px;
+}
+
+.creator-info-div a {
+    color: var(--primary-white);
 }
 
 @media only screen and (max-width: 768px) {
