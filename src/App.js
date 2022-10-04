@@ -10,13 +10,16 @@ import Footer from "./pages/Footer";
 import Nav from "./pages/Nav";
 import Skills from "./pages/Skills";
 import Achieve from "./pages/Achieve";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
     return (
         <div className="App">
             <Favicon url={FaviconIcon}></Favicon>
             <Nav />
-            <Main />
+            <Routes>
+                <Route path="" element={<Main />}></Route>
+            </Routes>
             <About />
             <Projects />
             <Achieve />

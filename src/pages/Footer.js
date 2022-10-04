@@ -1,5 +1,4 @@
 import React from "react";
-// import DBLogo from "../media/icons/favicon.png";
 import { Link } from "react-scroll";
 function Footer() {
     return (
@@ -19,16 +18,16 @@ function Footer() {
                         <Link className="foot-item-link" to="aboutme" spy={true} smooth={true} offset={10} duration={1950}>
                             know more about me
                         </Link>
-                        <a href="https://www.linkedin.com/in/delbingeorge/"  >go to linkedin</a>
+                        <a href="https://www.linkedin.com/in/delbingeorge/">go to linkedin</a>
+                        <a href="https://www.twitter.com/dellbingeorge/">see my tweets</a>
                         <Link className="foot-item-link" to="projects" spy={true} smooth={true} offset={10} duration={1950}>
                             see my projects
                         </Link>
-                        <a href="https://www.github.com/delbingeorge" >go to github</a>
+                        <a href="https://www.github.com/delbingeorge">go to github</a>
                     </div>
                 </div>
                 <div className="creator-info-div">
                     <p>Handcrafted by DB</p>
-                    {/* <img src={DBLogo} alt="DB logo"></img> */}
                 </div>
             </footer>
         </div>

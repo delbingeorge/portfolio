@@ -13,9 +13,9 @@ function About() {
                         <h1 className="section-heading">Designer, Frontend Developer & Self learner</h1>
                         <p>
                             My name is Delbin George I'm from India, I'm probably not the typical designer positioned behind
-                            an Illustrator art board adjusting pixels, but I design. I'm an entry-level front-end developer
-                            who loves to build and maintain web pages designs stylish user interfaces that inspires!. Seeking
-                            for new opportunities and challenges that will expand my skill set. I am currently doing BCA.
+                            an Illustrator art board adjusting pixels, but I design. I loves to build and maintain web pages
+                            and to create seamless, inspiring user interfaces. Seeking new opportunities and challenges that
+                            will expand my skill set.
                         </p>
                     </div>
                 </div>

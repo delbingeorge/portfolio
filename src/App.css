@@ -48,6 +48,7 @@ nav {
     width: 120px;
     height: 60px;
     animation: fadeUp 2s;
+    cursor: pointer;
 }
 
 .section-heading {
@@ -68,7 +69,7 @@ nav {
 }
 
 .container-div {
-    padding: 1rem 5rem 0 5rem;
+    padding: 1rem 2rem 0 5rem;
 }
 
 .hero-section-hone {
@@ -168,7 +169,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 4rem 2rem;
+    padding: 2rem;
 }
 
 .about-div {
@@ -214,7 +215,7 @@ nav {
 
 .project-section {
     background-color: var(--primary-black);
-    padding: 3rem 3rem;
+    padding: 2rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -246,13 +247,12 @@ nav {
     transition: 0.8s;
     justify-content: center;
     border-radius: 10px;
-    filter: grayscale(1);
     text-decoration: none;
     box-shadow: rgba(0, 0, 0, 0.1) 2px 15px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 
 .project-div .one:hover {
-    width: 25%;
+    width: 28%;
     filter: none;
 }
 
@@ -279,7 +279,7 @@ nav {
 }
 
 .my-skills {
-    padding: 4rem 0;
+    padding: 2rem 0;
     background-color: var(--primary-black);
 }
 
@@ -324,7 +324,7 @@ nav {
 }
 
 .achievements-section {
-    padding: 1rem 2rem 6rem 2rem;
+    padding: 1rem 2rem 2rem 2rem;
     background-color: var(--primary-black);
     color: var(--primary-white);
 }
@@ -397,7 +397,7 @@ footer {
 
 .overlay-btn {
     padding: 10px 35px;
-    border-radius: 10px;
+    border-radius: 6px;
     color: var(--primary-white);
     text-decoration: none;
     border: 2px solid var(--primary-brand-color);
@@ -626,7 +626,7 @@ footer {
         font-size: 2.5rem;
         margin: 10px;
         transition: 0.8s;
-        border-radius: 10px;
+        border-radius: 3px;
         align-items: center;
         justify-content: center;
     }
@@ -691,7 +691,7 @@ footer {
 
     .overlay-btn {
         padding: 10px 30px;
-        border-radius: 8px;
+        border-radius: 3px;
         text-decoration: none;
         font-size: 1rem;
         transition: 0.8s;
