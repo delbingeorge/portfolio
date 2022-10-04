@@ -66,6 +66,7 @@ nav {
     justify-content: flex-start;
     background-color: var(--primary-black);
 }
+
 .container-div {
     padding: 1rem 5rem 0 5rem;
 }
@@ -75,7 +76,8 @@ nav {
     color: var(--primary-white);
     line-height: 80px;
     font-size: 6rem;
-    margin-bottom: 20px;
+    margin-top: 10rem;
+    margin-bottom: 30px;
     letter-spacing: 1px;
     animation: fadeUp 1s;
 }
@@ -335,15 +337,13 @@ nav {
 }
 
 .certificate-div img {
-    filter: grayscale(1);
     width: 600px;
     padding: 2rem;
     transition: 0.8s;
 }
 
 .certificate-div img:hover {
-    filter: grayscale(0);
-    transform: scale(1.03);
+    transform: scale(1.01);
 }
 
 footer {
@@ -489,18 +489,20 @@ footer {
     }
 
     .nav-section-alink {
-        width: 95px;
-        height: 50px;
+        width: 55px;
+        height: 30px;
     }
 
     .hero-section {
-        padding-left: 2rem;
+        padding-left: 1rem;
         padding-bottom: 10rem;
     }
 
     .hero-section-hone {
-        font-size: 4rem;
-        line-height: 60px;
+        margin-top: 4rem;
+        margin-bottom: 10px;
+        font-size: 3.7rem;
+        line-height: 55px;
     }
 
     .action-btn-div-alink {
@@ -617,7 +619,7 @@ footer {
 
     .skill-div .skill-div-items {
         height: 15vh;
-        width: 100%;
+        width: 80%;
     }
 
     .skill-div .skill-div-items:hover {
@@ -629,13 +631,8 @@ footer {
         padding: 1rem;
     }
 
-    .achievements-div {
+    .achievements-div .certificate-div img {
         width: 350px;
-        padding: 0;
-    }
-
-    .achievements-div img {
-        width: 390px;
     }
 
     .certificate-head {
