@@ -171,6 +171,7 @@ nav {
     align-items: center;
     justify-content: center;
     padding: 2rem;
+    min-height: 100vh;
 }
 
 .about-div {
@@ -197,7 +198,6 @@ nav {
 }
 
 .about-section-content {
-    /* width: 60vw; */
     width: 55%;
     display: flex;
     padding-left: 1rem;
@@ -220,6 +220,7 @@ nav {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    min-height: 100vh;
 }
 
 .project-div-main {
@@ -282,6 +283,7 @@ nav {
 .my-skills {
     padding: 2rem 0;
     background-color: var(--primary-black);
+    min-height: 100vh;
 }
 
 .skill-div-main {
@@ -328,6 +330,7 @@ nav {
     padding: 1rem 2rem 2rem 2rem;
     background-color: var(--primary-black);
     color: var(--primary-white);
+    min-height: 100vh;
 }
 
 .achievements-div-main {

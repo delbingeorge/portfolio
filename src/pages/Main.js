@@ -14,6 +14,7 @@ function Main() {
                         <br></br>
                         <span>that inspires!</span>
                     </h1>
+
                     <div className="action-btn-div">
                         <Link
                             to="aboutme"
