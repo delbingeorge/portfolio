@@ -284,6 +284,9 @@ nav {
     padding: 2rem 0;
     background-color: var(--primary-black);
     min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .skill-div-main {
