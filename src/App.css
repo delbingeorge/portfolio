@@ -62,22 +62,23 @@ nav {
 
 .hero-section {
     display: flex;
-    min-height: 90vh;
+    min-height: 80vh;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     background-color: var(--primary-black);
+    padding: 3rem 0 4.5rem 0;
 }
 
 .container-div {
-    padding: 1rem 2rem 0 5rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .hero-section-hone {
     font-weight: 100;
     color: var(--primary-white);
-    line-height: 80px;
-    font-size: 6rem;
-    margin-top: 10rem;
+    line-height: 70px;
+    font-size: 5rem;
     margin-bottom: 30px;
     letter-spacing: 1px;
     animation: fadeUp 1s;
@@ -177,7 +178,7 @@ nav {
     align-items: center;
     flex-direction: row;
     justify-content: center;
-    width: 90%;
+    width: 100%;
 }
 
 .about-section-img {
@@ -210,7 +211,7 @@ nav {
     font-size: 1.35rem;
     line-height: 40px;
     text-align: justify;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .project-section {
