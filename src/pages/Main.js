@@ -58,7 +58,7 @@ function Main() {
                         </Link>
                     </div>
                 </div>
-                <img className="icono-3d" src={db3dthree} alt="3d icon "></img>
+                <img className="icon-3d" src={db3dthree} alt="3d icon "></img>
             </section>
         </div>
     );

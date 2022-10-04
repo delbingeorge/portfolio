@@ -66,7 +66,7 @@ nav {
     align-items: center;
     justify-content: space-evenly;
     background-color: var(--primary-black);
-    padding: 3rem 0 4.5rem 0;
+    padding: 3rem 0 4.5rem 1rem;
 }
 
 .container-div {
@@ -147,7 +147,7 @@ nav {
     opacity: 1;
 }
 
-.icono-3d {
+.icon-3d {
     width: 350px;
     animation: floating 3s ease-in-out infinite;
 }
@@ -232,7 +232,7 @@ nav {
 .project-div-main .project-div {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -367,7 +367,7 @@ nav {
 
 footer {
     background-color: var(--primary-brand-color);
-    padding: 4rem 6rem;
+    padding: 4rem 3rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -537,7 +537,12 @@ footer {
         font-size: 1.6rem;
     }
 
-    .icono-3d {
+    .action-btn-div {
+        margin-top: 0.5rem;
+        padding-top: 20px;
+    }
+
+    .icon-3d {
         display: none;
     }
 
@@ -563,14 +568,15 @@ footer {
 
     .about-section-img {
         width: 100%;
-        background-size: cover;
+        height: 100%;
         border-radius: 9px;
         margin-right: 0;
     }
 
     .about-section-img img {
         width: 100%;
-        background-size: cover;
+
+        height: 100%;
         border-radius: 9px;
         margin-right: 0;
     }
@@ -595,6 +601,7 @@ footer {
         font-size: 1.25rem;
         line-height: 40px;
         text-align: justify;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     }
 
     .project-section {
@@ -623,7 +630,7 @@ footer {
     .project-div .one {
         display: flex;
         flex-direction: row;
-        padding: 60px 160px;
+        padding: 50px 140px;
         font-size: 2.5rem;
         margin: 10px;
         transition: 0.8s;
