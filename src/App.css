@@ -83,9 +83,9 @@ nav {
 }
 
 .landing-header-gradient {
-    background: linear-gradient(-45deg, #6e07f3, #e73c7e, #6e07f3, #23d5ab);
+    background: linear-gradient(-45deg, #6d02f8, rgb(49, 76, 233), #6f00ff, rgb(52, 81, 243));
     background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+    animation: gradient 5s infinite;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -145,13 +145,30 @@ nav {
     opacity: 1;
 }
 
+.icono-3d {
+    width: 350px;
+    animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0px);
+    }
+    50% {
+        transform: translate(0, 15px);
+    }
+    100% {
+        transform: translate(0, -0px);
+    }
+}
+
 .about-section {
     color: var(--primary-white);
     background-color: var(--primary-black);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 5rem;
+    padding: 4rem 2rem;
 }
 
 .about-div {
@@ -159,10 +176,11 @@ nav {
     align-items: center;
     flex-direction: row;
     justify-content: center;
+    width: 90%;
 }
 
 .about-section-img {
-    width: 35vw;
+    width: 45%;
     background-size: cover;
     border-radius: 9px;
     margin-right: 1rem;
@@ -170,15 +188,15 @@ nav {
 
 .about-section-img img {
     width: 100%;
+    height: 100%;
     background-size: cover;
     border-radius: 5px;
-    margin-right: 3rem;
     box-shadow: rgba(0, 0, 0, 0.1) 10px 15px 25px 5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 
 .about-section-content {
-    width: 60vw;
-    height: 80%;
+    /* width: 60vw; */
+    width: 55%;
     display: flex;
     padding-left: 1rem;
     padding-right: 0;
@@ -493,6 +511,10 @@ footer {
         height: 30px;
     }
 
+    .section-heading {
+        font-size: 2rem;
+    }
+
     .hero-section {
         padding-left: 1rem;
         padding-bottom: 10rem;
@@ -512,6 +534,10 @@ footer {
     .action-btn-div-alink::after {
         content: " ↗";
         font-size: 1.6rem;
+    }
+
+    .icono-3d {
+        display: none;
     }
 
     .about-section {
@@ -613,13 +639,10 @@ footer {
         text-decoration: none;
     }
 
-    .my-skills {
-        padding: rem;
-    }
-
     .skill-div .skill-div-items {
         height: 15vh;
         width: 80%;
+        padding: 0;
     }
 
     .skill-div .skill-div-items:hover {

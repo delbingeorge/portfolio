@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
+import db3dthree from "../media/images/db3done.png";
 function Main() {
     return (
         <div>
@@ -56,6 +57,7 @@ function Main() {
                         </Link>
                     </div>
                 </div>
+                <img className="icono-3d" src={db3dthree} alt="3d icon "></img>
             </section>
         </div>
     );
