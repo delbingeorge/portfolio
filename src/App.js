@@ -4,7 +4,7 @@ import Favicon from "react-favicon";
 
 import "./App.css";
 import About from "./pages/About/About";
-// import Projects from "./pages/Project/Projects";
+import Projects from "./pages/Project/Projects";
 import Footer from "./pages/Footer/Footer";
 import Awards from "./pages/Awards/Awards";
 import Skills from "./pages/Skills/Skills";
@@ -16,7 +16,7 @@ function App() {
             <Favicon url={FaviconIcon}></Favicon>
             <Hero />
             <About />
-            {/* <Projects /> */}
+            <Projects />
             <Awards />
             <Skills />
             <Footer />

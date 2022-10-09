@@ -1,0 +1,4 @@
+.certificate-section {
+    min-height: 90vh;
+    background-color: var(--primary-white-color);
+}

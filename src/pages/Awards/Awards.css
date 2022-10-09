@@ -1,41 +1,6 @@
-/* .achievements-section {
-    padding: 1rem 2rem 2rem 2rem;
-    background-color: var(--primary-white-color);
-    color: var(--primary-white);
-    min-height: 100vh;
-}
-
-.achievements-div-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.achievements-div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.certificate-div {
-    text-align: center;
-}
-
-.certificate-div img {
-    width: 600px;
-    padding: 2rem;
-    transition: 0.8s;
-}
-
-.certificate-div img:hover {
-    transform: scale(1.01);
-} */
-
 .awards-section {
-    min-height: 100vh;
     background-color: var(--primary-white-color);
-    padding: 4rem 2rem;
+    padding: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -49,7 +14,6 @@
 }
 
 .awards-div {
-    width: 90vw;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -64,9 +28,9 @@
     padding: 4rem;
     display: flex;
     height: 480px;
+    width: 350px;
     text-decoration: none;
     flex-direction: column;
-    border: 5px solid black;
     align-items: center;
     justify-content: space-between;
     transition: 0.8s;
@@ -74,39 +38,71 @@
 }
 
 .award:hover {
- transform: scale(1.03);
+    transform: scale(1.03);
 }
 
 .award img {
-    width: 180px;
+    width: 120px;
 }
 
 .award h1 {
     color: var(--primary-white-color);
-    font-size: 2rem;
+    font-size: 1.7rem;
     text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
 }
 
 .award p {
     color: var(--primary-white-color);
     font-size: 1.5rem;
     text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: "Poppins", sans-serif;
 }
 
 @media only screen and (max-width: 768px) {
-    /* .achievements-section {
-        padding: 1rem;
+    .awards-section {
+        padding: 4rem 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
-    .achievements-div .certificate-div img {
-        width: 350px;
+    .awards-div-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
     }
 
-    .certificate-head {
+    .awards-div {
+        width: 90vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .award {
+        padding: 2rem;
+        display: flex;
+        height: 300px;
+        width: 100%;
+        margin: 0.5rem;
+    }
+
+    .award img {
+        width: 80px;
+    }
+
+    .award h1 {
         font-size: 1.2rem;
     }
 
-    .certificate-head-two {
-        font-size: 0.8rem;
-    } */
+    .award p {
+        font-size: 1.1rem;
+    }
 }
