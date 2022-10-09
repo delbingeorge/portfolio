@@ -1,16 +1,17 @@
 import React from "react";
-// import { Fade } from "react-awesome-reveal";
 import "../Awards/Awards.css";
 
-import certificateOne from "../../media/images/certificateOne.jpg";
-import certificateTwo from "../../media/images/certificateThree.jpg";
-import certificateThree from "../../media/images/certificateTwo.jpg";
+// import certificateOne from "../../media/images/certificateOne.jpg";
+// import certificateTwo from "../../media/images/certificateThree.jpg";
+// import certificateThree from "../../media/images/certificateTwo.jpg";
+
+import firstplacemedal from "../../media/images/medal.png";
+import { Link } from "react-router-dom";
 
 function Achieve() {
     return (
         <div id="achievements">
-            <section className="achievements-section">
-                {/* <Fade cascade duration={9000}> */}
+            {/* <section className="achievements-section">
                 <div className="achievements-div-main">
                     <h1 className="section-heading"> My Achievements</h1>
                     <div className="achievements-div">
@@ -31,7 +32,34 @@ function Achieve() {
                         </div>
                     </div>
                 </div>
-                {/* </Fade> */}
+            </section> */}
+            <section className="awards-section">
+                <div className="awards-div-main">
+                    <h1 className="section-heading">Achievements</h1>
+                    <div className="awards-div">
+                        <Link to="" className="award cerone">
+                            <img alt="" src={firstplacemedal}></img>
+                            <h1>
+                                Web Designing <br></br>Competition
+                            </h1>
+                            <p>Runners Up</p>
+                        </Link>
+                        <Link to="" className="award certwo">
+                            <img alt="" src={firstplacemedal}></img>
+                            <h1>
+                                Web Designing <br></br>Competition
+                            </h1>
+                            <p>Champion</p>
+                        </Link>
+                        <Link to="" className="award crethree">
+                            <img alt="" src={firstplacemedal}></img>
+                            <h1>
+                                Web Designing <br></br>Competition
+                            </h1>
+                            <p>Champion</p>
+                        </Link>
+                    </div>
+                </div>
             </section>
         </div>
     );

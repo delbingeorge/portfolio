@@ -73,6 +73,7 @@
 }
 
 .action-btn-div-alink:hover {
+    font-weight: bold;
     background: linear-gradient(-45deg, #6d02f8, rgb(49, 76, 233), #6f00ff, rgb(52, 81, 243));
     background-size: 400% 400%;
     -webkit-background-clip: text;

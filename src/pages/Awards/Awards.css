@@ -1,4 +1,4 @@
-.achievements-section {
+/* .achievements-section {
     padding: 1rem 2rem 2rem 2rem;
     background-color: var(--primary-white-color);
     color: var(--primary-white);
@@ -18,14 +18,6 @@
     flex-wrap: wrap;
 }
 
-.achievements-galley {
-    /* background-image: url(../src/media/images/przeCover.jpg); */
-    height: 45vh;
-    width: 90%;
-    border-radius: 20px;
-    background-size: cover;
-}
-
 .certificate-div {
     text-align: center;
 }
@@ -38,10 +30,71 @@
 
 .certificate-div img:hover {
     transform: scale(1.01);
+} */
+
+.awards-section {
+    min-height: 100vh;
+    background-color: var(--primary-white-color);
+    padding: 4rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.awards-div-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.awards-div {
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.award {
+    background-color: var(--primary-black-color);
+    box-shadow: 10px 11px 13px 0px rgb(0 0 0 / 22%);
+    border-radius: 9px;
+    padding: 4rem;
+    display: flex;
+    height: 480px;
+    text-decoration: none;
+    flex-direction: column;
+    border: 5px solid black;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.8s;
+    margin: 1rem;
+}
+
+.award:hover {
+ transform: scale(1.03);
+}
+
+.award img {
+    width: 180px;
+}
+
+.award h1 {
+    color: var(--primary-white-color);
+    font-size: 2rem;
+    text-align: center;
+}
+
+.award p {
+    color: var(--primary-white-color);
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 @media only screen and (max-width: 768px) {
-    .achievements-section {
+    /* .achievements-section {
         padding: 1rem;
     }
 
@@ -55,5 +108,5 @@
 
     .certificate-head-two {
         font-size: 0.8rem;
-    }
+    } */
 }

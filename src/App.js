@@ -4,10 +4,10 @@ import Favicon from "react-favicon";
 
 import "./App.css";
 import About from "./pages/About/About";
-import Projects from "./pages/Project/Projects";
+// import Projects from "./pages/Project/Projects";
 import Footer from "./pages/Footer/Footer";
+import Awards from "./pages/Awards/Awards";
 import Skills from "./pages/Skills/Skills";
-import Achieve from "./pages/Awards/Awards";
 import Hero from "./pages/Hero/Hero";
 
 function App() {
@@ -16,8 +16,8 @@ function App() {
             <Favicon url={FaviconIcon}></Favicon>
             <Hero />
             <About />
-            <Projects />
-            <Achieve />
+            {/* <Projects /> */}
+            <Awards />
             <Skills />
             <Footer />
         </div>
