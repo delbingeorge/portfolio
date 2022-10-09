@@ -1,0 +1,110 @@
+.project-section {
+    background-color: var(--primary-white-color);
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.project-div-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.project-div-main .project-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.project-div .one {
+    display: flex;
+    flex-direction: row;
+    padding: 110px 110px;
+    font-size: 3rem;
+    margin: 10px;
+    width: 25%;
+    color: var(--primary-white);
+    transition: 0.8s;
+    justify-content: center;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 2px 15px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.project-div .one:hover {
+    width: 28%;
+    filter: none;
+}
+
+.netflix-div {
+    background-image: linear-gradient(to bottom, rgba(130, 8, 8, 0.351), rgba(255, 0, 0, 0.836)),
+        url(https://assets.nflxext.com/ffe/siteui/vlv3/45082c39-e6d5-4b02-8867-e38fe32ed3af/4b49769b-ddbc-406a-a26b-482024a66727/IN-en-20220919-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+}
+
+.spotify-div {
+    background-image: linear-gradient(to bottom, rgba(0, 239, 4, 0.444), rgba(13, 255, 0, 0.842)),
+        url(https://i0.wp.com/9to5mac.com/wp-content/uploads/sites/6/2021/09/Spotify.png?w=2000&quality=82&strip=all&ssl=1);
+}
+
+.shoped-div {
+    background-image: linear-gradient(to bottom, rgba(239, 223, 0, 0.444), rgba(255, 208, 0, 0.822)),
+        url(https://i0.wp.com/9to5mac.com/wp-content/uploads/sites/6/2021/09/Spotify.png?w=2000&quality=82&strip=all&ssl=1);
+    background-size: cover;
+}
+
+.bitdrag-div {
+    background-image: linear-gradient(to bottom, rgba(0, 16, 239, 0.552), rgba(0, 34, 253, 0.801)),
+        url(https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+}
+
+@media only screen and (max-width: 768px) {
+    .project-section {
+        padding: 0 1rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-div-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .project-div-main .project-div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 97vw;
+        flex-wrap: wrap;
+    }
+
+    .project-div .one {
+        display: flex;
+        flex-direction: row;
+        padding: 50px 140px;
+        font-size: 2.5rem;
+        margin: 10px;
+        transition: 0.8s;
+        border-radius: 3px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .project-div .one:hover {
+        transform: translateY(-5px);
+    }
+
+    .project-div .one a {
+        text-decoration: none;
+    }
+}

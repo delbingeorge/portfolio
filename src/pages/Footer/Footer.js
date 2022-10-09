@@ -1,8 +1,8 @@
-import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
-import { faDownLeftAndUpRightToCenter } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Link } from "react-scroll";
+
+import "../Footer/Footer.css";
+
 function Footer() {
     return (
         <div>
@@ -33,9 +33,6 @@ function Footer() {
                 <hr></hr>
                 <div className="creator-info-div">
                     <p>&#169; | Handcrafted by DB</p>
-                    <a href="https://www.linkedin.com/in/delbingeorge/">
-                        <FontAwesomeIcon icon={faLinkedinIn} />
-                    </a>
                 </div>
             </footer>
         </div>

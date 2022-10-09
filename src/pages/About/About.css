@@ -1,0 +1,117 @@
+.about-section {
+    min-height: 100vh;
+    background-color: var(--primary-white-color);
+    padding: 4rem 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.about-div {
+    display: flex;
+    justify-content: flex-start;
+    border-radius: 10px;
+    background-color: var(--primary-white-color);
+    padding: 10rem 4rem;
+    box-shadow: 6px 6px 20px #cecece, -6px -6px 10px #ffffff;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    padding-right: 1rem;
+    color: var(--primary-black-color);
+}
+
+.content-head h1 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 2rem;
+}
+
+.head-icon {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 0;
+    justify-content: space-between;
+}
+
+.head-icon a {
+    font-size: 1.4rem;
+    transition: 0.8s;
+    color: var(--primary-black-color);
+}
+
+.head-icon a:hover {
+    color: var(--primary-brand-color);
+    transform: translateY(-3px);
+}
+
+.content-head p {
+    text-align: justify;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    line-height: 50px;
+}
+
+.name-span {
+    text-transform: uppercase;
+}
+
+.about-img {
+    padding: 10rem;
+    border-radius: 5px;
+    background-image: url(../../media/images/proImg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 884px) {
+    .about-section {
+        padding: 2rem 0;
+        justify-content: center;
+    }
+
+    .about-div {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 3rem 0;
+        width: 95%;
+    }
+
+    .about-content {
+        flex-direction: column;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .content-head h1 {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .head-icon {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        margin: 2rem 0 1rem;
+        justify-content: space-evenly;
+    }
+
+    .head-icon a {
+        font-size: 1.2rem;
+    }
+
+    .content-head p {
+        text-align: justify;
+        font-size: 1.3rem;
+    }
+
+    .about-img {
+        padding: 7rem;
+        border-radius: 10px;
+    }
+}

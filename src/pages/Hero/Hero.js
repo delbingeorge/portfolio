@@ -1,8 +1,10 @@
 import React from "react";
 import { Link } from "react-scroll";
-import db3dthree from "../media/images/db3done.png";
 
-function Main() {
+import "../Hero/Hero.css";
+import Image3D from "../../media/images/db3done.png";
+
+function Hero() {
     return (
         <div>
             <section className="hero-section">
@@ -27,6 +29,16 @@ function Main() {
                             about me
                         </Link>
                         <Link
+                            to="contact"
+                            className="action-btn-div-alink"
+                            spy={true}
+                            smooth={true}
+                            offset={10}
+                            duration={1950}
+                        >
+                            resume
+                        </Link>
+                        <Link
                             to="projects"
                             className="action-btn-div-alink"
                             spy={true}
@@ -35,17 +47,6 @@ function Main() {
                             duration={1950}
                         >
                             see my projects
-                        </Link>
-
-                        <Link
-                            to="achievements"
-                            className="action-btn-div-alink"
-                            spy={true}
-                            smooth={true}
-                            offset={10}
-                            duration={1950}
-                        >
-                            my achievements
                         </Link>
                         <Link
                             to="contact"
@@ -59,10 +60,10 @@ function Main() {
                         </Link>
                     </div>
                 </div>
-                <img className="icon-3d" src={db3dthree} alt="3d icon "></img>
+                <img className="icon-3d" src={Image3D} alt="3d icon "></img>
             </section>
         </div>
     );
 }
 
-export default Main;
+export default Hero;

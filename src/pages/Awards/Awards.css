@@ -1,0 +1,59 @@
+.achievements-section {
+    padding: 1rem 2rem 2rem 2rem;
+    background-color: var(--primary-white-color);
+    color: var(--primary-white);
+    min-height: 100vh;
+}
+
+.achievements-div-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.achievements-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.achievements-galley {
+    /* background-image: url(../src/media/images/przeCover.jpg); */
+    height: 45vh;
+    width: 90%;
+    border-radius: 20px;
+    background-size: cover;
+}
+
+.certificate-div {
+    text-align: center;
+}
+
+.certificate-div img {
+    width: 600px;
+    padding: 2rem;
+    transition: 0.8s;
+}
+
+.certificate-div img:hover {
+    transform: scale(1.01);
+}
+
+@media only screen and (max-width: 768px) {
+    .achievements-section {
+        padding: 1rem;
+    }
+
+    .achievements-div .certificate-div img {
+        width: 350px;
+    }
+
+    .certificate-head {
+        font-size: 1.2rem;
+    }
+
+    .certificate-head-two {
+        font-size: 0.8rem;
+    }
+}

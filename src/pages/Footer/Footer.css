@@ -1,0 +1,215 @@
+footer {
+    min-height: 100vh;
+    background-color: var(--primary-brand-color);
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: var(--primary-white);
+}
+
+.overlay-div {
+    background-color: var(--primary-black-color);
+    padding: 2.7rem 1rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--primary-white-color);
+    box-shadow: 10px 11px 13px 0px rgb(0 0 0 / 22%);
+}
+
+.overlay-div h1 {
+    font-weight: 100;
+    font-size: 1.8rem;
+}
+
+.overlay-div p {
+    font-weight: 100;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.overlay-btn {
+    padding: 10px 35px;
+    border-radius: 6px;
+    color: var(--primary-white-color);
+    text-decoration: none;
+    border: 2px solid var(--primary-brand-color);
+    font-size: 1rem;
+    transition: 0.8s;
+    background-color: none;
+    text-align: center;
+}
+
+.overlay-btn:hover {
+    background-color: var(--primary-brand-color);
+    color: var(--primary-white);
+    border: 2px solid var(--primary-brand-color);
+}
+
+.footer-div-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.footer-div-items div h4 {
+    font-size: 2rem;
+    color: var(--primary-white-color);
+    font-weight: 100;
+}
+
+.foot-action-btn-div {
+    display: flex;
+    flex-direction: column;
+    margin-right: 3rem;
+    margin-top: 2rem;
+}
+
+.foot-item-link {
+    color: var(--primary-white);
+    font-size: 1.6rem;
+    text-decoration: underline;
+    padding-top: 10px;
+    transition: 0.8s;
+}
+
+.foot-item-link::after {
+    content: " ↗";
+    transition: 0.8s;
+    font-size: 1.7rem;
+    color: var(--primary-white);
+    opacity: 0;
+}
+
+.foot-item-link:hover {
+    margin-left: 5px;
+}
+
+.foot-item-link:hover::after {
+    opacity: 1;
+}
+
+.foot-item-link:hover {
+    margin-right: 8px;
+}
+
+.foot-action-btn-div a {
+    font-family: "Poppins", sans-serif;
+    color: var(--primary-white-color);
+    font-size: 1.6rem;
+    text-decoration: none;
+    padding-top: 0;
+    transition: 0.8s;
+}
+
+.foot-action-btn-div a::after {
+    content: " ↗";
+    transition: 0.8s;
+    font-size: 1.7rem;
+    color: var(--primary-white-color);
+    opacity: 0;
+}
+
+.foot-action-btn-div a:hover {
+    margin-left: 5px;
+}
+
+.foot-action-btn-div a:hover::after {
+    opacity: 1;
+}
+
+.foot-action-btn-div a:hover {
+    margin-right: 8px;
+}
+
+.creator-info-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.creator-info-div p {
+    font-family: "Poppins", sans-serif;
+    line-height: 30px;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.creator-info-div p {
+    color: var(--primary-white-color);
+}
+
+@media only screen and (max-width: 768px) {
+    footer {
+        padding: 3rem 1rem 0.9rem 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .overlay-div {
+        padding: 2rem 2rem;
+        flex-direction: column;
+    }
+
+    .overlay-div h1 {
+        font-weight: 100;
+        font-size: 1.75rem;
+    }
+
+    .overlay-div p {
+        font-size: 1rem;
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .overlay-btn {
+        padding: 10px 30px;
+        border-radius: 3px;
+        text-decoration: none;
+        font-size: 1rem;
+        transition: 0.8s;
+        margin-top: 2rem;
+        background-color: none;
+    }
+
+    .footer-div-items {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .footer-div-items div h4 {
+        font-size: 2rem;
+        font-weight: 100;
+    }
+
+    .foot-action-btn-div {
+        display: flex;
+        flex-direction: column;
+        margin-right: 3rem;
+    }
+
+    .foot-action-btn-div a {
+        font-size: 1.3rem;
+        padding-top: 4px;
+        transition: 0.8s;
+    }
+
+    .foot-action-btn-div a::after {
+        content: " ↗";
+        transition: 0.8s;
+        font-size: 1.1rem;
+        opacity: 0;
+    }
+
+    .creator-info-div p {
+        text-align: right;
+        padding-top: 10px;
+        font-size: 1rem;
+    }
+}

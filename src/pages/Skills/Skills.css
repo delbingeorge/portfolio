@@ -1,0 +1,59 @@
+.my-skills {
+    padding: 2rem 0;
+    background-color: var(--primary-white-color);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-div-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.skill-div-main .skill-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.skill-div .skill-div-items {
+    display: flex;
+    height: 15vh;
+    width: 25%;
+    flex-direction: row;
+    padding: 40px 90px;
+    font-size: 1.5rem;
+    margin: 10px;
+    transition: 0.8s;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-size: cover;
+    background-color: #080811;
+    color: var(--primary-white);
+    text-align: center;
+    box-shadow: 12px 11px 20px -5px black;
+}
+
+.skill-div .skill-div-items:hover {
+    transform: scale(1.03);
+}
+
+@media only screen and (max-width: 768px) {
+    .skill-div .skill-div-items {
+        height: 15vh;
+        width: 80%;
+        padding: 0;
+    }
+
+    .skill-div .skill-div-items:hover {
+        background-image: linear-gradient(to top, rgba(1, 0, 3, 0.404), rgba(0, 0, 0, 0.664)),
+            url(https://images.unsplash.com/photo-1617900906639-cab7adceb499?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    }
+}
