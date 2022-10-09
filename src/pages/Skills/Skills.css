@@ -36,7 +36,7 @@
     border-radius: 10px;
     background-size: cover;
     background-color: #080811;
-    color: var(--primary-white);
+    color: var(--primary-white-color);
     text-align: center;
     box-shadow: 12px 11px 20px -5px black;
 }
