@@ -23,7 +23,7 @@
 }
 
 .skill-div img {
-    width: 330px;
+    width: 160px;
     padding: 40px;
 }
 
@@ -33,33 +33,23 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .my-skills {
-        padding: 2rem 0;
-        background-color: var(--primary-white-color);
-        min-height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
 
     .skill-div-main {
-        display: flex;
         flex-direction: column;
-        align-items: center;
     }
 
     .skill-div-main .skill-div {
-        display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: center;
     }
 
     .skill-div img {
-        width: 250px;
+        width: 120px;
         padding: 20px;
     }
 
     .skill-icon {
-        font-size: 4rem;
-        padding: 10px;
+        font-size: 4.4rem;
+        padding: 20px;
     }
 }
