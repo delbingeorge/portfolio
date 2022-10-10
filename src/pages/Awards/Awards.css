@@ -23,7 +23,7 @@
 
 .award {
     background-color: var(--primary-black-color);
-    box-shadow: 10px 11px 13px 0px rgb(0 0 0 / 22%);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 9px;
     padding: 4rem;
     display: flex;

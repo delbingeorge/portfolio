@@ -25,6 +25,7 @@
 .skill-div img {
     width: 160px;
     padding: 40px;
+    border-radius: 50px;
 }
 
 .skill-icon {
@@ -33,7 +34,6 @@
 }
 
 @media only screen and (max-width: 768px) {
-
     .skill-div-main {
         flex-direction: column;
     }
@@ -46,6 +46,7 @@
     .skill-div img {
         width: 120px;
         padding: 20px;
+        border-radius: 30px;
     }
 
     .skill-icon {
