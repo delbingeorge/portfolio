@@ -1,5 +1,5 @@
 .my-skills {
-    padding: 8rem 0;
+    padding: 2rem 0;
     background-color: var(--primary-white-color);
     display: flex;
     align-items: center;
@@ -23,9 +23,9 @@
 }
 
 .skill-div img {
-    width: 160px;
+    width: 150px;
     padding: 40px;
-    border-radius: 50px;
+    border-radius: 45px;
 }
 
 .skill-icon {
@@ -41,16 +41,17 @@
     .skill-div-main .skill-div {
         flex-direction: row;
         justify-content: center;
+        margin: 0;
     }
 
     .skill-div img {
-        width: 120px;
+        width: 100px;
         padding: 20px;
         border-radius: 30px;
     }
 
     .skill-icon {
-        font-size: 4.4rem;
+        font-size: 4rem;
         padding: 20px;
     }
 }

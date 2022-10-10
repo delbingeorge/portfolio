@@ -1,7 +1,7 @@
 import React from "react";
 import "../Certificate/Certificate.css";
 
-import certificateOne from "../../media/images/certificateOne.jpg";
+// import certificateOne from "../../media/images/certificateOne.jpg";
 // import certificateTwo from "../../media/images/certificateThree.jpg";
 // import certificateThree from "../../media/images/certificateTwo.jpg";
 

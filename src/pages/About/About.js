@@ -10,7 +10,10 @@ function About() {
                 <div className="about-div">
                     <div className="about-content">
                         <div className="content-head">
-                            <h1>Delbin George</h1>
+                            {/* <h1>Delbin George</h1> */}
+                            <h1>
+                                Designer, Developer & <br></br> Self learner
+                            </h1>
                             <div className="head-icon">
                                 <a href="https://twitter.com/dellbingeorge">
                                     <FontAwesomeIcon icon={faTwitter} />

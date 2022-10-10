@@ -24,7 +24,7 @@ function Hero() {
                             spy={true}
                             smooth={true}
                             offset={10}
-                            duration={1950}
+                            duration={2050}
                         >
                             about me
                         </Link>

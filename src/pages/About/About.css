@@ -38,7 +38,7 @@
 }
 
 .head-icon a {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     transition: 0.8s;
     color: var(--primary-black-color);
 }
@@ -61,11 +61,12 @@
 
 .about-img {
     padding: 13rem;
-    border-radius: 5px;
+    border-radius: 15px;
     margin-left: 30px;
     background-image: url(../../media/images/proImg.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
 }
 
 @media only screen and (max-width: 884px) {
@@ -79,7 +80,7 @@
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        padding: 4rem 0;
+        padding: 2rem 0;
         width: 95%;
     }
 

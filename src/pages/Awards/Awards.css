@@ -1,6 +1,6 @@
 .awards-section {
     background-color: var(--primary-white-color);
-    padding: 1rem;
+    padding: 0 0 6rem 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,8 +22,10 @@
 }
 
 .award {
-    background-color: var(--primary-black-color);
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background: linear-gradient(-45deg, #6d02f8, rgb(49, 76, 233), #6f00ff, rgb(52, 81, 243));
+    background-size: 400% 400%;
+    animation: gradient 5s infinite;
+    box-shadow: rgba(100, 100, 111, 0.351) 0px 7px 29px 0px;
     border-radius: 9px;
     padding: 4rem;
     display: flex;
@@ -64,7 +66,7 @@
 
 @media only screen and (max-width: 768px) {
     .awards-section {
-        padding: 4rem 2rem;
+        padding: 2rem 0;
         display: flex;
         align-items: center;
         justify-content: center;

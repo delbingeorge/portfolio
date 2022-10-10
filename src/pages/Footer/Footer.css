@@ -1,20 +1,23 @@
 footer {
-    min-height: 100vh;
+    min-height: 80vh;
     background-color: var(--primary-brand-color);
     padding: 1rem 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     color: var(--primary-white);
+    background: linear-gradient(-45deg, #6e07f3, rgb(49, 76, 233), #6f00ff, rgb(52, 81, 243));
+    background-size: 400% 400%;
+    animation: gradient 15s infinite;
 }
 
 .overlay-div {
     background-color: var(--primary-black-color);
-    padding: 2.7rem 1rem;
+    padding: 2.7rem 5rem;
     border-radius: 10px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     color: var(--primary-white-color);
     box-shadow: 10px 11px 13px 0px rgb(0 0 0 / 22%);
 }
@@ -27,7 +30,9 @@ footer {
 .overlay-div p {
     font-weight: 100;
     font-size: 1rem;
+    text-align: center;
     letter-spacing: 1px;
+    font-family: "Poppins", sans-serif;
 }
 
 .overlay-btn {
@@ -43,7 +48,9 @@ footer {
 }
 
 .overlay-btn:hover {
-    background-color: var(--primary-brand-color);
+    background: linear-gradient(-45deg, #6d02f8, rgb(49, 76, 233), #6f00ff, rgb(52, 81, 243));
+    background-size: 400% 400%;
+    animation: gradient 5s infinite;
     color: var(--primary-white);
     border: 2px solid var(--primary-brand-color);
 }
@@ -142,16 +149,20 @@ footer {
     color: var(--primary-white-color);
 }
 
+hr {
+    margin: 1rem 0;
+}
 @media only screen and (max-width: 768px) {
     footer {
         padding: 3rem 1rem 0.9rem 1rem;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+        background-color: var(--primary-brand-color);
     }
 
     .overlay-div {
-        padding: 2rem 2rem;
+        padding: 4rem 2rem;
         flex-direction: column;
     }
 
