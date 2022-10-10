@@ -12,13 +12,13 @@ function About() {
                         <div className="content-head">
                             <h1>Delbin George</h1>
                             <div className="head-icon">
-                                <a href="https://www.google.com">
+                                <a href="https://twitter.com/dellbingeorge">
                                     <FontAwesomeIcon icon={faTwitter} />
                                 </a>
-                                <a href="https://www.google.com">
+                                <a href="https://linkedin.com/in/delbingeorge">
                                     <FontAwesomeIcon icon={faLinkedin} />
                                 </a>
-                                <a href="https://www.google.com">
+                                <a href="https://www.github.com/delbingeorge">
                                     <FontAwesomeIcon icon={faGithub} />
                                 </a>
                             </div>

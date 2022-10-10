@@ -1,4 +1,26 @@
 .certificate-section {
-    min-height: 90vh;
+    min-height: 70vh;
     background-color: var(--primary-white-color);
+    /* padding: 0 4rem; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.certi-div {
+    width: 90%;
+    height: 70vh;
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.certi-content{
+    display: block;
+}
+
+.certi-img {
+    padding: 5rem;
+    background-image: url(../../media/images/certificateOne.jpg);
 }
