@@ -17,7 +17,7 @@ function Projects() {
                         <a href="https://delbingeorge.github.io/clonespotify">
                             <img
                                 src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_White-768x230.png"
-                                alt="Netflix Logo"
+                                alt="Netflix L ogo"
                             />
                         </a>
                         <a href="https://shoped.netlify.app">
