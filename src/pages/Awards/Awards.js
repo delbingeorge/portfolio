@@ -1,9 +1,8 @@
 import React from "react";
 import "../Awards/Awards.css";
 
-import firstplacemedal from "../../media/images/medalo.png";
+import firstplacemedal from "../../media/images/medal.png";
 import { Link } from "react-router-dom";
-// import CertificateOne from "../Certificate/CertificateOne";
 
 function Achieve() {
     return (
@@ -22,6 +21,7 @@ function Achieve() {
                             <h1>
                                 Web Designing <br></br>Competition
                             </h1>
+                            <h2>[ Inter Class ]</h2>
                             <p>Champion</p>
                         </Link>
                         <Link
@@ -34,7 +34,8 @@ function Achieve() {
                             <h1>
                                 Web Designing <br></br>Competition
                             </h1>
-                            <p>Runners Up</p>
+                            <h2>[ Inter College ]</h2>
+                            <p>Runner Up</p>
                         </Link>
                         <Link
                             to="first-certificate"
@@ -46,8 +47,33 @@ function Achieve() {
                             <h1>
                                 Web Designing <br></br>Competition
                             </h1>
+                            <h2>[ Inter Class ]</h2>
                             <p>Champion</p>
                         </Link>
+                    </div>
+                </div>
+            </section>
+
+            <section className="gallery-section">
+                <div className="gallery-div">
+                    <div className="gallery-img "></div>
+                    <div className="gallery-content">
+                        <h1>St. Aloysius College (Autonomous)</h1>
+                        <p>TECH-IT-OUT was a IT Fest conducted by BCA Department on 20th May 2022.</p>
+                    </div>
+                </div>
+                <div className="gallery-div">
+                    <div className="gallery-content">
+                        <h1>St. Joseph Engineering College</h1>
+                        <p>Joshiana IT Fest conducted by MCA Department of St.Joseph on 7th Sept 22.</p>
+                    </div>
+                    <div className="gallery-img img-one"></div>
+                </div>
+                <div className="gallery-div">
+                    <div className="gallery-img img-three"></div>
+                    <div className="gallery-content">
+                        <h1>St. Aloysius College (Autonomous)</h1>
+                        <p>TECHNOPHILIA was a IT Fest conducted by BCA Department on 21th April 2022.</p>
                     </div>
                 </div>
             </section>

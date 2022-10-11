@@ -55,6 +55,14 @@
     letter-spacing: 3px;
 }
 
+.award h2 {
+    color: var(--primary-white-color);
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
 .award p {
     color: var(--primary-white-color);
     font-size: 1.5rem;
@@ -62,6 +70,52 @@
     text-transform: uppercase;
     letter-spacing: 5px;
     font-family: "Poppins", sans-serif;
+}
+
+.gallery-section {
+    background-color: var(--primary-white-color);
+    padding: 6rem;
+}
+
+.gallery-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 8px 0;
+    flex-wrap: wrap;
+}
+
+.gallery-img {
+    width: 305px;
+    height: 305px;
+    background-size: cover;
+    background-image: url(../../media/images/prizeTwo.png);
+}
+
+.gallery-content {
+    padding: 7rem 11.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+    background: linear-gradient(-45deg, #6e07f3, rgb(49, 76, 233), #6f00ff, rgb(52, 81, 243));
+    background-size: 400% 400%;
+}
+
+.gallery-content p {
+    text-transform: capitalize;
+    font-family: "Poppins", sans-serif;
+    margin: 15px 0;
+}
+
+.img-three {
+    background-image: url(../../media/images/galleryImgOne.png);
+}
+
+.img-one {
+    background-image: url(../../media/images/prizeThree.png);
 }
 
 @media only screen and (max-width: 768px) {
@@ -104,7 +158,56 @@
         font-size: 1.2rem;
     }
 
+    .award h2 {
+        font-size: 0.8rem;
+    }
+
     .award p {
         font-size: 1.1rem;
+    }
+
+    .gallery-section {
+        background-color: var(--primary-white-color);
+        padding: 2rem;
+    }
+
+    .gallery-div {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 8px 0;
+        flex-wrap: wrap;
+    }
+
+    .gallery-img {
+        width: 100%;
+        background-size: cover;
+        background-image: url(../../media/images/prizeTwo.png);
+    }
+
+    .gallery-content {
+        padding: 3rem 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+        color: var(--primary-white-color);
+        background: linear-gradient(-45deg, #6e07f3, rgb(49, 76, 233), #6f00ff, rgb(52, 81, 243));
+        background-size: 400% 400%;
+    }
+
+    .gallery-content p {
+        text-transform: capitalize;
+        font-family: "Poppins", sans-serif;
+        margin: 15px 0;
+    }
+
+    .img-three {
+        background-image: url(../../media/images/galleryImgOne.png);
+    }
+
+    .img-one {
+        background-image: url(../../media/images/prizeThree.png);
     }
 }
