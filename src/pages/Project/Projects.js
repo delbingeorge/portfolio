@@ -1,5 +1,6 @@
 import React from "react";
 import "../Project/Project.css";
+// import firstplacemedal from "../../media/images/medal.png";
 
 function Projects() {
     return (
@@ -8,23 +9,27 @@ function Projects() {
                 <div className="project-div-main">
                     <h1 className="section-heading">My Recent Works</h1>
                     <div className="project-div">
-                        <a href="https://delbingeorge.github.io/clonenetflix">
-                            <img
-                                src="https://assets-global.website-files.com/5a1c1b26b1b09d00019565c0/5fb7bf6ee331134d8be1d276_I-netflix.svg"
-                                alt="Netflix Logo"
-                            />
+                        <a href="https://www.google.com" className="project">
+                            {/* <img alt="" src={firstplacemedal}></img> */}
+                            <h1>
+                                Netflix OTT <br></br>React Clone
+                            </h1>
                         </a>
-                        <a href="https://delbingeorge.github.io/clonespotify">
-                            <img
-                                src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_White-768x230.png"
-                                alt="Netflix L ogo"
-                            />
+                        <a href="https://www.google.com" className="project">
+                            {/* <img alt="" src={firstplacemedal}></img> */}
+                            <h1>
+                                Simple <br></br>Spotify Clone
+                            </h1>
                         </a>
-                        <a href="https://shoped.netlify.app">
-                            <img
-                                src="https://shoped.netlify.app/static/media/shopedLogo.1b6b0921c0a29ca872a8.png"
-                                alt="Netflix Logo"
-                            />
+                        <a href="https://www.google.com" className="project">
+                            {/* <img alt="" src={firstplacemedal}></img> */}
+                            <h1>My portfolio</h1>
+                        </a>
+                        <a href="https://www.google.com" className="project">
+                            {/* <img alt="" src={firstplacemedal}></img> */}
+                            <h1>
+                                Shoped <br></br> E-commerce
+                            </h1>
                         </a>
                     </div>
                 </div>
