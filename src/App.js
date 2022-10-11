@@ -20,7 +20,7 @@ function App() {
             <Projects />
             <Skills />
             <Awards />
-            <Gallery />
+            <Gallery/>
             <Footer />
         </div>
     );

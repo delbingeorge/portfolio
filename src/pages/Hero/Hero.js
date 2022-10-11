@@ -29,7 +29,7 @@ function Hero() {
                             about me
                         </Link>
                         <Link
-                            to="contact"
+                            to="resume"
                             className="action-btn-div-alink"
                             spy={true}
                             smooth={true}

@@ -29,27 +29,27 @@
     border-radius: 9px;
     padding: 4rem;
     display: flex;
-    height: 480px;
-    width: 350px;
+    height: 410px;
+    width: 300px;
     text-decoration: none;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     transition: 0.8s;
-    margin: 1rem;
+    margin: 0 1rem;
 }
 
 .award:hover {
-    transform: scale(1.03);
+    transform: scale(1.02);
 }
 
 .award img {
-    width: 120px;
+    width: 100px;
 }
 
 .award h1 {
     color: var(--primary-white-color);
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -57,7 +57,7 @@
 
 .award h2 {
     color: var(--primary-white-color);
-    font-size: 1rem;
+    font-size: 0.8rem;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -65,7 +65,7 @@
 
 .award p {
     color: var(--primary-white-color);
-    font-size: 1.5rem;
+    font-size: 0.9rem;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -74,7 +74,7 @@
 
 .gallery-section {
     background-color: var(--primary-white-color);
-    padding: 6rem;
+    padding: 0 4rem 6rem 4rem;
 }
 
 .gallery-div {
