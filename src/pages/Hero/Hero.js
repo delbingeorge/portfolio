@@ -28,7 +28,7 @@ function Hero() {
                         >
                             about me
                         </Link>
-                        <Link
+                        {/* <Link
                             to="resume"
                             className="action-btn-div-alink"
                             spy={true}
@@ -37,7 +37,7 @@ function Hero() {
                             duration={1950}
                         >
                             resume
-                        </Link>
+                        </Link> */}
                         <Link
                             to="projects"
                             className="action-btn-div-alink"

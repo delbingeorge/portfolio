@@ -33,7 +33,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    transition: 0.8s;
+    transition: 1s;
     margin: 0.5rem;
 }
 
@@ -97,7 +97,6 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        transition: 0.8s;
         margin: 0.5rem;
     }
 
