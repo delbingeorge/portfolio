@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0e1c8217.css",
+    "main.js": "/static/js/main.40e69bad.js",
+    "static/media/proImg.jpg": "/static/media/proImg.a1e945399e9a21f2701a.jpg",
+    "static/media/db3done.png": "/static/media/db3done.3ba4d7cdc042d1c6cf20.png",
+    "static/media/medalo.png": "/static/media/medalo.9632f53c2ee02fa4e7d0.png",
+    "static/media/favicon.png": "/static/media/favicon.40b2f59a541e3dfd497f.png",
+    "static/media/Mark-Pro-Heavy.ttf": "/static/media/Mark-Pro-Heavy.b785a58cebf77e4b7b2e.ttf",
+    "index.html": "/index.html",
+    "main.0e1c8217.css.map": "/static/css/main.0e1c8217.css.map",
+    "main.40e69bad.js.map": "/static/js/main.40e69bad.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0e1c8217.css",
+    "static/js/main.40e69bad.js"
+  ]
+}
