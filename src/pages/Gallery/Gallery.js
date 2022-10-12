@@ -6,24 +6,32 @@ function Gallery() {
         <div>
             <section className="gallery-section" id="firstcertificate">
                 <div className="gallery-div">
-                    <div className="gallery-img "></div>
-                    <div className="gallery-content">
-                        <h1>St. Aloysius College (Autonomous)</h1>
-                        <p>TECH-IT-OUT was a IT Fest conducted by BCA Department on 20th May 2022.</p>
+                    <div className="gallery">
+                        <div className="gallery-img "></div>
+                        <div className="gallery-content">
+                            <h1 className="gallery-content-head">St. Aloysius College (Autonomous)</h1>
+                            <p className="gallery-content-para">
+                                TECH-IT-OUT, IT Fest conducted by BCA Department on 20th May 2022.
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div className="gallery-div">
-                    <div className="gallery-content">
-                        <h1>St. Joseph Engineering College</h1>
-                        <p>Joshiana IT Fest conducted by MCA Department of St.Joseph on 7th Sept 22.</p>
+                    <div className="gallery">
+                        <div className="gallery-img img-one"></div>
+                        <div className="gallery-content">
+                            <h1 className="gallery-content-head">St. Joseph Engineering College</h1>
+                            <p className="gallery-content-para">
+                                Joshiana IT Fest by MCA Department of St.Joseph on 7th Sept 2022.
+                            </p>
+                        </div>
                     </div>
-                    <div className="gallery-img img-one"></div>
-                </div>
-                <div className="gallery-div">
-                    <div className="gallery-img img-three"></div>
-                    <div className="gallery-content">
-                        <h1>St. Aloysius College (Autonomous)</h1>
-                        <p>TECHNOPHILIA was a IT Fest conducted by BCA Department on 21th April 2022.</p>
+                    <div className="gallery">
+                        <div className="gallery-img img-three"></div>
+                        <div className="gallery-content">
+                            <h1 className="gallery-content-head">St. Aloysius College (Autonomous)</h1>
+                            <p className="gallery-content-para">
+                                TECHNOPHILIA,  IT Fest conducted by BCA Department on 21th April 2022.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>

@@ -25,10 +25,10 @@ function About() {
                                 </a>
                             </div>
                             <p>
-                                My name is <span class="name-span">Delbin George</span> and I'm from India, I'm a designer,
-                                not the one who sits behind an Illustrator art board adjusting pixels, but I can design,
-                                design beautiful and seamless user interactive websites also i enjoys a lot doing all these
-                                stuffs. Seeking new opportunities and challenges that will expand my skill set.
+                                My name is <span class="name-span">Delbin George</span>, and I'm from India. I'm a
+                                designer—not the one who sits behind an Illustrator art board tweaking pixels, but the one who
+                                can design beautiful and seamless user-interactive websites. I also enjoy a lot doing all
+                                these things. Seeking new opportunities and challenges that will expand my skill set.
                             </p>
                         </div>
                     </div>

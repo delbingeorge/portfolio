@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-scroll";
 
 import "../Footer/Footer.css";
 
@@ -18,16 +17,13 @@ function Footer() {
                 </div>
                 <div className="footer-div-items">
                     <div className="foot-action-btn-div">
-                        <Link className="foot-item-link" to="aboutme" spy={true} smooth={true} offset={10} duration={1950}>
-                            know more about me
-                        </Link>
+                        <a className="foot-item-link" href="https://www.resume.delb.in">
+                            résumé
+                        </a>
                         <a href="https://www.linkedin.com/in/delbingeorge/">go to linkedin</a>
 
                         <a href="https://www.twitter.com/dellbingeorge/">see my tweets</a>
                         <a href="https://www.github.com/delbingeorge">go to github</a>
-                        <Link className="foot-item-link" to="projects" spy={true} smooth={true} offset={10} duration={1950}>
-                            see my projects
-                        </Link>
                     </div>
                 </div>
                 <hr></hr>

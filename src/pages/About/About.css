@@ -110,6 +110,7 @@
     .content-head p {
         text-align: justify;
         font-size: 1.3rem;
+        line-height: 38px;
     }
 
     .about-img {

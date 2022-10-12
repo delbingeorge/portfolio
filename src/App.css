@@ -8,7 +8,7 @@
 * {
     margin: 0;
     padding: 0;
-    user-select: none;
+    /* user-select: none; */
     box-sizing: border-box;
     font-family: "MarcPro", sans-serif;
 }

@@ -51,7 +51,7 @@ footer {
     background: linear-gradient(-45deg, #6d02f8, rgb(49, 76, 233), #6f00ff, rgb(52, 81, 243));
     background-size: 400% 400%;
     animation: gradient 5s infinite;
-    color: var(--primary-white);
+    color: var(--primary-white-color);
     border: 2px solid var(--primary-brand-color);
 }
 
