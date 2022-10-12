@@ -61,6 +61,7 @@
     font-size: 2rem;
     color: var(--primary-white);
     font-family: "Poppins", sans-serif;
+    text-decoration: none;
     transition: 0.8s;
 }
 

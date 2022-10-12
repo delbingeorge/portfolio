@@ -4,9 +4,9 @@ import "../Awards/Awards.css";
 function Gallery() {
     return (
         <div>
-            <section className="gallery-section" id="firstcertificate">
+            <section className="gallery-section">
                 <div className="gallery-div">
-                    <div className="gallery">
+                    <div className="gallery" id="firstcertificate">
                         <div className="gallery-img "></div>
                         <div className="gallery-content">
                             <h1 className="gallery-content-head">St. Aloysius College (Autonomous)</h1>
@@ -15,7 +15,7 @@ function Gallery() {
                             </p>
                         </div>
                     </div>
-                    <div className="gallery">
+                    <div className="gallery" id="secondcertificate">
                         <div className="gallery-img img-one"></div>
                         <div className="gallery-content">
                             <h1 className="gallery-content-head">St. Joseph Engineering College</h1>
@@ -24,12 +24,12 @@ function Gallery() {
                             </p>
                         </div>
                     </div>
-                    <div className="gallery">
+                    <div className="gallery" id="thirdcertificate">
                         <div className="gallery-img img-three"></div>
                         <div className="gallery-content">
                             <h1 className="gallery-content-head">St. Aloysius College (Autonomous)</h1>
                             <p className="gallery-content-para">
-                                TECHNOPHILIA,  IT Fest conducted by BCA Department on 21th April 2022.
+                                TECHNOPHILIA, IT Fest conducted by BCA Department on 21th April 2022.
                             </p>
                         </div>
                     </div>

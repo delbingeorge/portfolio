@@ -1,4 +1,3 @@
-// Utilities
 import FaviconIcon from "../src/media/icons/favicon.png";
 import Favicon from "react-favicon";
 
@@ -20,7 +19,7 @@ function App() {
             <Projects />
             <Skills />
             <Awards />
-            <Gallery/>
+            <Gallery />
             <Footer />
         </div>
     );

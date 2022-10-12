@@ -3,6 +3,7 @@ import { Link } from "react-scroll";
 
 import "../Hero/Hero.css";
 import Image3D from "../../media/images/db3done.png";
+import Resume from "../Hero/DelbinGeorgeResume.pdf";
 
 function Hero() {
     return (
@@ -16,7 +17,6 @@ function Hero() {
                         <br></br>
                         <span>that inspires!</span>
                     </h1>
-
                     <div className="action-btn-div">
                         <Link
                             to="aboutme"
@@ -28,16 +28,9 @@ function Hero() {
                         >
                             about me
                         </Link>
-                        {/* <Link
-                            to="resume"
-                            className="action-btn-div-alink"
-                            spy={true}
-                            smooth={true}
-                            offset={10}
-                            duration={1950}
-                        >
-                            resume
-                        </Link> */}
+                        <a href={Resume} download="Delbin George - Resume.pdf" className="action-btn-div-alink">
+                            résumé
+                        </a>
                         <Link
                             to="projects"
                             className="action-btn-div-alink"

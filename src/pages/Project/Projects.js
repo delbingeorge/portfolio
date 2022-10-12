@@ -11,32 +11,6 @@ function Projects() {
                 <div className="project-div-main">
                     <h1 className="section-heading">My Recent Works</h1>
                     <div className="project-div">
-                        <div className="project">
-                            <h1>
-                                Netflix OTT <br></br>React Clone
-                            </h1>
-                            <div className="project-action-div">
-                                <a href="https://delbingeorge.github.io/clonenetflix/" className="project-div-button">
-                                    VIEW
-                                </a>
-                                <a href="https://github.com/delbingeorge/clonenetflix" className="project-github">
-                                    <FontAwesomeIcon icon={faGithub} />
-                                </a>
-                            </div>
-                        </div>
-                        <div className="project">
-                            <h1>
-                                Simple <br></br>Spotify Clone
-                            </h1>
-                            <div className="project-action-div">
-                                <a href="https://delbingeorge.github.io/clonespotify/" className="project-div-button">
-                                    VIEW
-                                </a>
-                                <a href="https://github.com/delbingeorge/clonespotify" className="project-github">
-                                    <FontAwesomeIcon icon={faGithub} />
-                                </a>
-                            </div>
-                        </div>
                         <div href="https://www.delb.in" className="project">
                             <h1>
                                 My portfolio <br></br>website
@@ -59,6 +33,32 @@ function Projects() {
                                     VIEW
                                 </a>
                                 <a href="https://github.com/delbingeorge/shoped" className="project-github">
+                                    <FontAwesomeIcon icon={faGithub} />
+                                </a>
+                            </div>
+                        </div>
+                        <div className="project">
+                            <h1>
+                                Netflix OTT <br></br>React Clone
+                            </h1>
+                            <div className="project-action-div">
+                                <a href="https://delbingeorge.github.io/clonenetflix/" className="project-div-button">
+                                    VIEW
+                                </a>
+                                <a href="https://github.com/delbingeorge/clonenetflix" className="project-github">
+                                    <FontAwesomeIcon icon={faGithub} />
+                                </a>
+                            </div>
+                        </div>
+                        <div className="project">
+                            <h1>
+                                Simple <br></br>Spotify Clone
+                            </h1>
+                            <div className="project-action-div">
+                                <a href="https://delbingeorge.github.io/clonespotify/" className="project-div-button">
+                                    VIEW
+                                </a>
+                                <a href="https://github.com/delbingeorge/clonespotify" className="project-github">
                                     <FontAwesomeIcon icon={faGithub} />
                                 </a>
                             </div>

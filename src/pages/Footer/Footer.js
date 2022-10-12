@@ -1,4 +1,5 @@
 import React from "react";
+import Resume from "../Hero/DelbinGeorgeResume.pdf";
 
 import "../Footer/Footer.css";
 
@@ -17,7 +18,7 @@ function Footer() {
                 </div>
                 <div className="footer-div-items">
                     <div className="foot-action-btn-div">
-                        <a className="foot-item-link" href="https://www.resume.delb.in">
+                        <a className="foot-item-link" href={Resume} download="Delbin George - Resume.pdf">
                             résumé
                         </a>
                         <a href="https://www.linkedin.com/in/delbingeorge/">go to linkedin</a>

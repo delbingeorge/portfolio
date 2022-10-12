@@ -1,7 +1,7 @@
 import React from "react";
 import "../Awards/Awards.css";
 
-import firstplacemedal from "../../media/images/medal.png";
+import medalImg from "../../media/images/medal.png";
 import { Link } from "react-scroll";
 
 function Achieve() {
@@ -12,23 +12,23 @@ function Achieve() {
                     <h1 className="section-heading">Achievements</h1>
                     <div className="awards-div">
                         <Link to="firstcertificate" spy={true} smooth={true} offset={10} duration={1950} className="award">
-                            <img alt="" src={firstplacemedal}></img>
+                            <img alt="" src={medalImg}></img>
                             <h1>
                                 Web Designing <br></br>Competition
                             </h1>
                             <h2>[ Inter Class ]</h2>
                             <p>Champion</p>
                         </Link>
-                        <Link to="firstcertificate" spy={true} smooth={true} offset={10} duration={1950} className="award">
-                            <img alt="" src={firstplacemedal}></img>
+                        <Link to="secondcertificate" spy={true} smooth={true} offset={10} duration={1950} className="award">
+                            <img alt="" src={medalImg}></img>
                             <h1>
                                 Web Designing <br></br>Competition
                             </h1>
                             <h2>[ Inter College ]</h2>
                             <p>Runner Up</p>
                         </Link>
-                        <Link to="firstcertificate" spy={true} smooth={true} offset={10} duration={1950} className="award">
-                            <img alt="" src={firstplacemedal}></img>
+                        <Link to="thirdcertificate" spy={true} smooth={true} offset={10} duration={1950} className="award">
+                            <img alt="" src={medalImg}></img>
                             <h1>
                                 Web Designing <br></br>Competition
                             </h1>
