@@ -5,7 +5,6 @@ import "./App.css";
 import About from "./pages/About/About";
 import Projects from "./pages/Project/Projects";
 import Footer from "./pages/Footer/Footer";
-import Awards from "./pages/Awards/Awards";
 import Skills from "./pages/Skills/Skills";
 import Hero from "./pages/Hero/Hero";
 import Gallery from "./pages/Gallery/Gallery";
@@ -18,7 +17,6 @@ function App() {
             <About />
             <Projects />
             <Skills />
-            <Awards />
             <Gallery />
             <Footer />
         </div>
