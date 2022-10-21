@@ -1,5 +1,5 @@
 .my-skills {
-    padding: 2rem 0;
+    padding: 3rem 0;
     background-color: var(--primary-white-color);
     display: flex;
     align-items: center;
@@ -34,6 +34,10 @@
 }
 
 @media only screen and (max-width: 768px) {
+    .my-skills {
+        padding: 3rem 0;
+    }
+
     .skill-div-main {
         flex-direction: column;
     }

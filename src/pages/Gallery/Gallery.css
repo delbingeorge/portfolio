@@ -82,7 +82,7 @@
 
 @media only screen and (max-width: 768px) {
     .gallery-section {
-        padding: 2rem;
+        padding: 0 2rem;
     }
 
     .gallery-div {
