@@ -22,7 +22,8 @@
 }
 
 .project {
-    background: linear-gradient(-45deg, #7b16ff, rgb(56, 86, 255), #801eff, rgb(56, 86, 255));
+    background-color: var(--primary-brand-color);
+    /* background: linear-gradient(-45deg, #7b16ff, rgb(56, 86, 255), #801eff, rgb(56, 86, 255)); */
     background-size: 400% 400%;
     box-shadow: rgba(100, 100, 111, 0.351) 0px 7px 29px 0px;
     border-radius: 9px;

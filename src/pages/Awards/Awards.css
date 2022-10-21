@@ -26,7 +26,7 @@
     background-size: 400% 400%;
     animation: gradient 5s infinite;
     box-shadow: rgba(100, 100, 111, 0.351) 0px 7px 29px 0px;
-    border-radius: 9px;
+    /* border-radius: 9px; */
     padding: 4rem;
     display: flex;
     height: 410px;

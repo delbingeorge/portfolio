@@ -32,7 +32,7 @@
 }
 
 .gallery-content {
-    padding: 2rem 0;
+    padding: 4rem 0;
     border-radius: 0 0 10px 10px;
     width: 100%;
     display: flex;
@@ -40,7 +40,8 @@
     align-items: center;
     text-align: center;
     color: var(--primary-white-color);
-    background: linear-gradient(-45deg, #7b16ff, rgb(56, 86, 255), #801eff, rgb(56, 86, 255));
+    /* background: linear-gradient(-45deg, #7b16ff, rgb(56, 86, 255), #801eff, rgb(56, 86, 255)); */
+    background-color: var(--primary-brand-color);
     background-size: 400% 400%;
 }
 

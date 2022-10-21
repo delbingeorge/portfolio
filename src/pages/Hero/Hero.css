@@ -62,26 +62,26 @@
     color: var(--primary-white);
     font-family: "Poppins", sans-serif;
     text-decoration: none;
-    transition: 0.8s;
+    transition: 0.1s;
 }
 
 .action-btn-div-alink::after {
     opacity: 0;
     content: " ↗";
     font-size: 2rem;
-    transition: 0s;
     color: var(--primary-white);
 }
 
 .action-btn-div-alink:hover {
-    font-weight: bold;
-    background: linear-gradient(-45deg, #7b16ff, rgb(56, 86, 255), #801eff, rgb(56, 86, 255));
-    background-size: 400% 400%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    /* font-weight: bold; */
+    /* background: linear-gradient(-45deg, #7b16ff, rgb(56, 86, 255), #801eff, rgb(56, 86, 255)); */
+    /* background-size: 400% 400%; */
+    /* -webkit-background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */
     rotate: 0.5deg;
     cursor: pointer;
-    animation: gradient 5s infinite;
+    color: var(--primary-brand-color);
+    /* animation: gradient 5s infinite; */
     margin-left: 8px;
 }
 

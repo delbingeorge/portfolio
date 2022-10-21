@@ -1,14 +1,11 @@
 footer {
     min-height: 80vh;
-    background-color: var(--primary-brand-color);
     padding: 1rem 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     color: var(--primary-white);
-    background: linear-gradient(-45deg, #6e07f3, rgb(49, 76, 233), #6f00ff, rgb(52, 81, 243));
-    background-size: 400% 400%;
-    animation: gradient 15s infinite;
+    background-color: var(--primary-brand-color);
 }
 
 .overlay-div {
