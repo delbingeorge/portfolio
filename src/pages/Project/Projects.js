@@ -24,7 +24,7 @@ function Projects() {
                                 </a>
                             </div>
                         </div>
-                        <div className="project">
+                        {/* <div className="project">
                             <h1>
                                 Shoped <br></br> E-commerce
                             </h1>
@@ -62,7 +62,7 @@ function Projects() {
                                     <FontAwesomeIcon icon={faGithub} />
                                 </a>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </section>

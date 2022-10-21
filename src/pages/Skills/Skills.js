@@ -5,7 +5,7 @@ import adobePR from "../../media/icons/adobePR.png";
 import adobePS from "../../media/icons/adobePS.png";
 import adobeXD from "../../media/icons/adobeXD.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCss3, faGitAlt, faHtml5, faJs, faReact } from "@fortawesome/free-brands-svg-icons";
+import { faBootstrap, faCss3, faGitAlt, faHtml5, faJs, faReact } from "@fortawesome/free-brands-svg-icons";
 
 function Skills() {
     return (
@@ -19,6 +19,7 @@ function Skills() {
                         <FontAwesomeIcon className="skill-icon" icon={faJs} />
                         <FontAwesomeIcon className="skill-icon" icon={faReact} />
                         <FontAwesomeIcon className="skill-icon" icon={faGitAlt} />
+                        <FontAwesomeIcon className="skill-icon" icon={faBootstrap} />
                     </div>
                     <div className="skill-div">
                         <img src={adobeXD} alt="" />

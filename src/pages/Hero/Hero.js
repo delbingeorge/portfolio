@@ -24,7 +24,7 @@ function Hero() {
                             spy={true}
                             smooth={true}
                             offset={10}
-                            duration={2050}
+                            duration={1050}
                         >
                             about me
                         </Link>
@@ -37,7 +37,7 @@ function Hero() {
                             spy={true}
                             smooth={true}
                             offset={10}
-                            duration={1950}
+                            duration={1050}
                         >
                             see my projects
                         </Link>
@@ -47,7 +47,7 @@ function Hero() {
                             spy={true}
                             smooth={true}
                             offset={10}
-                            duration={1950}
+                            duration={1050}
                         >
                             work together
                         </Link>

@@ -21,7 +21,7 @@
 }
 
 .landing-header-gradient {
-    background: linear-gradient(-45deg, #6d02f8, rgb(49, 76, 233), #6f00ff, rgb(52, 81, 243));
+    background: linear-gradient(-45deg, #7b16ff, rgb(56, 86, 255), #801eff, rgb(56, 86, 255));
     background-size: 400% 400%;
     animation: gradient 5s infinite;
     -webkit-background-clip: text;
@@ -75,7 +75,7 @@
 
 .action-btn-div-alink:hover {
     font-weight: bold;
-    background: linear-gradient(-45deg, #6d02f8, rgb(49, 76, 233), #6f00ff, rgb(52, 81, 243));
+    background: linear-gradient(-45deg, #7b16ff, rgb(56, 86, 255), #801eff, rgb(56, 86, 255));
     background-size: 400% 400%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
