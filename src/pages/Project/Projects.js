@@ -36,10 +36,10 @@ function Projects() {
                                     <FontAwesomeIcon icon={faGithub} />
                                 </a>
                             </div>
-                        </div>
+                        </div>*/}
                         <div className="project">
                             <h1>
-                                Netflix OTT <br></br>React Clone
+                                Simple <br></br> Netflix Clone
                             </h1>
                             <div className="project-action-div">
                                 <a href="https://delbingeorge.github.io/clonenetflix/" className="project-div-button">
@@ -62,7 +62,7 @@ function Projects() {
                                     <FontAwesomeIcon icon={faGithub} />
                                 </a>
                             </div>
-                        </div> */}
+                        </div>
                     </div>
                 </div>
             </section>
