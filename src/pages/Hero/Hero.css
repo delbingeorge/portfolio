@@ -64,7 +64,7 @@
     font-family: "Poppins", sans-serif;
     text-decoration: none;
     transition: 0.1s;
-    text-transform:capitalize;
+    text-transform: capitalize;
 }
 
 .action-btn-div-alink::after {
@@ -114,6 +114,7 @@
         padding-left: 1rem;
         padding-bottom: 3rem;
         justify-content: space-between;
+        overflow-x: hidden;
     }
 
     .hero-section-hone {
@@ -138,6 +139,6 @@
     }
 
     .icon-3d {
-        display: none;
+        display: block;
     }
 }

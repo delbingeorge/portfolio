@@ -19,7 +19,7 @@
     display: flex;
     width: 375px;
     flex-direction: column;
-    box-shadow: rgba(100, 100, 111, 0.351) 0px 7px 29px 0px;
+    /* box-shadow: rgba(100, 100, 111, 0.351) 0px 7px 29px 0px; */
     margin-top: 20px;
 }
 
@@ -42,6 +42,7 @@
     color: var(--primary-white-color);
     /* background: linear-gradient(-45deg, #7b16ff, rgb(56, 86, 255), #801eff, rgb(56, 86, 255)); */
     background-color: var(--primary-brand-color);
+   
     background-size: 400% 400%;
 }
 
