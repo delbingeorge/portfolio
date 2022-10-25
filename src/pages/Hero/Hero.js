@@ -15,7 +15,7 @@ function Hero() {
                         <span>creative </span>
                         <span className="landing-header-gradient">websites</span>
                         <br></br>
-                        <span>that inspires!</span>
+                        <span>that inspire!</span>
                     </h1>
                     <div className="action-btn-div">
                         <Link

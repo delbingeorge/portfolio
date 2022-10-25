@@ -27,9 +27,9 @@
     background-size: 400% 400%;
     box-shadow: rgba(100, 100, 111, 0.351) 0px 7px 29px 0px;
     border-radius: 9px;
-    padding: 2rem;
+    padding: 4rem;
     display: flex;
-    height: 200px;
+    height: 250px;
     width: 400px;
     flex-direction: column;
     align-items: center;

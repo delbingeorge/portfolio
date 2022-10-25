@@ -19,7 +19,7 @@ function Skills() {
                         <FontAwesomeIcon className="skill-icon" icon={faJs} />
                         <FontAwesomeIcon className="skill-icon" icon={faReact} />
                         <FontAwesomeIcon className="skill-icon" icon={faGitAlt} />
-                        <FontAwesomeIcon className="skill-icon" icon={faBootstrap} />
+                        {/* <FontAwesomeIcon className="skill-icon" icon={faBootstrap} /> */}
                     </div>
                     {/* <div className="skill-div">
                         <img src={adobeXD} alt="" />

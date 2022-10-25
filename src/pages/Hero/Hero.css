@@ -3,6 +3,7 @@
     min-height: 100vh;
     align-items: center;
     justify-content: space-around;
+    padding: 3rem;
     background-color: var(--primary-white-color);
 }
 
@@ -63,6 +64,7 @@
     font-family: "Poppins", sans-serif;
     text-decoration: none;
     transition: 0.1s;
+    text-transform:capitalize;
 }
 
 .action-btn-div-alink::after {

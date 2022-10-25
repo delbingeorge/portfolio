@@ -13,7 +13,7 @@ function About() {
                             <h1>
                                 Designer, Developer & <br></br> Self learner
                             </h1>
-                            <div className="head-icon">
+                            {/* <div className="head-icon">
                                 <a href="https://twitter.com/dellbingeorge">
                                     <FontAwesomeIcon icon={faTwitter} />
                                 </a>
@@ -23,7 +23,7 @@ function About() {
                                 <a href="https://www.github.com/delbingeorge">
                                     <FontAwesomeIcon icon={faGithub} />
                                 </a>
-                            </div>
+                            </div> */}
                             <p>
                                 My name is <span className="name-span">Delbin George</span>, and I'm from India. I'm a
                                 designer—not the one who sits behind an Illustrator art board tweaking pixels, but the one who
