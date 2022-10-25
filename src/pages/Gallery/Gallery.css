@@ -20,12 +20,12 @@
     width: 375px;
     flex-direction: column;
     /* box-shadow: rgba(100, 100, 111, 0.351) 0px 7px 29px 0px; */
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 
 .gallery-img {
     width: 100%;
-    border-radius: 10px 10px 0 0;
+    border-radius: 15px 15px 0 0;
     height: 350px;
     background-size: cover;
     background-image: url(../../media/images/prizeTwo.png);
@@ -33,7 +33,7 @@
 
 .gallery-content {
     padding: 4rem 0;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 15px 15px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -42,7 +42,7 @@
     color: var(--primary-white-color);
     /* background: linear-gradient(-45deg, #7b16ff, rgb(56, 86, 255), #801eff, rgb(56, 86, 255)); */
     background-color: var(--primary-brand-color);
-   
+
     background-size: 400% 400%;
 }
 

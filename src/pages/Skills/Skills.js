@@ -12,7 +12,9 @@ function Skills() {
         <div>
             <section className="my-skills">
                 <div className="skill-div-main">
-                    <h1 className="section-heading">My Skills & Knowledge</h1>
+                    <h1 className="section-heading">
+                        My Skills &<br></br> Knowledge
+                    </h1>
                     <div className="skill-div">
                         <FontAwesomeIcon className="skill-icon" icon={faHtml5} />
                         <FontAwesomeIcon className="skill-icon" icon={faCss3} />

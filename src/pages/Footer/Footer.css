@@ -45,11 +45,9 @@ footer {
 }
 
 .overlay-btn:hover {
-    background: linear-gradient(-45deg, #6d02f8, rgb(49, 76, 233), #6f00ff, rgb(52, 81, 243));
-    background-size: 400% 400%;
-    animation: gradient 5s infinite;
-    color: var(--primary-white-color);
-    border: 2px solid var(--primary-brand-color);
+    background: var(--primary-brand-color);
+    /* background-size: 400% 400%; */
+    /* animation: gradient 5s infinite; */
 }
 
 .footer-div-items {
@@ -151,6 +149,7 @@ hr {
 }
 @media only screen and (max-width: 768px) {
     footer {
+        margin-top: 3rem;
         padding: 3rem 1rem 0 1rem;
         display: flex;
         flex-direction: column;
@@ -217,7 +216,7 @@ hr {
 
     .creator-info-div p {
         text-align: right;
-        padding-top: 10px;
+        padding: 10px 0;
         font-size: 1rem;
     }
 }

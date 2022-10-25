@@ -10,7 +10,9 @@ function Footer() {
                 <div className="overlay-div" id="contact">
                     <h1>Start a project!</h1>
                     <p>
-                        Interested in working together? We should queue <br></br>up a time to chat. I'll buy the coffee.
+                        Interested in working together? We should queue
+                        <br></br>up a time to chat.
+                        {/* I'll buy the coffee. */}
                     </p>
                     <a href="https://www.linkedin.com/in/delbingeorge/" className="overlay-btn">
                         Let's do this!
