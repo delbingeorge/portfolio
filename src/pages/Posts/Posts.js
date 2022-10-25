@@ -5,8 +5,6 @@ import galleryImgOne from "../../media/images/galleryImgOne.png";
 import prizeTwo from "../../media/images/prizeTwo.png";
 import prizeThree from "../../media/images/prizeThree.png";
 import certificateTwo from "../../media/images/certificateTwo.jpg";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart, faWifiStrong } from "@fortawesome/free-solid-svg-icons";
 
 function Posts() {
     return (
