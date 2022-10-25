@@ -34,7 +34,6 @@
 
 .posts:hover {
     transform: scale(1.01);
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 .posts-head {
@@ -60,4 +59,21 @@
     height: 85%;
     background-size: cover;
     background-image: url(../../media/images/prizeTwo.png);
+}
+
+.postimg {
+    width: 100%;
+    height: 100%;
+}
+
+
+@media only screen and (max-width: 884px) {
+ 
+ .posts {
+     margin: 20px;
+     width: 100%;
+     height: 20%;
+     cursor: pointer;
+     transition: 0.8s;
+ }
 }

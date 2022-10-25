@@ -5,6 +5,8 @@ import galleryImgOne from "../../media/images/galleryImgOne.png";
 import prizeTwo from "../../media/images/prizeTwo.png";
 import prizeThree from "../../media/images/prizeThree.png";
 import certificateTwo from "../../media/images/certificateTwo.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeart, faWifiStrong } from "@fortawesome/free-solid-svg-icons";
 
 function Posts() {
     return (
@@ -18,7 +20,6 @@ function Posts() {
                             <p>delbingeorge</p>
                         </span>
                         <img className="post-img" src={prizeTwo} alt="Certificate"></img>
-                        {/* <div className="post-img"></div> */}
                     </div>
                     <div className="posts">
                         <span className="posts-head">
@@ -26,7 +27,6 @@ function Posts() {
                             <p>delbingeorge</p>
                         </span>
                         <img className="post-img" src={certificateTwo} alt="Certificate"></img>
-                        {/* <div className="post-img"></div> */}
                     </div>
                     <div className="posts">
                         <span className="posts-head">
@@ -34,7 +34,6 @@ function Posts() {
                             <p>delbingeorge</p>
                         </span>
                         <img className="post-img" src={prizeThree} alt="Certificate"></img>
-                        {/* <div className="post-img"></div> */}
                     </div>
                 </div>
             </section>
