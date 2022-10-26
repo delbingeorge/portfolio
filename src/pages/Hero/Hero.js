@@ -28,7 +28,7 @@ function Hero() {
                         >
                             about me
                         </Link>
-                        <a href={Resume} download="Delbin George - Resume.pdf" className="action-btn-div-alink">
+                        <a href={Resume} download="Delbin George.pdf" className="action-btn-div-alink">
                             résumé
                         </a>
                         <Link

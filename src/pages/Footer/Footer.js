@@ -20,7 +20,7 @@ function Footer() {
                 </div>
                 <div className="footer-div-items">
                     <div className="foot-action-btn-div">
-                        <a className="foot-item-link" href={Resume} download="Delbin George - Resume.pdf">
+                        <a className="foot-item-link" href={Resume} download="Delbin George.pdf">
                             résumé
                         </a>
                         <a href="https://www.linkedin.com/in/delbingeorge/">go to linkedin</a>
