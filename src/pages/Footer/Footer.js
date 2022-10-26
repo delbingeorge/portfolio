@@ -1,5 +1,5 @@
 import React from "react";
-import Resume from "../Hero/DelbinGeorgeResume.pdf";
+import Resume from "../Hero/DelbinGeorge.pdf";
 
 import "../Footer/Footer.css";
 
