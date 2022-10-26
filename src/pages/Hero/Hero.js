@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 
 import "../Hero/Hero.css";
 import Image3D from "../../media/images/db3done.png";
-import Resume from "../Hero/DelbinGeorgeResume.pdf";
+import Resume from "../Hero/DelbinGeorge.pdf";
 
 function Hero() {
     return (
