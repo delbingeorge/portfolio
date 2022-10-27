@@ -29,6 +29,20 @@ function Works() {
                         <div className="work">
                             <div>
                                 <ul>
+                                    <li className="work-title">Shoped</li>
+                                    <li className="work-des">E-commerce Theme</li>
+                                </ul>
+                                <a href="https://shoped.netlify.app" className="work-link">
+                                    <FontAwesomeIcon icon={faPaperPlane} />
+                                </a>
+                                <a href="https://github.com/delbingeorge/shoped" className="work-link">
+                                    <FontAwesomeIcon icon={faGithub} />
+                                </a>
+                            </div>
+                        </div>
+                        <div className="work">
+                            <div>
+                                <ul>
                                     <li className="work-title">Spotify</li>
                                     <li className="work-des">Clone Project</li>
                                 </ul>
