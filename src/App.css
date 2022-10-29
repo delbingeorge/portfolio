@@ -9,7 +9,7 @@
 * {
     margin: 0;
     padding: 0;
-    user-select: none;
+    /* user-select: none; */
     box-sizing: border-box;
     font-family: "MarcPro", sans-serif;
 }
@@ -20,6 +20,11 @@
     --primary-white-color: #e9f2f9;
 }
 
+::selection{
+    background-color: #ffffff;
+    color: #1a62e8;
+}
+
 /* :root {
     --primary-white: #f4f7ff;
     --primary-brand-color: #6e07f3;
@@ -27,7 +32,7 @@
 } */
 
 ::-webkit-scrollbar {
-    width: 0px;
+    width: 3px;
 }
 
 ::-webkit-scrollbar-track {
