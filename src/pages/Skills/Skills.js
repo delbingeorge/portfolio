@@ -5,8 +5,8 @@ import "../Skills/Skills.css";
 // import adobePS from "../../media/icons/adobePS.png";
 // import adobeXD from "../../media/icons/adobeXD.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBootstrap, faCss3, faGitAlt, faHtml5, faJs, faReact } from "@fortawesome/free-brands-svg-icons";
-
+import { faCss3, faGitAlt, faHtml5, faJs, faReact } from "@fortawesome/free-brands-svg-icons";
+// import Tailwind from "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg";
 function Skills() {
     return (
         <div>
@@ -21,6 +21,7 @@ function Skills() {
                         <FontAwesomeIcon className="skill-icon" icon={faJs} />
                         <FontAwesomeIcon className="skill-icon" icon={faReact} />
                         <FontAwesomeIcon className="skill-icon" icon={faGitAlt} />
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt="tailwind" />
                         {/* <FontAwesomeIcon className="skill-icon" icon={faBootstrap} /> */}
                     </div>
                     {/* <div className="skill-div">
