@@ -29,6 +29,20 @@ function Works() {
                         <div className="work">
                             <div>
                                 <ul>
+                                    <li className="work-title">Juniper</li>
+                                    <li className="work-des">personal project</li>
+                                </ul>
+                                <a href="https://juniperedu.netlify.app/" className="work-link">
+                                    <FontAwesomeIcon icon={faPaperPlane} />
+                                </a>
+                                <a href="https://github.com/delbingeorge/juniper" className="work-link">
+                                    <FontAwesomeIcon icon={faGithub} />
+                                </a>
+                            </div>
+                        </div>
+                        <div className="work">
+                            <div>
+                                <ul>
                                     <li className="work-title">Shoped</li>
                                     <li className="work-des">E-commerce Theme</li>
                                 </ul>
@@ -40,7 +54,7 @@ function Works() {
                                 </a>
                             </div>
                         </div>
-                        <div className="work">
+                        {/* <div className="work">
                             <div>
                                 <ul>
                                     <li className="work-title">Spotify</li>
@@ -53,14 +67,14 @@ function Works() {
                                     <FontAwesomeIcon icon={faGithub} />
                                 </a>
                             </div>
-                        </div>
+                        </div> */}
                         <div className="work">
                             <div>
                                 <ul>
                                     <li className="work-title">Netflix</li>
                                     <li className="work-des">Clone Project</li>
                                 </ul>
-                                <a href="https://delbingeorge.github.io/clonenetflix/" className="work-link">
+                                <a href="https://dbnetflix.netlify.app/" className="work-link">
                                     <FontAwesomeIcon icon={faPaperPlane} />
                                 </a>
                                 <a href="https://github.com/delbingeorge/clonenetflix" className="work-link">
