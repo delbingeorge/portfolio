@@ -54,20 +54,20 @@ function Works() {
                                 </a>
                             </div>
                         </div>
-                        {/* <div className="work">
+                         <div className="work">
                             <div>
                                 <ul>
-                                    <li className="work-title">Spotify</li>
-                                    <li className="work-des">Clone Project</li>
+                                    <li className="work-title">Meteo App</li>
+                                    <li className="work-des">Simple Weather app</li>
                                 </ul>
-                                <a href="https://delbingeorge.github.io/clonespotify/" className="work-link">
+                                <a href="https://homemeteo.netlify.app/" className="work-link">
                                     <FontAwesomeIcon icon={faPaperPlane} />
                                 </a>
                                 <a href="https://github.com/delbingeorge/clonespotify" className="work-link">
                                     <FontAwesomeIcon icon={faGithub} />
                                 </a>
                             </div>
-                        </div> */}
+                        </div> 
                         <div className="work">
                             <div>
                                 <ul>
