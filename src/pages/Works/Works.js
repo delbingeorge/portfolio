@@ -63,7 +63,7 @@ function Works() {
                                 <a href="https://homemeteo.netlify.app/" className="work-link">
                                     <FontAwesomeIcon icon={faPaperPlane} />
                                 </a>
-                                <a href="https://github.com/delbingeorge/clonespotify" className="work-link">
+                                <a href="https://github.com/delbingeorge/meteo" className="work-link">
                                     <FontAwesomeIcon icon={faGithub} />
                                 </a>
                             </div>
