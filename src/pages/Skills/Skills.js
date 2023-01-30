@@ -19,9 +19,14 @@ function Skills() {
                         <FontAwesomeIcon className="skill-icon" icon={faHtml5} />
                         <FontAwesomeIcon className="skill-icon" icon={faCss3} />
                         <FontAwesomeIcon className="skill-icon" icon={faJs} />
-                        <FontAwesomeIcon className="skill-icon" icon={faReact} />
                         <FontAwesomeIcon className="skill-icon" icon={faGitAlt} />
+                        <FontAwesomeIcon className="skill-icon" icon={faReact} />
+
                         <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt="tailwind" />
+                        <img
+                            src="https://d2nir1j4sou8ez.cloudfront.net/wp-content/uploads/2021/12/nextjs-boilerplate-logo.png"
+                            alt="next js"
+                        />
                         {/* <FontAwesomeIcon className="skill-icon" icon={faBootstrap} /> */}
                     </div>
                     {/* <div className="skill-div">
