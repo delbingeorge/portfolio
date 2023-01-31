@@ -24,19 +24,6 @@ function Projects() {
                                 </a>
                             </div>
                         </div>
-                        {/* <div className="project">
-                            <h1>
-                                Shoped <br></br> E-commerce
-                            </h1>
-                            <div className="project-action-div">
-                                <a href="https://shoped.netlify.app/" className="project-div-button">
-                                    VIEW
-                                </a>
-                                <a href="https://github.com/delbingeorge/shoped" className="project-github">
-                                    <FontAwesomeIcon icon={faGithub} />
-                                </a>
-                            </div>
-                        </div>*/}
                         <div className="project">
                             <h1>
                                 Simple <br></br> Netflix Clone

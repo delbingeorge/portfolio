@@ -41,7 +41,14 @@ function Hero() {
                         >
                             see my projects
                         </Link>
-                        <Link
+                        <a
+                            href="https://delbingeorge.medium.com/"
+                            
+                            className="action-btn-div-alink"
+                        >
+                           read my article
+                        </a>
+                        {/* <Link
                             to="contact"
                             className="action-btn-div-alink"
                             spy={true}
@@ -50,7 +57,7 @@ function Hero() {
                             duration={1050}
                         >
                             work together
-                        </Link>
+                        </Link> */}
                     </div>
                 </div>
                 <img className="icon-3d" src={Image3D} alt="3d icon "></img>

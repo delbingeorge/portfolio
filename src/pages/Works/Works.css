@@ -3,6 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 10rem 0;
 }
 
 .work-div-main {
@@ -63,6 +64,37 @@
 .work-link:hover {
     transform: scale(1.1);
     color: rgb(176, 208, 255);
+}
+
+.work-one {
+    height: 60vh;
+    padding: 0 2rem;
+    background-size: cover;
+    border-radius: 1rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: 0.5s;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.932), rgba(0, 0, 0, 0)), url(../../media/images/proImg.png);
+}
+.work-one:hover {
+    transform: scale(1.02);
+}
+.span-title {
+    margin-top: 1rem;
+    font-weight: 900;
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+}
+.icon-go {
+    padding-top: 6rem;
+    font-size: 4rem;
+    transition: 0.8s;
+}
+
+.icon-go:hover {
+    transform: translateX(20px);
 }
 
 @media only screen and (max-width: 884px) {
