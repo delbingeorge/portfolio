@@ -10,9 +10,6 @@ function About() {
                 <div className="about-div">
                     <div className="about-content">
                         <div className="content-head">
-                            {/* <h1>
-                                Designer, Developer & <br></br> Self learner
-                            </h1> */}
                             <p>
                                 My name is <span className="name-span">Delbin George</span>, and I'm from India. I'm a
                                 front-end developer with a background in graphic design, I have a unique perspective on

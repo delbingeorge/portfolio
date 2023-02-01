@@ -24,12 +24,6 @@
     color: #1a62e8;
 }
 
-/* :root {
-    --primary-white: #f4f7ff;
-    --primary-brand-color: #6e07f3;
-    --primary-black: #10101a;
-} */
-
 ::-webkit-scrollbar {
     width: 8px;
 }
@@ -47,7 +41,7 @@
     text-align: center;
     color: var(--primary-white);
     transition: 0.6s;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
     font-family: "Poppins", sans-serif;
 }
 
