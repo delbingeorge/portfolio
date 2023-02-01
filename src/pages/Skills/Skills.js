@@ -11,10 +11,8 @@ function Skills() {
     return (
         <div>
             <section className="my-skills">
+                <h1 className="section-heading">Skills</h1>
                 <div className="skill-div-main">
-                    <h1 className="section-heading">
-                        My Skills &<br></br> Knowledge
-                    </h1>
                     <div className="skill-div">
                         <FontAwesomeIcon className="skill-icon" icon={faHtml5} />
                         <FontAwesomeIcon className="skill-icon" icon={faCss3} />
@@ -27,13 +25,7 @@ function Skills() {
                             src="https://d2nir1j4sou8ez.cloudfront.net/wp-content/uploads/2021/12/nextjs-boilerplate-logo.png"
                             alt="next js"
                         />
-                        {/* <FontAwesomeIcon className="skill-icon" icon={faBootstrap} /> */}
                     </div>
-                    {/* <div className="skill-div">
-                        <img src={adobeXD} alt="" />
-                        <img src={adobePS} alt="" />
-                        <img src={adobePR} alt="" />
-                    </div> */}
                 </div>
             </section>
         </div>

@@ -12,9 +12,8 @@ function Footer() {
                     <p>
                         Interested in working together? We should queue
                         <br></br>up a time to chat.
-                        {/* I'll buy the coffee. */}
                     </p>
-                    <a href="https://www.linkedin.com/in/delbingeorge/" className="overlay-btn">
+                    <a href="mailto:imdelbingeorge@gmail.com" className="overlay-btn">
                         Let's do this!
                     </a>
                 </div>

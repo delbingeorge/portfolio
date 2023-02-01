@@ -2,8 +2,8 @@
     display: flex;
     min-height: 100vh;
     align-items: center;
-    justify-content: space-around;
-    padding: 3rem;
+    justify-content: space-between;
+    padding: 3rem 8rem;
     background-color: var(--primary-white-color);
 }
 

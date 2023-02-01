@@ -1,86 +1,105 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
+import { faCircle, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 import React from "react";
 import "../Works/Works.css";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 function Works() {
     return (
         <div>
             <section className="work-section" id="projects">
+                <h1 className="section-heading">My Recent Works</h1>
                 <div className="work-div-main">
-                    <h1 className="section-heading">My Recent Works</h1>
                     <div className="work-div">
                         <div className="work">
-                            <div>
+                            <a href="https://www.delb.in">
                                 <ul>
-                                    <li className="work-title">Portfolio</li>
-                                    <li className="work-des">personal project</li>
+                                    <li className="work-des">
+                                        <FontAwesomeIcon className="circle-icon" icon={faCircle} />
+                                        <span className="span-head">personal</span> project
+                                    </li>
+                                    <li className="work-title">
+                                        Portfolio<br></br>
+                                        <span className="span-title">Website</span>
+                                    </li>
+                                    <FontAwesomeIcon className="arrow-icon" icon={faArrowRight} />
                                 </ul>
-                                <a href="https://www.delb.in" className="work-link">
-                                    <FontAwesomeIcon icon={faPaperPlane} />
-                                </a>
-                                <a href="https://github.com/delbingeorge/portfolio" className="work-link">
-                                    <FontAwesomeIcon icon={faGithub} />
-                                </a>
-                            </div>
+                            </a>
                         </div>
                         <div className="work">
-                            <div>
+                            <a href="https://juniperedu.netlify.app/">
                                 <ul>
-                                    <li className="work-title">Juniper</li>
-                                    <li className="work-des">personal project</li>
+                                    <li className="work-des">
+                                        <FontAwesomeIcon className="circle-icon" icon={faCircle} />
+                                        <span className="span-head">personal</span> project
+                                    </li>
+                                    <li className="work-title">
+                                        Juniper<br></br>
+                                        <span className="span-title">Education Website</span>
+                                    </li>
+                                    <FontAwesomeIcon className="arrow-icon" icon={faArrowRight} />
                                 </ul>
-                                <a href="https://juniperedu.netlify.app/" className="work-link">
-                                    <FontAwesomeIcon icon={faPaperPlane} />
-                                </a>
-                                <a href="https://github.com/delbingeorge/juniper" className="work-link">
-                                    <FontAwesomeIcon icon={faGithub} />
-                                </a>
-                            </div>
+                            </a>
                         </div>
                         <div className="work">
-                            <div>
+                            <a href="https://nextables.vercel.app">
                                 <ul>
-                                    <li className="work-title">Shoped</li>
-                                    <li className="work-des">E-commerce Theme</li>
+                                    <li className="work-des">
+                                        <FontAwesomeIcon className="circle-icon" icon={faCircle} />
+                                        <span className="span-head">personal</span> project
+                                    </li>
+                                    <li className="work-title">
+                                        Eatables<br></br>
+                                        <span className="span-title">Web App</span>
+                                    </li>
+                                    <FontAwesomeIcon className="arrow-icon" icon={faArrowRight} />
                                 </ul>
-                                <a href="https://shoped.netlify.app" className="work-link">
-                                    <FontAwesomeIcon icon={faPaperPlane} />
-                                </a>
-                                <a href="https://github.com/delbingeorge/shoped" className="work-link">
-                                    <FontAwesomeIcon icon={faGithub} />
-                                </a>
-                            </div>
+                            </a>
                         </div>
-                         <div className="work">
-                            <div>
-                                <ul>
-                                    <li className="work-title">Meteo App</li>
-                                    <li className="work-des">Simple Weather app</li>
-                                </ul>
-                                <a href="https://homemeteo.netlify.app/" className="work-link">
-                                    <FontAwesomeIcon icon={faPaperPlane} />
-                                </a>
-                                <a href="https://github.com/delbingeorge/meteo" className="work-link">
-                                    <FontAwesomeIcon icon={faGithub} />
-                                </a>
-                            </div>
-                        </div> 
                         <div className="work">
-                            <div>
+                            <a href="https://shoped.netlify.app">
                                 <ul>
-                                    <li className="work-title">Netflix</li>
-                                    <li className="work-des">Clone Project</li>
+                                    <li className="work-des">
+                                        <FontAwesomeIcon className="circle-icon" icon={faCircle} />
+                                        <span className="span-head">personal</span> project
+                                    </li>
+                                    <li className="work-title">
+                                        Shoped<br></br>
+                                        <span className="span-title">E-commerce Website</span>
+                                    </li>
+                                    <FontAwesomeIcon className="arrow-icon" icon={faArrowRight} />
                                 </ul>
-                                <a href="https://dbnetflix.netlify.app/" className="work-link">
-                                    <FontAwesomeIcon icon={faPaperPlane} />
-                                </a>
-                                <a href="https://github.com/delbingeorge/clonenetflix" className="work-link">
-                                    <FontAwesomeIcon icon={faGithub} />
-                                </a>
-                            </div>
+                            </a>
+                        </div>
+                        <div className="work">
+                            <a href="https://homemeteo.netlify.app/">
+                                <ul>
+                                    <li className="work-des">
+                                        <FontAwesomeIcon className="circle-icon" icon={faCircle} />
+                                        <span className="span-head">personal</span> project
+                                    </li>
+                                    <li className="work-title">
+                                        Meteo<br></br>
+                                        <span className="span-title">Weather App</span>
+                                    </li>
+                                    <FontAwesomeIcon className="arrow-icon" icon={faArrowRight} />
+                                </ul>
+                            </a>
+                        </div>
+                        <div className="work">
+                            <a href="https://dbnetflix.netlify.app/">
+                                <ul>
+                                    <li className="work-des">
+                                        <FontAwesomeIcon className="circle-icon" icon={faCircle} />
+                                        <span className="span-head">clone</span> project
+                                    </li>
+                                    <li className="work-title">
+                                        Netflix<br></br>
+                                        <span className="span-title">UI Clone</span>
+                                    </li>
+                                    <FontAwesomeIcon className="arrow-icon" icon={faArrowRight} />
+                                </ul>
+                            </a>
                         </div>
                     </div>
                 </div>

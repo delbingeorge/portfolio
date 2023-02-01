@@ -10,25 +10,16 @@ function About() {
                 <div className="about-div">
                     <div className="about-content">
                         <div className="content-head">
-                            <h1>
+                            {/* <h1>
                                 Designer, Developer & <br></br> Self learner
-                            </h1>
-                            {/* <div className="head-icon">
-                                <a href="https://twitter.com/dellbingeorge">
-                                    <FontAwesomeIcon icon={faTwitter} />
-                                </a>
-                                <a href="https://linkedin.com/in/delbingeorge">
-                                    <FontAwesomeIcon icon={faLinkedin} />
-                                </a>
-                                <a href="https://www.github.com/delbingeorge">
-                                    <FontAwesomeIcon icon={faGithub} />
-                                </a>
-                            </div> */}
+                            </h1> */}
                             <p>
                                 My name is <span className="name-span">Delbin George</span>, and I'm from India. I'm a
-                                designer—not the one who sits behind an Illustrator art board tweaking pixels, but the one who
-                                can design beautiful and seamless user-interactive websites. I also enjoy a lot doing all
-                                these things. Seeking new opportunities and challenges that will expand my skill set.
+                                front-end developer with a background in graphic design, I have a unique perspective on
+                                creating visually appealing and user-friendly web experiences. I love working with HTML, CSS
+                                and JavaScript, and have a strong understanding of responsive design and mobile optimization.
+                                I am passionate about staying up-to-date with the latest web development technologies and
+                                trends, and am eager to bring my skills and creativity to a new challenge.
                             </p>
                         </div>
                     </div>

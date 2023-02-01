@@ -1,14 +1,16 @@
 .my-skills {
-    padding: 6rem 0;
-    background-color: var(--primary-white-color);
+    padding:5rem 8rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    background-color: var(--primary-white-color);
+    color: black;
 }
 
 .skill-div-main {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -24,13 +26,14 @@
 
 .skill-div img {
     width: 150px;
-    padding: 40px;
+    padding: 0 30px;
     border-radius: 45px;
 }
 
 .skill-icon {
     font-size: 4.5rem;
-    padding: 0 60px;
+    padding: 0 30px;
+    color: black;
 }
 
 @media only screen and (max-width: 768px) {

@@ -46,7 +46,7 @@ function Hero() {
                             
                             className="action-btn-div-alink"
                         >
-                           read my article
+                           read my blog
                         </a>
                         {/* <Link
                             to="contact"
