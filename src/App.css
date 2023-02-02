@@ -8,7 +8,7 @@
 * {
     margin: 0;
     padding: 0;
-    /* user-select: none; */
+    user-select: none;
     box-sizing: border-box;
     font-family: "MarcPro", sans-serif;
 }
@@ -16,7 +16,8 @@
 :root {
     --primary-black-color: #10101a;
     --primary-brand-color: #1a62e8;
-    --primary-white-color: #e9f2f9;
+    --primary-white-color: #f7f8f9;
+    /* --primary-white-color: #e9f2f9; */
 }
 
 ::selection {

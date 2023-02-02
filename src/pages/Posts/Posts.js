@@ -1,7 +1,7 @@
 import React from "react";
 import "../Posts/Posts.css";
 
-import galleryImgOne from "../../media/images/galleryImgOne.png";
+import galleryImgOne from "../../media/images/proImg.png";
 import prizeTwo from "../../media/images/prizeTwo.png";
 import prizeThree from "../../media/images/prizeThree.png";
 import certificateTwo from "../../media/images/certificateTwo.jpg";

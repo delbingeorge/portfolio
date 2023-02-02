@@ -12,6 +12,7 @@
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
+    overflow-x: scroll;
 }
 
 .work-div {
@@ -20,16 +21,18 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    /* width: 160%; */
 }
 
 .work {
-    margin: 10px;
+    margin: 20px;
     background-color: rgb(255, 255, 255);
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border-radius: 10px;
     width: 320px;
     height: 430px;
     color: black;
+    background-image: url(https://wallpaperaccess.com/full/260164.jpg);
     transition: 0.5s;
 }
 
@@ -88,7 +91,7 @@
 }
 
 .arrow-icon:hover {
-    transform: translateX(30px);
+    transform: translateX(20px);
 }
 
 .work-link:hover {
@@ -108,13 +111,16 @@
     transition: 0.5s;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.932), rgba(0, 0, 0, 0)), url(../../media/images/proImg.png);
 }
+
 .work-one:hover {
     transform: scale(1.02);
 }
+
 .span-title {
     font-size: 1.5rem;
     font-family: "Poppins", sans-serif;
 }
+
 .icon-go {
     padding-top: 6rem;
     font-size: 4rem;
@@ -131,7 +137,7 @@
         background-color: rgb(255, 255, 255);
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         border-radius: 10px;
-        width: 100%;
+        width: 90%;
         height: 330px;
         color: black;
         transition: 0.5s;
