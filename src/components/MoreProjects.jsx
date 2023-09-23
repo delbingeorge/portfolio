@@ -75,8 +75,9 @@ function MoreProjects() {
           </Link>
         </div>
       </div>
-      <div className='py-4 lg:py-8 flex items-center flex-col lg:flex-row space-y-3 lg:space-y-0 justify-around bg-light-mode-secondary rounded-xl'>
-        <h1 className='text-2xl'>Loved what you saw?</h1>
+      <div className='py-4 lg:py-8 px-4 flex items-center flex-col lg:flex-row space-y-3 lg:space-y-0 justify-around bg-light-mode-secondary rounded-xl'>
+        {/* <h1 className='text-2xl'>Loved what you saw?</h1> */}
+        <h1 className='text-2xl'>Did you like what you saw?</h1>
         <a href='mailto:imdelbingeorge@gmail.com' className='bg-dark-mode-primary rounded-lg text-light-mode-secondary px-10 text-lg tracking-wider font-bold py-2'>Hire Me</a>
       </div>
     </div>
