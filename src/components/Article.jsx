@@ -2,8 +2,7 @@ import React from 'react'
 import { useMode } from '../ModeProvider';
 import { Link } from 'react-router-dom';
 function Article() {
-  const { mode, data, toggleMode } = useMode();
-  console.log(data);
+  const { mode, data, toggleMode, id } = useMode();
 
   const handleClick = () => {
     if (mode == "dark") {
@@ -14,7 +13,7 @@ function Article() {
     }
   }
 
-  if (!data) {
+  if (!data || id == null) {
     return (
       <div className='bg-dark-mode-primary bg-article-not-found space-y-3 text-light-mode-primary min-h-screen flex flex-col items-center justify-center'>
         <h1 className='text-2xl font-mono-space'>No article found!</h1>
@@ -23,14 +22,12 @@ function Article() {
     )
   }
 
-  const businessChallenges = data[0]['business-challenges'];
-  const productUsers = data[0]['product-users'];
-  const userNeeds = data[0]['user-needs'];
-  const designProcess = data[0]["design-process"];
-  const competitors = data[0]["competitor-analysis"]["competitors"];
-  const lofiScreens = data[0]["lofi-screens"];
-  const hifiScreens = data[0]["hifi-screens"];
-  console.log(competitors);
+  const businessChallenges = data[id]['business-challenges'];
+  const productUsers = data[id]['product-users'];
+  const userNeeds = data[id]['user-needs'];
+  const designProcess = data[id]["design-process"];
+  const lofiScreens = data[id]["lofi-screens"];
+  const hifiScreens = data[id]["hifi-screens"];
 
   return (
     <div className='font-mono-space'>
@@ -59,7 +56,7 @@ function Article() {
           <div className="">
             <div className='pt-8 pb-4 space-y-4'>
               <h1 className="text-[3.5rem] font-bold tracking-tighter leading-[3.3rem]">
-                {data[0]['title']}
+                {data[id]['title']}
               </h1>
 
             </div>
@@ -67,31 +64,31 @@ function Article() {
               <div>
                 <h2 className="text-[1.35rem] font-semibold">Introduction </h2>
                 <p className="text-[1.20rem] text-justify">
-                  {data[0]['introduction']}
+                  {data[id]['introduction']}
                 </p>
               </div>
               <div>
                 <h2 className="text-[1.35rem] font-semibold">My Role</h2>
                 <p className="text-[1.20rem] text-justify">
-                  {data[0]['my-role']}
+                  {data[id]['my-role']}
                 </p>
               </div>
               <div>
                 <h2 className="text-[1.35rem] font-semibold">Problem Statement</h2>
                 <p className="text-[1.20rem] text-justify">
-                  {data[0]['problem-statement']}
+                  {data[id]['problem-statement']}
                 </p>
               </div>
               <div>
                 <h2 className="text-[1.35rem] font-semibold">Problem Solution</h2>
                 <p className="text-[1.20rem] text-justify">
-                  {data[0]['problem-solution']}
+                  {data[id]['problem-solution']}
                 </p>
               </div>
-              <div>
+              <div className={`${data[id]['objectives-goals'] == "" ? "hidden" : "block"}`}>
                 <h2 className="text-[1.35rem] font-semibold">Objectives & Goals</h2>
                 <p className="text-[1.20rem] text-justify">
-                  {data[0]['objectives-goals']}
+                  {data[id]['objectives-goals']}
                 </p>
               </div>
               <div>
@@ -102,13 +99,12 @@ function Article() {
                   ))}
                 </ul>
               </div>
-              <div>
-                <div>
-                  <h2 className="text-[1.35rem] font-semibold">Competitor analysis</h2>
-                  <p className="text-[1.20rem] text-justify">
-                    {data[0]["competitor-analysis"]["analysis-description"]}
-                  </p>
-                  {/* <div className="grid bg-white grid-cols-3 py-12 justify-items-center place-items-center gap-5 w-full">
+              <div className={`${data[id]['competitor-analysis'] == "" ? "hidden" : "block"}`}>
+                <h2 className="text-[1.35rem] font-semibold">Competitor analysis</h2>
+                <p className="text-[1.20rem] text-justify">
+                  {data[id]["competitor-analysis"]["analysis-description"]}
+                </p>
+                {/* <div className="grid bg-white grid-cols-3 py-12 justify-items-center place-items-center gap-5 w-full">
                     {competitors.map((item, index) => (
                       <img
                         className="w-28 hover:scale-110 duration-300"
@@ -120,38 +116,38 @@ function Article() {
                       />
                     ))}
                   </div> */}
-                  <img src={data[0]["competitor-analysis"]["competitor-analysis-image"]} alt={data[0]["competitor-analysis"]["competitor-analysis-image"]} />
-                </div>
-                <div>
-                  <h2 className="text-[1.35rem] font-semibold">Product Users</h2>
-                  <ul className="text-[1.20rem] list-disc list-inside">
-                    {productUsers.map((item, index) => (
-                      <li key={index}>{item}</li>
-                    ))}
-                  </ul>
-                </div>
-                <div>
-                  <h2 className="text-[1.35rem] font-semibold">User Needs</h2>
-                  <ul className="text-[1.20rem] list-disc list-inside">
-                    {userNeeds.map((item, index) => (
-                      <li key={index}>{item}</li>
-                    ))}
-                  </ul>
-                </div>
-                <div className="flex items-center justify-center flex-col">
-                  <h2 className="text-[1.35rem] mb-4 font-semibold">Design Process</h2>
-                  <div className="w-full md:w-3/4 flex items-center justify-between md:justify-evenly">
-                    {designProcess.map((item, key) => (
-                      <img
-                        key={key}
-                        className="w-16 md:w-24"
-                        src={item}
-                        width={1080}
-                        height={1080}
-                        alt={item}
-                      />
-                    ))}
-                  </div>
+                <img className='pt-6' src={data[id]["competitor-analysis"]["competitor-analysis-image"]} alt={data[id]["competitor-analysis"]["competitor-analysis-image"]} />
+              </div>
+
+              <div>
+                <h2 className="text-[1.35rem] font-semibold">Product Users</h2>
+                <ul className="text-[1.20rem] list-disc list-inside">
+                  {productUsers.map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <h2 className="text-[1.35rem] font-semibold">User Needs</h2>
+                <ul className="text-[1.20rem] list-disc list-inside">
+                  {userNeeds.map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+              <div className="flex items-center justify-center flex-col">
+                <h2 className="text-[1.35rem] mb-4 font-semibold">Design Process</h2>
+                <div className="w-full md:w-3/4 flex items-center justify-between md:justify-evenly">
+                  {designProcess.map((item, key) => (
+                    <img
+                      key={key}
+                      className="w-16 md:w-24"
+                      src={item}
+                      width={1080}
+                      height={1080}
+                      alt={item}
+                    />
+                  ))}
                 </div>
               </div>
               <div>
@@ -190,7 +186,7 @@ function Article() {
               <div className="">
                 <h2 className="text-[1.35rem] font-semibold mb-4">Figma Prototype</h2>
                 <div className="flex items-center justify-center">
-                  <iframe width="1200" height="900" src={data[0]["figma-prototype"]} allowFullScreen=""></iframe>
+                  <iframe width="1200" height="900" src={data[id]["figma-prototype"]} allowFullScreen=""></iframe>
                 </div>
               </div>
             </div>
@@ -198,6 +194,7 @@ function Article() {
         </div>
       </div>
     </div>
+
   );
 
 }

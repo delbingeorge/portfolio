@@ -10,8 +10,10 @@ export default {
                 // "dark-mode-secondary": "#2a2a2a",
                 "dark-mode-secondary": "#1e1f21",
                 "dark-mode-accent": "#e3e3e3",
-                "light-mode-primary": "#cccccc",
-                "light-mode-secondary": "#c5c5c5",
+                "light-mode-primary": "#ffffff",
+                // "light-mode-primary": "#cccccc",
+                // "light-mode-secondary": "#c5c5c5",
+                "light-mode-secondary": "#f5f5f5",
                 "light-mode-accent": "#222222",
             },
             fontFamily: {
@@ -28,6 +30,7 @@ export default {
             },
             cursor: {
                 custom: "url(./assets/images/cursor.png), auto",
+                hover: "url(./assets/images/hover-cursor.png), auto",
             },
         },
     },

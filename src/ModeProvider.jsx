@@ -8,13 +8,13 @@ export function useMode() {
 }
 
 export function ModeProvider({ children }) {
-    const [mode, setMode] = useState('dark');
-    const [id, setID] = useState();
+    const [mode, setMode] = useState('light');
+    const [id, setID] = useState(null);
     const [data, setData] = useState(null);
 
     useEffect(() => {
         axios
-            .get('https://delbingeorge.github.io/portfolio-database/article-data.json')
+            .get('https://raw.githubusercontent.com/delbingeorge/portfolio-database/json-data/article-data.json')
             .then((response) => {
                 setData(response.data);
             })
