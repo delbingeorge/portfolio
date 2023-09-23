@@ -1,9 +1,7 @@
 import React from 'react'
 import { useMode } from '../ModeProvider';
 function MoreProjects() {
-  const { mode, data } = useMode();
-  console.log(data);
-
+  const { mode } = useMode();
   return (
     <div className={`px-6 md:px-28 ${(mode == "light") ? ('bg-light-mode-primary text-dark-mode-primary') : ('bg-dark-mode-primary text-light-mode-primary')}`}>
       <div>

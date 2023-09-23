@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom'
 function CaseStudies() {
      const { mode } = useMode()
 
+     
 
      return (
           <div className={`${(mode == "light") ? ('bg-light-mode-primary text-dark-mode-primary') : ('bg-dark-mode-primary text-light-mode-primary')}`}>
@@ -39,7 +40,6 @@ function CaseStudies() {
                          <div className='w-[15rem] md:w-[12rem] lg:w-[20rem]'>
                               <img className='duration-300  group-hover:scale-[1.02]' alt='Extratime: Turf Booking App' src={extratimeMore} width="640" height="360" />
                          </div>
-
                     </Link>
                     <Link to='more-projects' className={`group hover:bg-read-more duration-300  group-hover:scale-[1.02]  card py-8 ${(mode == "light") ? (' bg-light-mode-secondary text-dark-mode-secondary flex items-center justify-center') : (' bg-dark-mode-secondary text-light-mode-primary flex items-center justify-center')}`}>
                          <h1 className='font-mono-space font-bold tracking-wider text-2xl text-center py-36 md:py-0'>Find More <br />

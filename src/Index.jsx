@@ -7,7 +7,7 @@ import Footer from './components/Footer';
 import Socials from './components/Skills';
 function Index() {
      return (
-          <div className='px-6 md:px-40'>
+          <div className='px-6  lg:px-40'>
                <NavBar />
                <Hero />
                <CaseStudies />
