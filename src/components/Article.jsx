@@ -7,8 +7,6 @@ function Article() {
   const extractedNumber = pathname.match(/\d+/);
   const id = parseInt(extractedNumber[0]);
 
-  console.log(data);
-
   const handleClick = () => {
     if (mode == "dark") {
       toggleMode("light");
@@ -59,7 +57,7 @@ function Article() {
             </div>
           </div>
           <div className="">
-            <div className='pt-8 pb-4 space-y-4'>
+            <div className='pt-8 pb-6 space-y-4'>
               <h1 className="text-[3.5rem] font-bold tracking-tighter leading-[3.3rem]">
                 {data[id]['title']}
               </h1>
@@ -95,12 +93,15 @@ function Article() {
                   {data[id]['objectives-goals']}
                 </p>
               </div>
-              <div>
+              <div className={`${data[id]['business-challenges'] == "" ? "hidden" : "block"}`}>
                 <h2 className="text-[1.35rem] font-semibold">Business challenges</h2>
                 <ul className="text-[1.20rem] list-disc list-inside">
-                  {businessChallenges.map((item, index) => (
-                    <li key={index}>{item}</li>
-                  ))}
+                  {
+                    businessChallenges == "" ? " " :
+                      businessChallenges.map((item, index) => (
+                        <li key={index}>{item}</li>
+                      ))
+                  }
                 </ul>
               </div>
               <div className={`${data[id]['competitor-analysis'] == "" ? "hidden" : "block"}`}>
@@ -108,86 +109,89 @@ function Article() {
                 <p className="text-[1.20rem] text-justify">
                   {data[id]["competitor-analysis"]["analysis-description"]}
                 </p>
-                {/* <div className="grid bg-white grid-cols-3 py-12 justify-items-center place-items-center gap-5 w-full">
-                    {competitors.map((item, index) => (
-                      <img
-                        className="w-28 hover:scale-110 duration-300"
-                        src={item}
-                        key={index}
-                        width={1080}
-                        height={1080}
-                        alt=""
-                      />
-                    ))}
-                  </div> */}
                 <img className='pt-6' src={data[id]["competitor-analysis"]["competitor-analysis-image"]} alt={data[id]["competitor-analysis"]["competitor-analysis-image"]} />
               </div>
 
-              <div>
+              <div className={`${data[id]['product-users'] == "" ? "hidden" : "block"}`}>
                 <h2 className="text-[1.35rem] font-semibold">Product Users</h2>
                 <ul className="text-[1.20rem] list-disc list-inside">
-                  {productUsers.map((item, index) => (
-                    <li key={index}>{item}</li>
-                  ))}
+                  {
+                    productUsers == "" ? " " :
+                      productUsers.map((item, index) => (
+                        <li key={index}>{item}</li>
+                      ))
+                  }
                 </ul>
               </div>
-              <div>
+              <div className={`${data[id]['user-needs'] == "" ? "hidden" : "block"}`}>
                 <h2 className="text-[1.35rem] font-semibold">User Needs</h2>
                 <ul className="text-[1.20rem] list-disc list-inside">
-                  {userNeeds.map((item, index) => (
-                    <li key={index}>{item}</li>
-                  ))}
+                  {
+                    userNeeds == "" ? " " :
+                      userNeeds.map((item, index) => (
+                        <li key={index}>{item}</li>
+                      ))
+                  }
                 </ul>
               </div>
-              <div className="flex items-center justify-center flex-col">
+              <div className={`${data[id]['design-process'] == "" ? "hidden" : "flex items-center justify-center flex-col"}`}>
                 <h2 className="text-[1.35rem] mb-4 font-semibold">Design Process</h2>
                 <div className="w-full md:w-3/4 flex items-center justify-between md:justify-evenly">
-                  {designProcess.map((item, key) => (
-                    <img
-                      key={key}
-                      className="w-16 md:w-24"
-                      src={item}
-                      width={1080}
-                      height={1080}
-                      alt={item}
-                    />
-                  ))}
+                  {
+                    designProcess == "" ? " " :
+                      designProcess.map((item, key) => (
+                        <img
+                          key={key}
+                          className="w-16 md:w-24"
+                          src={item}
+                          width={1080}
+                          height={1080}
+                          alt={item}
+                        />
+                      ))
+                  }
                 </div>
               </div>
               <div>
-                <div className="flex justify-center flex-col my-10 md:my-6">
+                <div className={`${data[id]['lofi-screens'] == "" ? "hidden" : "flex justify-center flex-col my-10 md:my-6"}`}>
                   <h2 className="text-[1.35rem] mb-4 font-semibold">Low Fidelity Screen</h2>
                   <div className="w-full flex flex-col items-center justify-center space-y-3">
-                    {lofiScreens.map((item, key) => (
-                      <img
-                        key={key}
-                        className="w-full md:w-[80%]"
-                        src={item}
-                        width={1080}
-                        height={1080}
-                        alt={item}
-                      />
-                    ))}
+                    {
+                      lofiScreens == "" ? " " :
+                        lofiScreens.map((item, key) => (
+                          <img
+                            key={key}
+                            className="w-full md:w-[80%]"
+                            src={item}
+                            width={1080}
+                            height={1080}
+                            alt={item}
+                          />
+                        ))
+                    }
                   </div>
                 </div>
-                <div className="flex justify-center flex-col my-10 md:my-6">
+                <div className={`${data[id]['hifi-screens'] == "" ? "hidden" : "flex justify-center flex-col my-10 md:my-6"}`}>
                   <h2 className="text-[1.35rem] mb-4 font-semibold">High Fidelity Screen</h2>
                   <div className="w-full flex flex-col items-center justify-center space-y-3">
-                    {hifiScreens.map((item, key) => (
-                      <img
-                        key={key}
-                        className="w-full md:w-[80%]"
-                        src={item}
-                        width={1080}
-                        height={1080}
-                        alt={item}
-                      />
-                    ))}
+                    {
+                      hifiScreens == "" ? " " :
+                        hifiScreens.map((item, key) => (
+                          <img
+                            key={key}
+                            className="w-full md:w-[80%]"
+                            src={item}
+                            width={1080}
+                            height={1080}
+                            alt={item}
+                          />
+                        ))
+                    }
                   </div>
                 </div>
               </div>
 
-              <div className="">
+              <div className={`${data[id]['figma-prototype'] == "" ? "hidden" : "block"}`}>
                 <h2 className="text-[1.35rem] font-semibold mb-4">Figma Prototype</h2>
                 <div className="flex items-center justify-center">
                   <iframe width="1200" height="900" src={data[id]["figma-prototype"]} allowFullScreen=""></iframe>

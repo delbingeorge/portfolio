@@ -43,22 +43,25 @@ function Resume() {
                </div>
                <div className='pt-12 pb-6 space-y-3'>
                     <h1 className='text-5xl font-bold'>Delbin George</h1>
-                    <h2 className='text-xl'>UI UX & Frontend Developer</h2>
+                    <h2 className='text-xl'>UI/UX & Frontend Developer</h2>
                </div>
                <div>
                     <div>
                          <h1 className='text-xl font-bold uppercase py-4'>about me</h1>
                     </div>
                     <div className='pb-8'>
-                         <p className='text-2xl font-bold text-left md:text-justify'>I'm a front-end developer with a strong understanding of UI/UX
+                         <p className='text-[1.60rem] font-bold text-left md:text-justify'>I'm a front-end developer with a strong understanding of UI/UX
                               principles and a passion for creating visually appealing and
                               user-friendly web experiences. I love working with HTML, CSS, and
                               JavaScript, and have a strong grasp of responsive design and mobile optimization. </p>
                     </div>
                </div>
+               <div>
+                    <h1 className='text-xl font-bold uppercase py-4'>Projects & Case studies</h1>
+               </div>
                <div className='space-y-8'>
                     <div className=''>
-                         <h2 className='text-3xl font-bold'>Eatables Food Discovery & Review Platform using HTML, Tailwind CSS and PHP</h2>
+                         <h2 className='text-[1.65rem] font-bold'>Eatables Food Discovery & Review Platform using HTML, Tailwind CSS and PHP</h2>
                          <h3 className='text-2xl'>Final Year Project</h3>
                          <ul className='list-disc list-inside text-lg pl-2 md:pl-6 pt-4  text-left md:text-justify space-y-2'>
                               <li>Independently conceptualized and designed a mobile app prototype for Eatables, a food discovery platform, using Figma.</li>
@@ -68,7 +71,7 @@ function Resume() {
                          </ul>
                     </div>
                     <div className=''>
-                         <h2 className='text-3xl font-bold'>Qikfixer: Repairmen Finder App</h2>
+                         <h2 className='text-[1.65rem] font-bold'>Qikfixer: Repairmen Finder App</h2>
                          <h3 className='text-2xl'>Personal Project</h3>
                          <ul className='list-disc list-inside pl-2 md:pl-6 pt-4 text-lg text-left md:text-justify space-y-2'>
                               <li>Designed the user interface for a mobile app, focusing on user-centered design principles also created interactive prototypes in Figma to visualize the app's functionality and user flow. </li>
@@ -77,7 +80,7 @@ function Resume() {
                          </ul>
                     </div>
                     <div className=''>
-                         <h2 className='text-3xl font-bold'>Developed personal portfolio website using React JS and Tailwind CSS</h2>
+                         <h2 className='text-[1.65rem] font-bold'>Developed personal portfolio website using React JS and Tailwind CSS</h2>
                          <h3 className='text-2xl'>Personal Project</h3>
                          <ul className='list-disc list-inside pl-2 md:pl-6 pt-4 text-lg text-left md:text-justify space-y-2'>
                               <li>Implemented clean and modern design elements, resulting in a 50% increase in website traffic and a 40% improvement in user engagement.</li>
@@ -91,25 +94,25 @@ function Resume() {
                </div>
                <div className='space-y-8'>
                     <div>
-                         <h2 className='text-3xl font-bold'>Secured first place in the event dotHTML (Web Designing)</h2>
+                         <h2 className='text-[1.65rem] font-bold'>Secured first place in the event dotHTML (Web Designing)</h2>
                          <h3 className='text-lg'>National level Tech Fest Noesis 2023</h3>
                          <h3 className='text-lg'>Rosary College of Commerce and Arts, Margao, Goa</h3>
                          <h3 className='text-lg'>28th January 2023</h3>
                     </div>
                     <div>
-                         <h2 className='text-3xl font-bold'>Secured second place in the event Error 404 (Web Designing)</h2>
+                         <h2 className='text-[1.65rem] font-bold'>Secured second place in the event Error 404 (Web Designing)</h2>
                          <h3 className='text-lg'>National level IT Fest Joshiana 11.0</h3>
                          <h3 className='text-lg'>St. Joseph Engineering College, Vamanjoor, Mangaluru</h3>
                          <h3 className='text-lg'>7th September 2022</h3>
                     </div>
                     <div>
-                         <h2 className='text-3xl font-bold'>Secured first place in the event DortWeb (Web Designing)</h2>
+                         <h2 className='text-[1.65rem] font-bold'>Secured first place in the event DortWeb (Web Designing)</h2>
                          <h3 className='text-lg'>Inter-Class Competition (Tech It Out)</h3>
                          <h3 className='text-lg'>St Aloysius College (Autonomous), Mangaluru, Karnataka</h3>
                          <h3 className='text-lg'>20th May 2022</h3>
                     </div>
                     <div>
-                         <h2 className='text-3xl font-bold'>Secured first place in the event Web Designing</h2>
+                         <h2 className='text-[1.65rem] font-bold'>Secured first place in the event Web Designing</h2>
                          <h3 className='text-lg'>Inter-Class Competition (Technophilia)</h3>
                          <h3 className='text-lg'>St Aloysius College (Autonomous), Mangaluru, Karnataka</h3>
                          <h3 className='text-lg'>21st April 2022</h3>
@@ -120,17 +123,17 @@ function Resume() {
                </div>
                <div className='space-y-8'>
                     <div>
-                         <h2 className='text-3xl font-bold'>Masters in Computer Application</h2>
+                         <h2 className='text-[1.65rem] font-bold'>Masters in Computer Application</h2>
                          <h3 className='text-lg'>N.M.AMIT, Nitte University, Nitte, Karnataka</h3>
                          <h3 className='text-lg'> 2023 - Present</h3>
                     </div>
                     <div>
-                         <h2 className='text-3xl font-bold'>Bachelor of Computer Application</h2>
+                         <h2 className='text-[1.65rem] font-bold'>Bachelor of Computer Application</h2>
                          <h3 className='text-lg'>St Aloysius College (Autonomous), Mangaluru, Karnataka</h3>
                          <h3 className='text-lg'>2020 - 2023</h3>
                     </div>
                </div>
-               <div className='flex md:flex-row flex-col  items-start justify-between'>
+               <div className='flex md:flex-row flex-col  items-start justify-between pb-12'>
                     <div>
                          <div>
                               <h1 className='text-xl font-bold uppercase py-8'>Industry Knowledge  </h1>

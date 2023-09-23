@@ -32,13 +32,13 @@ function CaseStudies() {
                     <Link to="/case-study/extratime-2" onClick={() => scrollToTop()} className={`group flex items-center justify-center hover:bg-extratime card py-8 ${(mode == "light") ? ('bg-light-mode-secondary text-dark-mode-secondary') : ('bg-dark-mode-secondary text-light-mode-primary')}`}>
                          <div className='flex items-center justify-center flex-col pb-4 text-center'>
                               <h1 className='font-mono-space font-bold tracking-wider text-3xl md:text-4xl'>Extratime</h1>
-                              <h2 className='font-mono-space font-medium tracking-wider text-lg md:text-xl '>Sports Turf Booking fa-apple</h2>
+                              <h2 className='font-mono-space font-medium tracking-wider text-lg md:text-xl '>Sports Turf Booking App</h2>
                          </div>
                          <div className='w-[15rem] md:w-[12rem] lg:w-[20rem]'>
                               <img className='duration-300  group-hover:scale-[1.02]' alt='Extratime: Turf Booking App' src={extratimeMore} width="640" height="360" />
                          </div>
                     </Link>
-                    <Link to='more-projects' className={`group hover:bg-read-more duration-300  group-hover:scale-[1.02]  card py-8 ${(mode == "light") ? (' bg-light-mode-secondary text-dark-mode-secondary flex items-center justify-center') : (' bg-dark-mode-secondary text-light-mode-primary flex items-center justify-center')}`}>
+                    <Link to='more-projects' onClick={() => scrollToTop()} className={`group hover:bg-read-more duration-300  group-hover:scale-[1.02]  card py-8 ${(mode == "light") ? (' bg-light-mode-secondary text-dark-mode-secondary flex items-center justify-center') : (' bg-dark-mode-secondary text-light-mode-primary flex items-center justify-center')}`}>
                          <h1 className='font-mono-space font-bold tracking-wider text-2xl text-center py-36 md:py-0'>Find More <br />
                               Case Studies <br />
                               & Projects

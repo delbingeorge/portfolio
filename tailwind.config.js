@@ -5,15 +5,11 @@ export default {
     theme: {
         extend: {
             colors: {
-                // "dark-mode-primary": "#222222",
                 "dark-mode-primary": "#131313",
-                // "dark-mode-secondary": "#2a2a2a",
                 "dark-mode-secondary": "#1e1f21",
                 "dark-mode-accent": "#e3e3e3",
                 "light-mode-primary": "#ffffff",
-                // "light-mode-primary": "#cccccc",
-                // "light-mode-secondary": "#c5c5c5",
-                "light-mode-secondary": "#f5f5f5",
+                "light-mode-secondary": "#ECECEC",
                 "light-mode-accent": "#222222",
             },
             fontFamily: {
