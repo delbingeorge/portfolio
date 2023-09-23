@@ -9,7 +9,6 @@ export function useMode() {
 
 export function ModeProvider({ children }) {
     const [mode, setMode] = useState('light');
-    const [id, setID] = useState(null);
     const [data, setData] = useState(null);
 
     useEffect(() => {
@@ -31,8 +30,6 @@ export function ModeProvider({ children }) {
         mode,
         toggleMode,
         data,
-        id,
-        setID
     };
 
     return (

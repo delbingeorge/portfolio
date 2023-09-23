@@ -2,7 +2,12 @@ import React from 'react'
 import { useMode } from '../ModeProvider';
 import { Link } from 'react-router-dom';
 function Article() {
-  const { mode, data, toggleMode, id } = useMode();
+  const { mode, data, toggleMode } = useMode();
+  const { pathname } = window.location;
+  const extractedNumber = pathname.match(/\d+/);
+  const id = parseInt(extractedNumber[0]);
+
+  console.log(data);
 
   const handleClick = () => {
     if (mode == "dark") {
@@ -13,7 +18,7 @@ function Article() {
     }
   }
 
-  if (!data || id == null) {
+  if (!data) {
     return (
       <div className='bg-dark-mode-primary bg-article-not-found space-y-3 text-light-mode-primary min-h-screen flex flex-col items-center justify-center'>
         <h1 className='text-2xl font-mono-space'>No article found!</h1>
@@ -58,7 +63,6 @@ function Article() {
               <h1 className="text-[3.5rem] font-bold tracking-tighter leading-[3.3rem]">
                 {data[id]['title']}
               </h1>
-
             </div>
             <div className="space-y-8">
               <div>

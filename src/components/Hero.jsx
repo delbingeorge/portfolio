@@ -8,8 +8,6 @@ import { Link } from 'react-router-dom';
 
 function Hero() {
      const { mode } = useMode()
-
-
      return (
           <div className={`flex lg:flex-row space-y-4 lg:space-y-0 flex-col md:justify-between ${(mode == "light") ? (' bg-light-mode-primary text-dark-mode-primary') : ('bg-dark-mode-primary text-light-mode-primary')}`}>
                <div className={`py-6 md:py-8 rounded-3xl pl-4 md:pl-8 w-full lg:w-[74%] flex flex-col items-start justify-between ${mode == "light" ? 'bg-light-mode-secondary' : 'bg-dark-mode-secondary'}`}>
@@ -19,7 +17,7 @@ function Hero() {
                     </div>
                     <div className='flex items-center space-x-5 md:space-x-7'>
                          <Link to="resume"
-                              className={`py-2 md:py-3 px-5 md:px-6 font-inter rounded-lg hover:cursor-pointer text-[10px] lg:text-lg ${(mode == 'light') ? ('bg-dark-mode-primary text-light-mode-primary ') : ('bg-light-mode-primary text-dark-mode-primary')}`}>
+                              className={`py-2 md:py-3 px-5 md:px-6 font-inter rounded-lg hover:cursor-pointer text-[10px] lg:text-lg ${(mode == 'light') ? ('bg-dark-mode-primary text-light-mode-primary') : ('bg-light-mode-primary text-dark-mode-primary')}`}>
                               View Resume
                          </Link>
                          <FontAwesomeIcon className='text-2xl md:text-4xl hover:cursor-pointer' icon={faLinkedin} />
@@ -28,7 +26,7 @@ function Hero() {
                     </div>
                </div>
                <div className='w-full md:w-[25%]'>
-                    <img alt='Delbin George' width="640" height="360"  src={DelbinGeorge} />
+                    <img alt='Delbin George' width="640" height="360" src={DelbinGeorge} />
                </div>
           </div>
      )
