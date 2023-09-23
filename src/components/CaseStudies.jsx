@@ -7,9 +7,6 @@ import { Link } from 'react-router-dom'
 
 function CaseStudies() {
      const { mode } = useMode()
-
-     
-
      return (
           <div className={`${(mode == "light") ? ('bg-light-mode-primary text-dark-mode-primary') : ('bg-dark-mode-primary text-light-mode-primary')}`}>
                <h1 className={`text-2xl md:text-3xl font-bold font-mono-space w-full my-3 py-5 rounded-xl text-center ${(mode == 'light') ? ('bg-light-mode-secondary') : ('bg-dark-mode-secondary')}`}>case studies</h1>
