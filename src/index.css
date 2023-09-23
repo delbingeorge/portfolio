@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    user-select: none;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+@layer components {
+    .btn-dark-mode {
+        @apply bg-dark-mode-secondary rounded-full p-3 flex  items-center justify-center hover:cursor-pointer;
+    }
+    .btn-light-mode {
+        @apply bg-light-mode-secondary rounded-full p-3 flex  items-center justify-center hover:cursor-pointer;
+    }
+
+    .dark {
+        @apply bg-dark-mode-primary text-light-mode-primary;
+    }
+
+    .light {
+        @apply bg-light-mode-primary text-dark-mode-primary;
+    }
+
+    .card {
+        @apply hover:cursor-pointer bg-cover rounded-xl flex items-center flex-col justify-between hover:text-light-mode-primary;
+    }
+
+    .skill-card{
+        @apply p-8 flex items-center justify-center rounded-xl hover:cursor-pointer hover:scale-[1.02] duration-300;
+    }
+}
