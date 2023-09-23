@@ -29,7 +29,7 @@ function Hero() {
                     </div>
                </div>
                <div className='w-full md:w-[25%]'>
-                    <img alt='Delbin George' width="640" height="360" src={DelbinGeorge} />
+                    <img alt='Delbin George' width="640" height="360"  src={DelbinGeorge} />
                </div>
           </div>
      )
