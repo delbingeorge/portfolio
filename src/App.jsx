@@ -8,7 +8,6 @@ import MoreProjects from './components/MoreProjects';
 
 function App() {
   const { mode } = useMode();
-
   return (
     <div className={`cursor-custom ${(mode == "light") ? ('bg-light-mode-primary text-dark-mode-primary ') : ('bg-dark-mode-primary text-light-mode-primary')}`}>
       <Router>

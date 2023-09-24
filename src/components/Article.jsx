@@ -63,6 +63,11 @@ function Article() {
               </h1>
             </div>
             <div className="space-y-8">
+              <div className={`${data[id]['banner-info'] == "" ? "hidden" : "block"}`}>
+                <a href={data[id]['banner-info']['link']} aria-label={data[id]['title']}>
+                  <img src={data[id]['banner-info']['banner']} width={1280} height={720} className='rounded-xl' />
+                </a>
+              </div>
               <div>
                 <h2 className="text-[1.35rem] font-semibold">Introduction </h2>
                 <p className="text-[1.20rem] text-justify">
@@ -190,7 +195,6 @@ function Article() {
                   </div>
                 </div>
               </div>
-
               <div className={`${data[id]['figma-prototype'] == "" ? "hidden" : "block"}`}>
                 <h2 className="text-[1.35rem] font-semibold mb-4">Figma Prototype</h2>
                 <div className="flex items-center justify-center">
@@ -201,7 +205,7 @@ function Article() {
           </div>
         </div>
       </div>
-    </div>
+    </div >
 
   );
 

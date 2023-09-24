@@ -53,7 +53,7 @@ function Resume() {
                          <p className='text-[1.60rem] font-bold text-left md:text-justify'>I'm a front-end developer with a strong understanding of UI/UX
                               principles and a passion for creating visually appealing and
                               user-friendly web experiences. I love working with HTML, CSS, and
-                              JavaScript, and have a strong grasp of responsive design and mobile optimization. </p>
+                              JavaScript and have a strong grasp of responsive design and mobile optimization. </p>
                     </div>
                </div>
                <div>
@@ -141,13 +141,13 @@ function Resume() {
                          <ul className='list-disc list-inside pl-2 text-lg md:pl-6 text-justify space-y-2'>
                               <li>User Interface</li>
                               <li>User Experience</li>
-                              <li>Interaction Design</li>
+                              <li>Mobile App Design</li>
+                              <li>Software Design</li>
+                              <li>Website Design</li>
+                              <li>Visual Design</li>
                               <li>Wireframing</li>
                               <li>Rapid Prototyping</li>
                               <li>Design Research</li>
-                              <li>Software Design</li>
-                              <li>Visual Design</li>
-                              <li>Interaction Design</li>
                          </ul>
                     </div>
                     <div>
@@ -157,8 +157,6 @@ function Resume() {
                          <ul className='list-disc list-inside pl-2 text-lg md:pl-6 text-justify space-y-2'>
                               <li>Figma</li>
                               <li>Adobe XD</li>
-                              <li>Protopie</li>
-                              <li>Invision</li>
                               <li>Premiere Pro</li>
                               <li>Photoshop</li>
                               <li>Illustrator</li>
@@ -172,10 +170,10 @@ function Resume() {
                               <li>HTML</li>
                               <li>CSS</li>
                               <li>JavaScript</li>
-                              <li>Tailwind CSS</li>
-                              <li>Bootstrap</li>
                               <li>React JS</li>
                               <li>Git & Github</li>
+                              <li>Tailwind CSS</li>
+                              <li>Bootstrap</li>
                          </ul>
                     </div>
                </div>

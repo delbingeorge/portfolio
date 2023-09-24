@@ -21,8 +21,7 @@ export default {
                 qikfixer: "url(./assets/images/qikfixerBg.webp)",
                 extratime: "url(./assets/images/extratimeBg.webp)",
                 "read-more": "url(./assets/images/MoreProjects.webp)",
-                "article-not-found":
-                    "linear-gradient(to top, black,rgb(0,0,0,0.4)),url(https://images.unsplash.com/photo-1641545423876-3d7dc842132c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1886&q=80)",
+                portfoilo: "url(./assets/images/portfolio.webp)",
             },
             cursor: {
                 custom: "url(./assets/images/cursor.png), auto",

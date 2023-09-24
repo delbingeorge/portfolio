@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { useMode } from '../ModeProvider';
 import { Link } from 'react-router-dom';
 import eatablesImage from '../assets/images/eatablesImage.webp'
@@ -17,6 +17,7 @@ function MoreProjects() {
       toggleMode("dark");
     }
   }
+
   return (
     <div className={`px-6 md:px-28 pb-8 font-mono-space ${(mode == "light") ? ('bg-light-mode-primary text-dark-mode-primary') : ('bg-dark-mode-primary text-light-mode-primary')}`}>
       <div className='py-4 md:py-8 flex items-center justify-between'>
@@ -36,17 +37,17 @@ function MoreProjects() {
         </div>
       </div>
       <div className='py-8'>
-        <div className='grid grid-cols-1 md:grid-cols-3 gap-3 '>
-          <Link to='/case-study/eatables-0' onClick={() => scrollToTop()} className={`group flex items-center justify-center hover:bg-eatables card py-8 ${(mode == "light") ? ('bg-light-mode-secondary text-dark-mode-secondary') : ('bg-dark-mode-secondary text-light-mode-primary')}`}>
+        <div className='grid grid-cols-1 md:grid-cols-3 gap-3'>
+          <Link to='/case-study/eatables-0' className={`group flex items-center justify-center hover:bg-eatables card py-8 ${(mode == "light") ? ('bg-light-mode-secondary text-dark-mode-secondary') : ('bg-dark-mode-secondary text-light-mode-primary')}`}>
             <div className='flex items-center justify-center flex-col pb-4 text-center'>
               <h1 className='font-mono-space font-bold tracking-wider text-[1.65rem] md:text-4xl'>Eatables</h1>
-              <h2 className='font-mono-space font-medium tracking-wider text-lg md:text-xl '>Food discovery & Review App</h2>
+              <h2 className='font-mono-space font-medium tracking-wider text-lg md:text-xl'>Food discovery & Review App</h2>
             </div>
             <div className='w-[15rem] md:w-[12rem] lg:w-[20rem]'>
               <img className='duration-300  group-hover:scale-[1.02]' alt="Eatables: Food Discovery & Review Platform" src={eatablesImage} width="640" height="360" />
             </div>
           </Link>
-          <Link to="/case-study/qikfixer-1" onClick={() => scrollToTop()} className={`group flex items-center justify-center hover:bg-qikfixer card py-8 ${(mode == "light") ? (' bg-light-mode-secondary text-dark-mode-secondary') : ('bg-dark-mode-secondary text-light-mode-primary')}`}>
+          <Link to="/case-study/qikfixer-1" className={`group flex items-center justify-center hover:bg-qikfixer card py-8 ${(mode == "light") ? (' bg-light-mode-secondary text-dark-mode-secondary') : ('bg-dark-mode-secondary text-light-mode-primary')}`}>
             <div className='group flex items-center justify-center flex-col pb-4 text-center'>
               <h1 className='font-mono-space font-bold tracking-wider text-[1.65rem] md:text-4xl'>Qikfixer App</h1>
               <h2 className='font-mono-space font-medium tracking-wider text-lg md:text-xl '>Repairmen Finder Platform</h2>
@@ -55,7 +56,7 @@ function MoreProjects() {
               <img className='duration-300  group-hover:scale-[1.02]' alt='Qikfixer: Servicemen finder app' src={qikfixerMore} width="640" height="360" />
             </div>
           </Link>
-          <Link to="/case-study/extratime-2" onClick={() => scrollToTop()} className={`group flex items-center justify-center hover:bg-extratime card py-8 ${(mode == "light") ? ('bg-light-mode-secondary text-dark-mode-secondary') : ('bg-dark-mode-secondary text-light-mode-primary')}`}>
+          <Link to="/case-study/extratime-2" className={`group flex items-center justify-center hover:bg-extratime card py-8 ${(mode == "light") ? ('bg-light-mode-secondary text-dark-mode-secondary') : ('bg-dark-mode-secondary text-light-mode-primary')}`}>
             <div className='flex items-center justify-center flex-col pb-4 text-center'>
               <h1 className='font-mono-space font-bold tracking-wider text-[1.65rem] md:text-4xl'>Extratime</h1>
               <h2 className='font-mono-space font-medium tracking-wider text-lg md:text-xl '>Sports Turf Booking App</h2>
@@ -64,7 +65,7 @@ function MoreProjects() {
               <img className='duration-300  group-hover:scale-[1.02]' alt='Extratime: Turf Booking App' src={extratimeMore} width="640" height="360" />
             </div>
           </Link>
-          <Link to="/case-study/extratime-2" onClick={() => scrollToTop()} className={`group flex items-center justify-center hover:bg-extratime card py-8 ${(mode == "light") ? ('bg-light-mode-secondary text-dark-mode-secondary') : ('bg-dark-mode-secondary text-light-mode-primary')}`}>
+          <Link to="/case-study/extratime-2" className={`group flex items-center justify-center hover:bg-portfoilo card py-28 ${(mode == "light") ? ('bg-light-mode-secondary text-dark-mode-secondary') : ('bg-dark-mode-secondary text-light-mode-primary')}`}>
             <div className='flex items-center justify-center flex-col pb-4 text-center'>
               <h1 className='font-mono-space font-bold tracking-wider text-[1.65rem] md:text-4xl'>Portfolio</h1>
               <h2 className='font-mono-space font-medium tracking-wider text-lg md:text-xl'>Personal Portfolio Website</h2>
@@ -76,7 +77,6 @@ function MoreProjects() {
         </div>
       </div>
       <div className='py-4 lg:py-8 px-4 flex items-center flex-col lg:flex-row space-y-3 lg:space-y-0 justify-around bg-light-mode-secondary rounded-xl'>
-        {/* <h1 className='text-2xl'>Loved what you saw?</h1> */}
         <h1 className='text-2xl'>Did you like what you saw?</h1>
         <a href='mailto:imdelbingeorge@gmail.com' className='bg-dark-mode-primary rounded-lg text-light-mode-secondary px-10 text-lg tracking-wider font-bold py-2'>Hire Me</a>
       </div>
