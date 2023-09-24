@@ -68,7 +68,7 @@ function Article() {
                 </h1>
               </div>
             </div>
-            <div className="space-y-8">
+            <div className="space-y-6">
               <div className={`${data[id]['banner-info'] == "" ? "hidden" : "block"}`}>
                 <a href={data[id]['banner-info']['link']} aria-label={data[id]['title']}>
                   <img src={data[id]['banner-info']['banner']} width={1280} height={720} className='rounded-xl' />
@@ -121,6 +121,13 @@ function Article() {
                   {data[id]["competitor-analysis"]["analysis-description"]}
                 </p>
                 <img className='pt-6' src={data[id]["competitor-analysis"]["competitor-analysis-image"]} alt={data[id]["competitor-analysis"]["competitor-analysis-image"]} />
+              </div>
+
+              <div className={`${data[id]['storytelling'] == "" ? "hidden" : "block"}`}>
+                <h2 className="text-[1.35rem] font-semibold pb-4">Visual Storytelling</h2>
+                <div className='flex items-center justify-center'>
+                  <img src={data[id]['storytelling']} alt={`${data[id]['title']} "Visual Story"`} width={1080} height={1080} />
+                </div>
               </div>
 
               <div className={`${data[id]['product-users'] == "" ? "hidden" : "block"}`}>
