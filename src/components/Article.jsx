@@ -16,7 +16,7 @@ function Article() {
     }
   }
 
-  if (data == "") {
+  if (!data) {
     return (
       <div className='bg-dark-mode-primary bg-article-not-found space-y-3 text-light-mode-primary min-h-screen flex flex-col items-center justify-center'>
         <h1 className='text-2xl font-mono-space'>No article found!</h1>
@@ -27,6 +27,7 @@ function Article() {
 
   const businessChallenges = data[id]['business-challenges'];
   const productUsers = data[id]['product-users'];
+  const storyImages = data[id]['storytelling'];
   const userNeeds = data[id]['user-needs'];
   const designProcess = data[id]["design-process"];
   const lofiScreens = data[id]["lofi-screens"];
@@ -121,8 +122,14 @@ function Article() {
 
               <div className={`${data[id]['storytelling'] == "" ? "hidden" : "block"}`}>
                 <h2 className="text-[1.35rem] font-semibold pb-4">Storyboard</h2>
-                <div className='flex items-center justify-center'>
-                  <img src={data[id]['storytelling']} alt={`${data[id]['title']} "Visual Story"`} width={1080} height={1080} />
+                <div className='flex items-center justify-center flex-col space-y-4'>
+                  {
+                    storyImages == "" ? " " :
+                      storyImages.map((item, index) => (
+                        <img key={index} src={item} alt={`${data[id]['title']} "Visual Story"`} width={1280} height={720} />
+                        // console.log(item)
+                      ))
+                  }
                 </div>
               </div>
 
