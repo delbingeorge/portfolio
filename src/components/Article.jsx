@@ -58,9 +58,15 @@ function Article() {
           </div>
           <div className="">
             <div className='pt-8 pb-6 space-y-4'>
-              <h1 className="text-[3.5rem] font-bold tracking-tighter leading-[3.3rem]">
+              <h1 className="text-[2.5rem] lg:text-[3.5rem] font-bold tracking-tighter leading-[3.3rem]">
                 {data[id]['title']}
               </h1>
+              <div className='flex items-center justify-start space-x-3'>
+                <img width={30} height={30} className='rounded-full' src={data[id]['article-details']['atuhor-img']} alt={data[id]['article-details']['author']} />
+                <h1 className='font-bold'>
+                  {data[id]['article-details']['author']}
+                </h1>
+              </div>
             </div>
             <div className="space-y-8">
               <div className={`${data[id]['banner-info'] == "" ? "hidden" : "block"}`}>
