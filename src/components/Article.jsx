@@ -1,12 +1,11 @@
 import React from 'react'
 import { useMode } from '../ModeProvider';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 function Article() {
   const { mode, data, toggleMode } = useMode();
-  const { pathname } = window.location;
+  let { pathname } = useLocation();
   const extractedNumber = pathname.match(/\d+/);
   const id = parseInt(extractedNumber[0]);
-
   const handleClick = () => {
     if (mode == "dark") {
       toggleMode("light");
@@ -18,9 +17,19 @@ function Article() {
 
   if (!data) {
     return (
-      <div className='bg-dark-mode-primary bg-article-not-found space-y-3 text-light-mode-primary min-h-screen flex flex-col items-center justify-center'>
+      <div className={`'bg-article-not-found space-y-3 min-h-screen flex flex-col items-center justify-center ${mode == "light" ? "bg-light-mode-primary text-dark-mode-primary" : "bg-dark-mode-primary text-light-mode-primary"}`}>
         <h1 className='text-2xl font-mono-space'>No article found!</h1>
         <Link to='/' className='text-xl font-mono-space'>Go Back</Link>
+      </div>
+    )
+  } else if (data[id]['title'] == "Coming Soon!") {
+    return (
+      <div className={`'bg-article-not-found space-y-3 min-h-screen flex flex-col items-center justify-center ${mode == "light" ? "bg-light-mode-primary text-dark-mode-primary" : "bg-dark-mode-primary text-light-mode-primary"}`}>
+        <div className='flex items-center justify-center flex-col'>
+          <h1 className='text-[2rem] lg:text-[2.5rem] font-bold font-mono-space'>Coming Soon!</h1>
+          <h1 className='text-[1rem] lg:text-2xl font-mono-space'>Article yet to update!</h1>
+        </div>
+        <Link to='/' className='text-[1rem] lg:text-xl font-mono-space'>Go Back</Link>
       </div>
     )
   }
@@ -34,8 +43,8 @@ function Article() {
   const hifiScreens = data[id]["hifi-screens"];
 
   return (
-    <div className='font-mono-space'>
-      <div className="min-h-screen overflow-y-scroll">
+    <div className='font-mono-space' id='article'>
+      <div className="pb-4 lg:pb-16">
         <div className="mx-8 lg:mx-40">
           <div className='pt-4 md:pt-8 flex items-center justify-between'>
             <Link to='/' className='text-xl font-bold'>Go Back</Link>
@@ -53,7 +62,7 @@ function Article() {
               }
             </div>
           </div>
-          <div className="">
+          <div>
             <div className='pt-8 pb-6 space-y-4'>
               <h1 className="text-[2.5rem] lg:text-[3.5rem] font-bold tracking-tighter leading-[3.3rem]">
                 {data[id]['title']}
@@ -119,7 +128,6 @@ function Article() {
                 </p>
                 <img className='pt-6' src={data[id]["competitor-analysis"]["competitor-analysis-image"]} alt={data[id]["competitor-analysis"]["competitor-analysis-image"]} />
               </div>
-
               <div className={`${data[id]['storytelling'] == "" ? "hidden" : "block"}`}>
                 <h2 className="text-[1.35rem] font-semibold pb-4">Storyboard</h2>
                 <div className='flex items-center justify-center flex-col space-y-4'>
@@ -127,12 +135,10 @@ function Article() {
                     storyImages == "" ? " " :
                       storyImages.map((item, index) => (
                         <img key={index} src={item} alt={`${data[id]['title']} "Visual Story"`} width={1280} height={720} />
-                        // console.log(item)
                       ))
                   }
                 </div>
               </div>
-
               <div className={`${data[id]['product-users'] == "" ? "hidden" : "block"}`}>
                 <h2 className="text-[1.35rem] font-semibold">Product Users</h2>
                 <ul className="text-[1.20rem] list-disc list-inside">
@@ -173,6 +179,16 @@ function Article() {
                   }
                 </div>
               </div>
+
+              <div className={`${data[id]['brand-assets'] == "" ? "hidden" : "block"}`}>
+                <h1 className="text-[1.35rem] mb-4 font-semibold">Brand Assets</h1>
+                <div className='space-y-3'>
+                  <img src={data[id]['brand-assets']['color-theme']} width={1280} height={720} className='rounded-xl' />
+                  <img src={data[id]['brand-assets']['typography']} width={1280} height={720} className='rounded-xl' />
+                  <img src={data[id]['brand-assets']['alignment-grid']} width={1280} height={720} className='rounded-xl' />
+                </div>
+              </div>
+
               <div>
                 <div className={`${data[id]['lofi-screens'] == "" ? "hidden" : "flex justify-center flex-col my-10 md:my-6"}`}>
                   <h2 className="text-[1.35rem] mb-4 font-semibold">Low Fidelity Screen</h2>
@@ -214,7 +230,7 @@ function Article() {
               <div className={`${data[id]['figma-prototype'] == "" ? "hidden" : "block"}`}>
                 <h2 className="text-[1.35rem] font-semibold mb-4">Figma Prototype</h2>
                 <div className="flex items-center justify-center">
-                  <iframe width="1200" height="900" src={data[id]["figma-prototype"]} allowFullScreen=""></iframe>
+                  <iframe className='rounded-xl bg-white' width="400" height="700" src={data[id]["figma-prototype"]} allowFullScreen=""></iframe>
                 </div>
               </div>
             </div>
@@ -223,7 +239,7 @@ function Article() {
       </div>
     </div>
   );
-
 }
+
 
 export default Article;

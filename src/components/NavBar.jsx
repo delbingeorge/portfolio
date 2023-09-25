@@ -14,7 +14,7 @@ function NavBar() {
      }
 
      return (
-          <nav className={`flex justify-end py-2 lg:py-6 ${(mode == "light") ? 'bg-light-mode-primary' : 'bg-dark-mode-primary'}`}>
+          <nav className={`flex justify-end py-4 lg:py-6 ${(mode == "light") ? 'bg-light-mode-primary' : 'bg-dark-mode-primary'}`}>
                <div className='flex space-x-4'>
                     {
                          (mode == "light") ? (

@@ -38,7 +38,7 @@ function MoreProjects() {
       </div>
       <div className='py-8'>
         <div className='grid grid-cols-1 md:grid-cols-3 gap-3'>
-          <Link to='/case-study/eatables-0' className={`group flex items-center justify-center hover:bg-eatables card py-8 ${(mode == "light") ? ('bg-light-mode-secondary text-dark-mode-secondary') : ('bg-dark-mode-secondary text-light-mode-primary')}`}>
+          <Link to='/case-study/eatables-0/' className={`group flex items-center justify-center hover:bg-eatables card py-8 ${(mode == "light") ? ('bg-light-mode-secondary text-dark-mode-secondary') : ('bg-dark-mode-secondary text-light-mode-primary')}`}>
             <div className='flex items-center justify-center flex-col pb-4 text-center'>
               <h1 className='font-mono-space font-bold tracking-wider text-[1.65rem] md:text-4xl'>Eatables</h1>
               <h2 className='font-mono-space font-medium tracking-wider text-lg md:text-xl'>Food discovery & Review App</h2>

@@ -5,7 +5,6 @@ import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-ic
 import DelbinGeorge from '../assets/images/DelbinGeorge.webp'
 import { Link } from 'react-router-dom';
 
-
 function Hero() {
      const { mode } = useMode()
      return (
@@ -17,17 +16,17 @@ function Hero() {
                     </div>
                     <div className='flex items-center space-x-5 md:space-x-7'>
                          <Link to="resume"
-                              className={`py-2 md:py-3 px-5 md:px-6 font-inter tracking-wider rounded-lg hover:cursor-pointer text-[10px] lg:text-lg ${(mode == 'light') ? ('bg-dark-mode-primary text-light-mode-primary') : ('bg-light-mode-primary text-dark-mode-primary')}`}>
+                              className={`py-2 md:py-3 px-5 md:px-6 font-inter tracking-wider rounded-lg hover:cursor-pointer text-[15px] lg:text-     ${(mode == 'light') ? ('bg-dark-mode-primary text-light-mode-primary') : ('bg-light-mode-primary text-dark-mode-primary')}`}>
                               View Resume
                          </Link>
                          <a href="https://www.linkedin.com/in/delbingeorge/">
-                              <FontAwesomeIcon className='text-2xl md:text-4xl hover:cursor-pointer' icon={faLinkedin} />
+                              <FontAwesomeIcon className='text-[1.91rem] md:text-[2rem] hover:cursor-pointer' icon={faLinkedin} />
                          </a>
                          <a href="https://www.x.com/dellbingeorge/">
-                              <FontAwesomeIcon className='text-2xl md:text-4xl hover:cursor-pointer' icon={faTwitter} />
+                              <FontAwesomeIcon className='text-[1.91rem] md:text-[2rem] hover:cursor-pointer' icon={faTwitter} />
                          </a>
                          <a href="https://www.github.com/delbingeorge/">
-                              <FontAwesomeIcon className='text-2xl md:text-4xl hover:cursor-pointer' icon={faGithub} />
+                              <FontAwesomeIcon className='text-[1.91rem] md:text-[2rem] hover:cursor-pointer' icon={faGithub} />
                          </a>
                     </div>
                </div>

@@ -22,6 +22,7 @@ export default {
                 extratime: "url(./assets/images/extratimeBg.webp)",
                 "read-more": "url(./assets/images/MoreProjects.webp)",
                 portfoilo: "url(./assets/images/portfolio.webp)",
+                "error-page": "linear-gradient(to top, rgb(0,0,0,0.4),rgb(0,0,0,0.4)),url(./assets/images/PageNotFoundImage.webp)",
             },
             cursor: {
                 custom: "url(./assets/images/cursor.png), auto",
