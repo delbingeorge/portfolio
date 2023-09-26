@@ -126,7 +126,7 @@ function Article() {
                 <p className="text-[1.20rem] lg:text-[1.25rem] text-justify">
                   {data[id]["competitor-analysis"]["analysis-description"]}
                 </p>
-                <img className='pt-6' src={data[id]["competitor-analysis"]["competitor-analysis-image"]} alt={data[id]["competitor-analysis"]["competitor-analysis-image"]} />
+                <img className={`pt-6 ${(mode == "dark" ? "invert" : "invert-0")}`} src={data[id]["competitor-analysis"]["competitor-analysis-image"]} alt={data[id]["competitor-analysis"]["competitor-analysis-image"]} />
               </div>
               <div className={`${data[id]['storytelling'] == "" ? "hidden" : "block"}`}>
                 <h2 className="text-[1.35rem] lg:text-[1.8rem] font-semibold pb-4">Storyboard</h2>
@@ -186,6 +186,7 @@ function Article() {
                   <img src={data[id]['brand-assets']['color-theme']} width={1280} height={720} className='rounded-xl' />
                   <img src={data[id]['brand-assets']['typography']} width={1280} height={720} className='rounded-xl' />
                   <img src={data[id]['brand-assets']['alignment-grid']} width={1280} height={720} className='rounded-xl' />
+                  <img src={data[id]['brand-assets']['logo']} width={1280} height={720} className='rounded-xl' />
                 </div>
               </div>
 
