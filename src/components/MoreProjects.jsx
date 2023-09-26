@@ -65,7 +65,7 @@ function MoreProjects() {
               <img className='duration-300  group-hover:scale-[1.02]' alt='Extratime: Turf Booking App' src={extratimeMore} width="640" height="360" />
             </div>
           </Link>
-          <Link to="/case-study/extratime-2" className={`group flex items-center justify-center hover:bg-portfoilo card py-28 ${(mode == "light") ? ('bg-light-mode-secondary text-dark-mode-secondary') : ('bg-dark-mode-secondary text-light-mode-primary')}`}>
+          <a href='https://www.delb.in' className={`group flex items-center justify-center hover:bg-portfoilo card py-28 ${(mode == "light") ? ('bg-light-mode-secondary text-dark-mode-secondary') : ('bg-dark-mode-secondary text-light-mode-primary')}`}>
             <div className='flex items-center justify-center flex-col pb-4 text-center'>
               <h1 className='font-mono-space font-bold tracking-wider text-[1.65rem] md:text-4xl'>Portfolio</h1>
               <h2 className='font-mono-space font-medium tracking-wider text-lg md:text-xl'>Personal Portfolio Website</h2>
@@ -73,7 +73,7 @@ function MoreProjects() {
             <div className='w-[15rem] md:w-[12rem] lg:w-[20rem]'>
               <img className='duration-300  group-hover:scale-[1.02]' alt='Extratime: Turf Booking App' src={portfolioMockup} width="640" height="360" />
             </div>
-          </Link>
+          </a>
         </div>
       </div>
       <div className='py-4 lg:py-8 px-4 flex items-center flex-col lg:flex-row space-y-3 lg:space-y-0 justify-around bg-light-mode-secondary rounded-xl'>

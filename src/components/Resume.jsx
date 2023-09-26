@@ -57,7 +57,7 @@ function Resume() {
                     </div>
                </div>
                <div>
-                    <h1 className='text-xl font-bold uppercase py-4'>Projects & Case studies</h1>
+                    <h1 className='text-xl font-bold uppercase py-4'>Projects</h1>
                </div>
                <div className='space-y-8'>
                     <div className=''>
@@ -90,7 +90,7 @@ function Resume() {
                     </div>
                </div>
                <div>
-                    <h1 className='text-xl font-bold uppercase py-8'>my achievement</h1>
+                    <h1 className='text-xl font-bold uppercase pb-4 pt-6'>my achievement</h1>
                </div>
                <div className='space-y-8'>
                     <div>
@@ -105,7 +105,7 @@ function Resume() {
                          <h3 className='text-lg'>St. Joseph Engineering College, Vamanjoor, Mangaluru</h3>
                          <h3 className='text-lg'>7th September 2022</h3>
                     </div>
-                    <div>
+                    {/* <div>
                          <h2 className='text-[1.65rem] font-bold'>Secured first place in the event DortWeb (Web Designing)</h2>
                          <h3 className='text-lg'>Inter-Class Competition (Tech It Out)</h3>
                          <h3 className='text-lg'>St Aloysius College (Autonomous), Mangaluru, Karnataka</h3>
@@ -116,10 +116,10 @@ function Resume() {
                          <h3 className='text-lg'>Inter-Class Competition (Technophilia)</h3>
                          <h3 className='text-lg'>St Aloysius College (Autonomous), Mangaluru, Karnataka</h3>
                          <h3 className='text-lg'>21st April 2022</h3>
-                    </div>
+                    </div> */}
                </div>
                <div>
-                    <h1 className='text-xl font-bold uppercase py-8'>education</h1>
+                    <h1 className='text-xl font-bold uppercase pb-4 pt-6'>education</h1>
                </div>
                <div className='space-y-8'>
                     <div>

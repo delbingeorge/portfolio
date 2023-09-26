@@ -233,6 +233,12 @@ function Article() {
                   <iframe className='rounded-xl bg-white' width="400" height="700" src={data[id]["figma-prototype"]} allowFullScreen=""></iframe>
                 </div>
               </div>
+              <div>
+                <h2 className="text-[1.35rem] lg:text-[1.8rem] font-semibold">Conclusion </h2>
+                <p className="text-[1.20rem] lg:text-[1.25rem] text-justify">
+                  {data[id]['conclusion']}
+                </p>
+              </div>
             </div>
           </div>
         </div>
