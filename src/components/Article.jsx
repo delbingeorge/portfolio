@@ -180,13 +180,13 @@ function Article() {
                 </div>
               </div>
 
-              <div className={`${data[id]['brand-assets']['color-theme'] == "" ? "hidden" : "block"}`}>
+              <div className={`${data[id]['brand-assets'] == "" ? "hidden" : "block"}`}>
                 <h1 className="text-[1.35rem] lg:text-[1.8rem] mb-4 font-semibold">Brand Assets</h1>
                 <div className='space-y-3'>
-                  <img src={data[id]['brand-assets']['color-theme']} width={1280} height={720} className='rounded-xl' />
-                  <img src={data[id]['brand-assets']['typography']} width={1280} height={720} className='rounded-xl' />
-                  <img src={data[id]['brand-assets']['alignment-grid']} width={1280} height={720} className='rounded-xl' />
-                  <img src={data[id]['brand-assets']['logo']} width={1280} height={720} className='rounded-xl' />
+                  <img src={data[id]['brand-assets']['color-theme']} width={1280} height={720} className={`rounded-xl ${!data[id]['brand-assets']['color-theme'] == "" ? "block" : "hidden"}`} />
+                  <img src={data[id]['brand-assets']['typography']} width={1280} height={720} className={`rounded-xl ${!data[id]['brand-assets']['typography'] == "" ? "block" : "hidden"}`} />
+                  <img src={data[id]['brand-assets']['alignment-grid']} width={1280} height={720} className={`rounded-xl ${!data[id]['brand-assets']['alignment-grid'] == "" ? "block" : "hidden"}`} />
+                  <img src={data[id]['brand-assets']['logo']} width={1280} height={720} className={`rounded-xl ${!data[id]['brand-assets']['logo'] == "" ? "block" : "hidden"}`} />
                 </div>
               </div>
 

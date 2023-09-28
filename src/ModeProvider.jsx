@@ -13,7 +13,7 @@ export function ModeProvider({ children }) {
 
     useEffect(() => {
         axios
-            .get('https://raw.githubusercontent.com/delbingeorge/portfolio-database/json-data/article-data.json')
+            .get('https://delbingeorge.github.io/portfolio-database/article-data.json')
             .then((response) => {
                 setData(response.data);
             })

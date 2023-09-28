@@ -21,7 +21,7 @@ function MoreProjects() {
   return (
     <div className={`px-6 md:px-28 pb-8 font-mono-space ${(mode == "light") ? ('bg-light-mode-primary text-dark-mode-primary') : ('bg-dark-mode-primary text-light-mode-primary')}`}>
       <div className='py-4 md:py-8 flex items-center justify-between'>
-        <Link to='/' className='text-xl font-bold'>Case Studies</Link>
+        <Link to='/' className='text-xl font-bold'>Projects & Case Studies</Link>
         <div className='flex items-center space-x-12'>
           {
             (mode == "light") ? (
@@ -74,6 +74,15 @@ function MoreProjects() {
               <img className='duration-300  group-hover:scale-[1.02]' alt='Extratime: Turf Booking App' src={portfolioMockup} width="640" height="360" />
             </div>
           </a>
+          <Link to="/case-study/buswatch-3" className={`group flex items-center justify-center hover:bg-buswatch card py-8 ${(mode == "light") ? ('bg-light-mode-secondary text-dark-mode-secondary') : ('bg-dark-mode-secondary text-light-mode-primary')}`}>
+            <div className='flex items-center justify-center flex-col pb-4 text-center'>
+              <h1 className='font-mono-space font-bold tracking-wider text-[1.65rem] md:text-4xl'>BusWatch</h1>
+              <h2 className='font-mono-space font-medium tracking-wider text-lg md:text-xl'>Local Bus Timing Checker</h2>
+            </div>
+            <div className='w-[15rem] md:w-[12rem] lg:w-[20rem]'>
+              <img className='duration-300  group-hover:scale-[1.02]' alt='Extratime: Turf Booking App' src={extratimeMore} width="640" height="360" />
+            </div>
+          </Link>
         </div>
       </div>
       <div className='py-4 lg:py-8 px-4 flex items-center flex-col lg:flex-row space-y-3 lg:space-y-0 justify-around bg-light-mode-secondary rounded-xl'>
