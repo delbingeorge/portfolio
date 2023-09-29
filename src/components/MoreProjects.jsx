@@ -57,7 +57,7 @@ function MoreProjects() {
               <img className='duration-300  group-hover:scale-[1.02]' alt='Qikfixer: Servicemen finder app' src={qikfixerMore} width="640" height="360" />
             </div>
           </Link>
-          <Link to="/case-study/extratime-2" className={`group flex items-center justify-center hover:bg-extratime card py-8 ${(mode == "light") ? ('bg-light-mode-secondary text-dark-mode-secondary') : ('bg-dark-mode-secondary text-light-mode-primary')}`}>
+          {/* <Link to="/case-study/extratime-2" className={`group flex items-center justify-center hover:bg-extratime card py-8 ${(mode == "light") ? ('bg-light-mode-secondary text-dark-mode-secondary') : ('bg-dark-mode-secondary text-light-mode-primary')}`}>
             <div className='flex items-center justify-center flex-col pb-4 text-center'>
               <h1 className='font-mono-space font-bold tracking-wider text-[1.65rem] md:text-4xl'>Extratime</h1>
               <h2 className='font-mono-space font-medium tracking-wider text-lg md:text-xl '>Sports Turf Booking App</h2>
@@ -65,8 +65,8 @@ function MoreProjects() {
             <div className='w-[15rem] md:w-[12rem] lg:w-[20rem]'>
               <img className='duration-300  group-hover:scale-[1.02]' alt='Extratime: Turf Booking App' src={extratimeMore} width="640" height="360" />
             </div>
-          </Link>
-          <a href='https://www.delb.in' className={`group flex items-center justify-center hover:bg-portfoilo card py-28 ${(mode == "light") ? ('bg-light-mode-secondary text-dark-mode-secondary') : ('bg-dark-mode-secondary text-light-mode-primary')}`}>
+          </Link> */}
+          <Link to={"/"} className={`group flex items-center justify-center hover:bg-portfoilo card py-28 ${(mode == "light") ? ('bg-light-mode-secondary text-dark-mode-secondary') : ('bg-dark-mode-secondary text-light-mode-primary')}`}>
             <div className='flex items-center justify-center flex-col pb-4 text-center'>
               <h1 className='font-mono-space font-bold tracking-wider text-[1.65rem] md:text-4xl'>Portfolio</h1>
               <h2 className='font-mono-space font-medium tracking-wider text-lg md:text-xl'>Personal Portfolio Website</h2>
@@ -74,7 +74,7 @@ function MoreProjects() {
             <div className='w-[15rem] md:w-[12rem] lg:w-[20rem]'>
               <img className='duration-300  group-hover:scale-[1.02]' alt='Extratime: Turf Booking App' src={portfolioMockup} width="640" height="360" />
             </div>
-          </a>
+          </Link>
           <Link to="/case-study/buswatch-3" className={`group flex items-center justify-center hover:bg-buswatch card py-8 ${(mode == "light") ? ('bg-light-mode-secondary text-dark-mode-secondary') : ('bg-dark-mode-secondary text-light-mode-primary')}`}>
             <div className='flex items-center justify-center flex-col pb-4 text-center'>
               <h1 className='font-mono-space font-bold tracking-wider text-[1.65rem] md:text-4xl'>BusWatch</h1>

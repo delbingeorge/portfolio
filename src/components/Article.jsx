@@ -180,7 +180,7 @@ function Article() {
                 </div>
               </div>
 
-              <div className={`${data[id]['brand-assets'] == "" ? "hidden" : "block"}`}>
+              <div className={`${data[id]['brand-assets']["color-theme"] == "" ? "hidden" : "block"}`}>
                 <h1 className="text-[1.35rem] lg:text-[1.8rem] mb-4 font-semibold">Brand Assets</h1>
                 <div className='space-y-3'>
                   <img src={data[id]['brand-assets']['color-theme']} width={1280} height={720} className={`rounded-xl ${!data[id]['brand-assets']['color-theme'] == "" ? "block" : "hidden"}`} />

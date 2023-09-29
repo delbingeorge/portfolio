@@ -20,7 +20,7 @@ export default {
                 eatables: "url(./assets/images/eatablesMore.webp)",
                 qikfixer: "url(./assets/images/qikfixerBg.webp)",
                 extratime: "url(./assets/images/extratimeBg.webp)",
-                "read-more": "url(./assets/images/MoreProjects.webp)",
+                "read-more": "url(./assets/images/MoreProjects.png)",
                 // "error-page": "linear-gradient(to top, rgb(0,0,0,0.4),rgb(0,0,0,0.4)),url(./assets/images/PageNotFoundImage.webp)",
                 portfoilo: "url(./assets/images/portfolio.webp)",
                 buswatch: "url(./assets/images/buswatch.png)",
