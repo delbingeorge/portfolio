@@ -5,6 +5,7 @@ import eatablesImage from '../assets/images/eatablesImage.webp'
 import extratimeMore from '../assets/images/extratimeMore.webp'
 import qikfixerMore from '../assets/images/qikfixerMore.webp'
 import portfolioMockup from '../assets/images/portfolioMockup.webp'
+import busWatchMore from '../assets/images/busWatchMore.png'
 
 function MoreProjects() {
   const { mode, toggleMode } = useMode();
@@ -79,15 +80,15 @@ function MoreProjects() {
               <h1 className='font-mono-space font-bold tracking-wider text-[1.65rem] md:text-4xl'>BusWatch</h1>
               <h2 className='font-mono-space font-medium tracking-wider text-lg md:text-xl'>Local Bus Timing Checker</h2>
             </div>
-            <div className='w-[15rem] md:w-[12rem] lg:w-[20rem]'>
-              <img className='duration-300  group-hover:scale-[1.02]' alt='Extratime: Turf Booking App' src={extratimeMore} width="640" height="360" />
+            <div className='w-[13rem] md:w-[10rem] lg:w-[15rem]'>
+              <img className='duration-300  group-hover:scale-[1.02]' alt='BusWatch: Bus timing Checker' src={busWatchMore} width="640" height="360" />
             </div>
           </Link>
         </div>
       </div>
       <div className='py-4 lg:py-8 px-4 flex items-center flex-col lg:flex-row space-y-3 lg:space-y-0 justify-around bg-light-mode-secondary rounded-xl'>
-        <h1 className='text-2xl'>Did you like what you saw?</h1>
-        <a href='mailto:imdelbingeorge@gmail.com' className='bg-dark-mode-primary rounded-lg text-light-mode-secondary px-10 text-lg tracking-wider font-bold py-2'>Hire Me</a>
+        <h1 className='text-xl text-center'>Did you like what you saw?</h1>
+        <a href='mailto:imdelbingeorge@gmail.com' className='bg-dark-mode-primary rounded-lg text-light-mode-secondary px-10 text-md lg:text-lg text-center tracking-wider font-bold py-2'>Hire Me</a>
       </div>
     </div>
   )

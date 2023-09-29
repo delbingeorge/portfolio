@@ -86,7 +86,7 @@ function Article() {
                   {data[id]['introduction']}
                 </p>
               </div>
-              <div>
+              <div className={`${data[id]['my-role'] == "" ? "hidden" : "block"}`}>
                 <h2 className="text-[1.35rem] lg:text-[1.8rem] font-semibold">My Role</h2>
                 <p className="text-[1.20rem] lg:text-[1.25rem] text-justify">
                   {data[id]['my-role']}
@@ -121,7 +121,7 @@ function Article() {
                   }
                 </ul>
               </div>
-              <div className={`${data[id]['competitor-analysis'] == "" ? "hidden" : "block"}`}>
+              <div className={`${data[id]['competitor-analysis']['analysis-description'] == "" ? "hidden" : "block"}`}>
                 <h2 className="text-[1.35rem] lg:text-[1.8rem] font-semibold">Competitor analysis</h2>
                 <p className="text-[1.20rem] lg:text-[1.25rem] text-justify">
                   {data[id]["competitor-analysis"]["analysis-description"]}
