@@ -30,7 +30,27 @@
         @apply hover:cursor-pointer bg-cover rounded-xl flex items-center flex-col justify-between hover:text-light-mode-primary;
     }
 
-    .skill-card{
+    .skill-card {
         @apply p-8 flex items-center justify-center rounded-xl hover:cursor-pointer hover:scale-[1.02] duration-300;
+    }
+
+    .input {
+        @apply border-[3px] border-dark-mode-secondary/20 outline-0 focus:border-dark-mode-primary text-2xl w-full px-3 py-2 rounded-xl placeholder:text-xl;
+    }
+    .input-dark {
+        @apply border-[3px] bg-dark-mode-secondary border-light-mode-primary/20 focus:border-light-mode-primary/40 text-light-mode-secondary/60  outline-0 text-2xl w-full px-3 py-2 rounded-xl placeholder:text-xl;
+    }
+}
+
+.animation {
+    animation: goUp 3s;
+}
+
+@keyframes goUp {
+    0% {
+        transform: translateY(-200px);
+    }
+    100% {
+        transform: translateY(0);
     }
 }

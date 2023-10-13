@@ -74,44 +74,44 @@ function Article() {
                 </h1>
               </div>
             </div>
-            <div className="space-y-6">
+            <div className="space-y-8">
               <div className={`${data[id]['banner-info'] == "" ? "hidden" : "block"}`}>
                 <a href={data[id]['banner-info']['link']} aria-label={data[id]['title']}>
-                  <img src={data[id]['banner-info']['banner']} width={1280} height={720} className='rounded-xl' />
+                  <img src={data[id]['banner-info']['banner']} width={1280} height={720} className='rounded-2xl' />
                 </a>
               </div>
               <div>
-                <h2 className="text-[1.35rem] lg:text-[1.8rem] font-semibold">Introduction </h2>
+                <h2 className="text-[1.35rem] lg:text-[1.8rem] font-semibold  pb-2">Introduction </h2>
                 <p className="text-[1.20rem] lg:text-[1.25rem] text-justify">
                   {data[id]['introduction']}
                 </p>
               </div>
               <div className={`${data[id]['my-role'] == "" ? "hidden" : "block"}`}>
-                <h2 className="text-[1.35rem] lg:text-[1.8rem] font-semibold">My Role</h2>
+                <h2 className="text-[1.35rem] lg:text-[1.8rem] font-semibold  pb-2">My Role</h2>
                 <p className="text-[1.20rem] lg:text-[1.25rem] text-justify">
                   {data[id]['my-role']}
                 </p>
               </div>
               <div>
-                <h2 className="text-[1.35rem] lg:text-[1.8rem] font-semibold">Problem Statement</h2>
+                <h2 className="text-[1.35rem] lg:text-[1.8rem] font-semibold  pb-2">Problem Statement</h2>
                 <p className="text-[1.20rem] lg:text-[1.25rem] text-justify">
                   {data[id]['problem-statement']}
                 </p>
               </div>
               <div>
-                <h2 className="text-[1.35rem] lg:text-[1.8rem] font-semibold">Problem Solution</h2>
+                <h2 className="text-[1.35rem] lg:text-[1.8rem] font-semibold  pb-2">Problem Solution</h2>
                 <p className="text-[1.20rem] lg:text-[1.25rem] text-justify">
                   {data[id]['problem-solution']}
                 </p>
               </div>
               <div className={`${data[id]['objectives-goals'] == "" ? "hidden" : "block"}`}>
-                <h2 className="text-[1.35rem] lg:text-[1.8rem] font-semibold">Objectives & Goals</h2>
+                <h2 className="text-[1.35rem] lg:text-[1.8rem] font-semibold  pb-2">Objectives & Goals</h2>
                 <p className="text-[1.20rem] lg:text-[1.25rem] text-justify">
                   {data[id]['objectives-goals']}
                 </p>
               </div>
               <div className={`${data[id]['business-challenges'] == "" ? "hidden" : "block"}`}>
-                <h2 className="text-[1.35rem] lg:text-[1.8rem] font-semibold">Business challenges</h2>
+                <h2 className="text-[1.35rem] lg:text-[1.8rem] font-semibold  pb-2">Business challenges</h2>
                 <ul className="text-[1.20rem] lg:text-[1.25rem] list-disc list-inside">
                   {
                     businessChallenges == "" ? " " :
@@ -122,14 +122,14 @@ function Article() {
                 </ul>
               </div>
               <div className={`${data[id]['competitor-analysis']['analysis-description'] == "" ? "hidden" : "block"}`}>
-                <h2 className="text-[1.35rem] lg:text-[1.8rem] font-semibold">Competitor analysis</h2>
+                <h2 className="text-[1.35rem] lg:text-[1.8rem] font-semibold  pb-2">Competitor analysis</h2>
                 <p className="text-[1.20rem] lg:text-[1.25rem] text-justify">
                   {data[id]["competitor-analysis"]["analysis-description"]}
                 </p>
                 <img className={`pt-6 ${(mode == "dark" ? "invert" : "invert-0")}`} src={data[id]["competitor-analysis"]["competitor-analysis-image"]} alt={data[id]["competitor-analysis"]["competitor-analysis-image"]} />
               </div>
               <div className={`${data[id]['storytelling'] == "" ? "hidden" : "block"}`}>
-                <h2 className="text-[1.35rem] lg:text-[1.8rem] font-semibold pb-4">Storyboard</h2>
+                <h2 className="text-[1.35rem] lg:text-[1.8rem] font-semibold  pb-2">Storyboard</h2>
                 <div className='flex items-center justify-center flex-col space-y-4'>
                   {
                     storyImages == "" ? " " :
@@ -140,7 +140,7 @@ function Article() {
                 </div>
               </div>
               <div className={`${data[id]['product-users'] == "" ? "hidden" : "block"}`}>
-                <h2 className="text-[1.35rem] lg:text-[1.8rem] font-semibold">Product Users</h2>
+                <h2 className="text-[1.35rem] lg:text-[1.8rem] font-semibold  pb-2">Product Users</h2>
                 <ul className="text-[1.20rem] lg:text-[1.25rem] list-disc list-inside">
                   {
                     productUsers == "" ? " " :
@@ -151,7 +151,7 @@ function Article() {
                 </ul>
               </div>
               <div className={`${data[id]['user-needs'] == "" ? "hidden" : "block"}`}>
-                <h2 className="text-[1.35rem] lg:text-[1.8rem] font-semibold">User Needs</h2>
+                <h2 className="text-[1.35rem] lg:text-[1.8rem] font-semibold  pb-2">User Needs</h2>
                 <ul className="text-[1.20rem] lg:text-[1.25rem] list-disc list-inside">
                   {
                     userNeeds == "" ? " " :
@@ -162,7 +162,7 @@ function Article() {
                 </ul>
               </div>
               <div className={`${data[id]['design-process'] == "" ? "hidden" : "flex items-center justify-center flex-col"}`}>
-                <h2 className="text-[1.35rem] lg:text-[1.8rem] mb-4 font-semibold">Design Process</h2>
+                <h2 className="text-[1.35rem] lg:text-[1.8rem] mb-4 font-semibold  pb-2">Design Process</h2>
                 <div className="w-full md:w-3/4 flex items-center justify-between md:justify-evenly">
                   {
                     designProcess == "" ? " " :
@@ -181,7 +181,7 @@ function Article() {
               </div>
 
               <div className={`${data[id]['brand-assets']["color-theme"] == "" ? "hidden" : "block"}`}>
-                <h1 className="text-[1.35rem] lg:text-[1.8rem] mb-4 font-semibold">Brand Assets</h1>
+                <h1 className="text-[1.35rem] lg:text-[1.8rem] mb-4 font-semibold  pb-2">Brand Assets</h1>
                 <div className='space-y-3'>
                   <img src={data[id]['brand-assets']['color-theme']} width={1280} height={720} className={`rounded-xl ${!data[id]['brand-assets']['color-theme'] == "" ? "block" : "hidden"}`} />
                   <img src={data[id]['brand-assets']['typography']} width={1280} height={720} className={`rounded-xl ${!data[id]['brand-assets']['typography'] == "" ? "block" : "hidden"}`} />
@@ -192,7 +192,7 @@ function Article() {
 
               <div>
                 <div className={`${data[id]['lofi-screens'] == "" ? "hidden" : "flex justify-center flex-col my-10 md:my-6"}`}>
-                  <h2 className="text-[1.35rem] lg:text-[1.8rem] mb-4 font-semibold">Low Fidelity Screen</h2>
+                  <h2 className="text-[1.35rem] lg:text-[1.8rem] mb-4 font-semibold  pb-2">Low Fidelity Screen</h2>
                   <div className="w-full flex flex-col items-center justify-center space-y-3">
                     {
                       lofiScreens == "" ? " " :
@@ -210,7 +210,7 @@ function Article() {
                   </div>
                 </div>
                 <div className={`${data[id]['hifi-screens'] == "" ? "hidden" : "flex justify-center flex-col my-10 md:my-6"}`}>
-                  <h2 className="text-[1.35rem] lg:text-[1.8rem] mb-4 font-semibold">High Fidelity Screen</h2>
+                  <h2 className="text-[1.35rem] lg:text-[1.8rem] mb-4 font-semibold  pb-2">High Fidelity Screen</h2>
                   <div className="w-full flex flex-col items-center justify-center space-y-3">
                     {
                       hifiScreens == "" ? " " :
@@ -229,13 +229,13 @@ function Article() {
                 </div>
               </div>
               <div className={`${data[id]['figma-prototype'] == "" ? "hidden" : "block"}`}>
-                <h2 className="text-[1.35rem] lg:text-[1.8rem] font-semibold mb-4">Figma Prototype</h2>
+                <h2 className="text-[1.35rem] lg:text-[1.8rem] font-semibold  pb-2 mb-4">Figma Prototype</h2>
                 <div className="flex items-center justify-center">
                   <iframe className='rounded-xl bg-white' width="400" height="700" src={data[id]["figma-prototype"]} allowFullScreen=""></iframe>
                 </div>
               </div>
               <div>
-                <h2 className="text-[1.35rem] lg:text-[1.8rem] font-semibold">Conclusion </h2>
+                <h2 className="text-[1.35rem] lg:text-[1.8rem] font-semibold  pb-2">Conclusion </h2>
                 <p className="text-[1.20rem] lg:text-[1.25rem] text-justify">
                   {data[id]['conclusion']}
                 </p>
