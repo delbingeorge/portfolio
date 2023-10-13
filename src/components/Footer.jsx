@@ -112,7 +112,6 @@ function Footer() {
                .then((response) => {
                     if (response.ok) {
                          setToast(true);
-                         console.log("hi");
                     } else {
                          setToast(false);
                     }
@@ -131,14 +130,14 @@ function Footer() {
      };
 
      return (
-          <>
+          <div className='relative'>
                <footer className='flex flex-col justify-center items-start pt-16 pb-12 font-mono-space relative'>
                     <div className='pb-5'>
                          <h1 className='text-2xl font-bold'>
                               Submit your query!
                          </h1>
                     </div>
-                    <form className='grid grid-cols-2 gap-3 w-full place-items-end' onSubmit={handleSubmit}>
+                    <form className='grid grid-cols-1 lg:grid-cols-2 gap-3 w-full lg:place-items-end' onSubmit={handleSubmit}>
                          <input
                               className={`${mode == "dark" ? "input-dark" : "input"}`}
                               placeholder='First Name'
@@ -161,7 +160,7 @@ function Footer() {
                               className={`col-span-2 ${mode == "dark" ? "input-dark" : "input"}`}
                               placeholder='Email Address'
                               required
-                              type='text'
+                              type='email'
                               name='emailAddress'
                               value={formData.emailAddress}
                               onChange={handleChange}
@@ -177,18 +176,14 @@ function Footer() {
                               onChange={handleChange}
                          />
                          <input
-                              className={`w-2/4 border-[3px] text-xl py-3 rounded-xl cursor-pointer col-start-2 ${mode == "dark" ? "bg-dark-mode-secondary  border-light-mode-secondary/20 text-light-mode-primary/80 " : "bg-dark-mode-primary border-dark-mode-secondary text-light-mode-primary"}`}
+                              className={`w-full lg:w-2/4 border-[3px] text-xl py-3 rounded-xl cursor-pointer lg:col-start-2 ${mode == "dark" ? "bg-dark-mode-secondary  border-light-mode-secondary/20 text-light-mode-primary/80 " : "bg-dark-mode-primary border-dark-mode-secondary text-light-mode-primary"}`}
                               type='submit'
                               value='Submit'
                          />
                     </form>
                </footer>
-               {
-                    (toast == true) ? (<h1 className='text-xl bg-red-500'>Hi</h1>) : ("")
-               }
-          </>
+          </div>
      );
 }
-
 
 export default Footer

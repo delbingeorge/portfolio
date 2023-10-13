@@ -35,10 +35,10 @@
     }
 
     .input {
-        @apply border-[3px] border-dark-mode-secondary/20 outline-0 focus:border-dark-mode-primary text-2xl w-full px-3 py-2 rounded-xl placeholder:text-xl;
+        @apply border-[3px] border-dark-mode-secondary/20 outline-0 col-span-2 lg:col-span-1 focus:border-dark-mode-primary text-2xl w-full px-3 py-2 rounded-xl placeholder:text-xl;
     }
     .input-dark {
-        @apply border-[3px] bg-dark-mode-secondary border-light-mode-primary/20 focus:border-light-mode-primary/40 text-light-mode-secondary/60  outline-0 text-2xl w-full px-3 py-2 rounded-xl placeholder:text-xl;
+        @apply border-[3px] bg-dark-mode-secondary border-light-mode-primary/20 col-span-2 lg:col-span-1 focus:border-light-mode-primary/40 text-light-mode-secondary/60  outline-0 text-2xl w-full px-3 py-2 rounded-xl placeholder:text-xl;
     }
 }
 
