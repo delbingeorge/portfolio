@@ -8,7 +8,6 @@ import Socials from './components/Socials';
 function Index() {
      return (
           <div className='px-6  lg:px-40'>
-               
                <NavBar />
                <Hero />
                <CaseStudies />
