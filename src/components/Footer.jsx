@@ -130,59 +130,57 @@ function Footer() {
      };
 
      return (
-          <div className='relative'>
-               <footer className='flex flex-col justify-center items-start pt-16 pb-12 font-mono-space relative'>
-                    <div className='pb-5'>
-                         <h1 className='text-2xl font-bold'>
-                              Submit your query!
-                         </h1>
-                    </div>
-                    <form className='grid grid-cols-1 lg:grid-cols-2 space-y-3 w-full lg:place-items-end' onSubmit={handleSubmit}>
-                         <input
-                              className={` mr-0 lg:mr-3 ${mode == "dark" ? "input-dark" : "input"}`}
-                              placeholder='First Name'
-                              required
-                              type='text'
-                              name='firstName'
-                              value={formData.firstName}
-                              onChange={handleChange}
-                         />
-                         <input
-                              className={`${mode == "dark" ? "input-dark" : "input"}`}
-                              placeholder='Last Name'
-                              required
-                              type='text'
-                              name='lastName'
-                              value={formData.lastName}
-                              onChange={handleChange}
-                         />
-                         <input
-                              className={`col-span-2 ${mode == "dark" ? "input-dark" : "input"}`}
-                              placeholder='Email Address'
-                              required
-                              type='email'
-                              name='emailAddress'
-                              value={formData.emailAddress}
-                              onChange={handleChange}
-                         />
-                         <textarea
-                              required
-                              name='query'
-                              className={`col-span-2 ${mode == "dark" ? "input-dark" : "input"}`}
-                              cols='5'
-                              rows='3'
-                              placeholder='Add your query here!'
-                              value={formData.query}
-                              onChange={handleChange}
-                         />
-                         <input
-                              className={`w-full lg:w-2/4 border-[3px] text-xl py-3 rounded-xl cursor-pointer lg:col-start-2 ${mode == "dark" ? "bg-dark-mode-secondary  border-light-mode-secondary/20 text-light-mode-primary/80 " : "bg-dark-mode-primary border-dark-mode-secondary text-light-mode-primary"}`}
-                              type='submit'
-                              value='Submit'
-                         />
-                    </form>
-               </footer>
-          </div>
+          <footer className='flex flex-col justify-center items-start pt-16 pb-12 font-mono-space relative'>
+               <div className='pb-5'>
+                    <h1 className='text-2xl font-bold'>
+                         Submit your query!
+                    </h1>
+               </div>
+               <form className='grid grid-cols-1 lg:grid-cols-2 gap-y-2 lg:gap-2  w-full lg:place-items-end' onSubmit={handleSubmit}>
+                    <input
+                         className={`${mode == "dark" ? "input-dark" : "input"}`}
+                         placeholder='First Name'
+                         required
+                         type='text'
+                         name='firstName'
+                         value={formData.firstName}
+                         onChange={handleChange}
+                    />
+                    <input
+                         className={`${mode == "dark" ? "input-dark" : "input"}`}
+                         placeholder='Last Name'
+                         required
+                         type='text'
+                         name='lastName'
+                         value={formData.lastName}
+                         onChange={handleChange}
+                    />
+                    <input
+                         className={`col-span-2 ${mode == "dark" ? "input-dark" : "input"}`}
+                         placeholder='Email Address'
+                         required
+                         type='email'
+                         name='emailAddress'
+                         value={formData.emailAddress}
+                         onChange={handleChange}
+                    />
+                    <textarea
+                         required
+                         name='query'
+                         className={`col-span-2 ${mode == "dark" ? "input-dark" : "input"}`}
+                         cols='5'
+                         rows='3'
+                         placeholder='Add your query here!'
+                         value={formData.query}
+                         onChange={handleChange}
+                    />
+                    <input
+                         className={`w-full lg:w-2/4 border-[3px] text-xl py-3 rounded-xl cursor-pointer lg:col-start-2 ${mode == "dark" ? "bg-dark-mode-secondary  border-light-mode-secondary/20 text-light-mode-primary/80 " : "bg-dark-mode-primary border-dark-mode-secondary text-light-mode-primary"}`}
+                         type='submit'
+                         value='Submit'
+                    />
+               </form>
+          </footer>
      );
 }
 
