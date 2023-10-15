@@ -137,9 +137,9 @@ function Footer() {
                               Submit your query!
                          </h1>
                     </div>
-                    <form className='grid grid-cols-1 lg:grid-cols-2 gap-3 w-full lg:place-items-end' onSubmit={handleSubmit}>
+                    <form className='grid grid-cols-1 lg:grid-cols-2 space-y-3 w-full lg:place-items-end' onSubmit={handleSubmit}>
                          <input
-                              className={`${mode == "dark" ? "input-dark" : "input"}`}
+                              className={` mr-0 lg:mr-3 ${mode == "dark" ? "input-dark" : "input"}`}
                               placeholder='First Name'
                               required
                               type='text'
