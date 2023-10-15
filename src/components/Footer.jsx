@@ -108,7 +108,7 @@ function Footer() {
                          value='Submit'
                     />
                     {
-                         (toast == false) ? (
+                         (toast == true) ? (
                               <div className='flex items-center justify-center col-span-2 py-3'>
                                    <div className="pl-4 text-xl font-normal">Query sent successfully.</div>
                               </div>
