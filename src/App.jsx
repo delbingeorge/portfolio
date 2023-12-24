@@ -15,11 +15,11 @@ function App() {
       {/* <News /> */}
       <Router>
         <Routes>
-          <Route path="/" element={<Index />} />
+          {/* <Route path="/" element={<Index />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/case-study/:id" element={<Article />} />
-          <Route path="/more-projects" element={<MoreProjects />} />
-          <Route path="*" element={<PageNotFound />} />
+          <Route path="/more-projects" element={<MoreProjects />} /> */}
+          <Route path="/" element={<PageNotFound />} />
         </Routes>
       </Router>
     </div>
