@@ -1,5 +1,6 @@
 import React from 'react'
 import { useMode } from '../ModeProvider';
+import News from './News';
 
 function NavBar() {
      const { mode, toggleMode } = useMode();
