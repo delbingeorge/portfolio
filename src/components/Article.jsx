@@ -68,7 +68,7 @@ function Article() {
                 {data[id]['title']}
               </h1>
               <div className='flex items-center justify-start space-x-3'>
-                <img width={30} height={30} className='rounded-full' src={data[id]['article-details']['atuhor-img']} alt={data[id]['article-details']['author']} />
+                <img width={30} height={30} className='rounded-full' src={data[id]['article-details']['author-img']} alt={data[id]['article-details']['author']} />
                 <h1 className='font-bold'>
                   {data[id]['article-details']['author']}
                 </h1>
@@ -169,7 +169,7 @@ function Article() {
                       designProcess.map((item, key) => (
                         <img
                           key={key}
-                          className="w-16 md:w-24"
+                          className="w-full"
                           src={item}
                           width={1080}
                           height={1080}
