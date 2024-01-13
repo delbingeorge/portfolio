@@ -22,9 +22,9 @@ function Hero() {
                          <a href="https://www.linkedin.com/in/delbingeorge/">
                               <FontAwesomeIcon className='text-[1.91rem] md:text-[2rem] hover:cursor-pointer' icon={faLinkedin} />
                          </a>
-                         <a href="https://www.x.com/dellbingeorge/">
+                         {/* <a href="https://www.x.com/dellbingeorge/">
                               <FontAwesomeIcon className='text-[1.91rem] md:text-[2rem] hover:cursor-pointer' icon={faTwitter} />
-                         </a>
+                         </a> */}
                          <a href="https://www.github.com/delbingeorge/">
                               <FontAwesomeIcon className='text-[1.91rem] md:text-[2rem] hover:cursor-pointer' icon={faGithub} />
                          </a>
