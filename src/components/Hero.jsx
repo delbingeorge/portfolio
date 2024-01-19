@@ -2,7 +2,7 @@ import React from 'react'
 import { useMode } from '../ModeProvider'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
-import DelbinGeorge from '../assets/images/DelbinGeorge.webp'
+import DelbinGeorge from '../assets/images/DelbinGeorge.jpeg'
 import { Link } from 'react-router-dom';
 
 function Hero() {
@@ -31,7 +31,8 @@ function Hero() {
                     </div>
                </div>
                <div className='w-full md:w-[25%]'>
-                    <img alt='Delbin George' width="640" height="360" src={DelbinGeorge} />
+                    <img alt='Delbin George' className='rounded-xl grayscale hover:grayscale-0 duration-300' width="640" height="360" src={DelbinGeorge} />
+                    {/* <img alt='Delbin George' width="640" height="360" src={DelbinGeorge} /> */}
                </div>
           </div>
      )
