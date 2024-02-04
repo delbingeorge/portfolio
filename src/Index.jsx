@@ -8,6 +8,7 @@ import Socials from './components/Socials';
 import News from './components/News';
 import Loading from './components/Loading';
 import IIndex from './IIndex';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 function Index() {
      const [showLoading, setShowLoading] = useState(true);
@@ -35,7 +36,10 @@ function Index() {
           //           </>
           //      )}
           // </div>
-          <IIndex />
+          <>
+               <SpeedInsights />
+               <IIndex />
+          </>
      );
 }
 
