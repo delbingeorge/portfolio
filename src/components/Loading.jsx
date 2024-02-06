@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from "framer-motion"
+import LoadingImage from '../assets/loading-assets/1.png'
 
 function Loading() {
      return (
@@ -7,9 +8,9 @@ function Loading() {
                <motion.img
                     animate={{ y: -50 }}
                     transition={{ delay: 0.1 }}
-                    src="../src/assets/loading-assets/1.png" alt="Loading Image" className='w-[23rem]' />
+                    src={LoadingImage} alt="Loading Image" className='w-[23rem]' />
           </div>
-     )    
+     )
 }
 
 export default Loading
