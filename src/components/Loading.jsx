@@ -7,7 +7,7 @@ function Loading() {
                <motion.img
                     animate={{ y: -50 }}
                     transition={{ delay: 0.1 }}
-                    src="src/assets/loading-assets/1.png" alt="Loading Image" className='w-[23rem]' />
+                    src="../src/assets/loading-assets/1.png" alt="Loading Image" className='w-[23rem]' />
           </div>
      )    
 }
