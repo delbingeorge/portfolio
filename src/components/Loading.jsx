@@ -8,7 +8,7 @@ function Loading() {
                <motion.img
                     animate={{ y: -50 }}
                     transition={{ delay: 0.1 }}
-                    src={LoadingImage} alt="Loading Image" className='w-[23rem]' />
+                    src={LoadingImage} alt="Loading Image" className='w-[15rem] md:w-[23rem]' />
           </div>
      )
 }
