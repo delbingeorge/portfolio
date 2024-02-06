@@ -22,24 +22,24 @@ function Index() {
      }, []);
 
      return (
-          // <div className='px-6  lg:px-40'>
-          //      {showLoading ? (
-          //           <Loading />
-          //      ) : (
-          //           <>
-          //                <NavBar />
-          //                <Hero />
-          //                <CaseStudies />
-          //                <Skills />
-          //                <Socials />
-          //                <Footer />
-          //           </>
-          //      )}
-          // </div>
-          <>
-               <SpeedInsights />
-               <IIndex />
-          </>
+          <div className='px-6  lg:px-40'>
+               {showLoading ? (
+                    <Loading />
+               ) : (
+                    <>
+                         <NavBar />
+                         <Hero />
+                         <CaseStudies />
+                         <Skills />
+                         <Socials />
+                         <Footer />
+                    </>
+               )}
+          </div>
+          // <>
+          //      <SpeedInsights />
+          //      <IIndex />
+          // </>
      );
 }
 
