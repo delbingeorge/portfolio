@@ -24,6 +24,7 @@ export default {
                 // "error-page": "linear-gradient(to top, rgb(0,0,0,0.4),rgb(0,0,0,0.4)),url(./assets/images/PageNotFoundImage.webp)",
                 portfoilo: "url(./assets/images/portfolio.webp)",
                 buswatch: "url(./assets/images/buswatch.png)",
+                exploreImg: "linear-gradient(to top, #000000c4, #fff0), url(./assets/images/imgtwo.jpg)",
             },
             cursor: {
                 custom: "url(./assets/images/cursor.png), auto",

@@ -1,6 +1,7 @@
 import React from 'react'
 import { useMode } from '../ModeProvider';
 import News from './News';
+import { Link } from 'react-router-dom';
 
 function NavBar() {
      const { mode, toggleMode } = useMode();
@@ -38,6 +39,7 @@ function NavBar() {
                          </svg>
                          <h1 className='-mt-2 text-left'>mail me</h1>
                     </a>
+                    {/* <Link to='/new-explore'>Hello World</Link> */}
                </div>
           </nav>
      )

@@ -7,6 +7,7 @@ import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import MoreProjects from './components/MoreProjects';
 import PageNotFound from './components/PageNotFound';
 import News from './components/News';
+import NewExplore from './components/NewExplore';
 
 function App() {
   const { mode } = useMode();
@@ -19,6 +20,7 @@ function App() {
           <Route path="/resume" element={<Resume />} />
           <Route path="/case-study/:id" element={<Article />} />
           <Route path="/more-projects" element={<MoreProjects />} />
+          <Route path="/new-explore" element={<NewExplore />} />
           {/* <Route path="/" element={<PageNotFound />} /> */}
         </Routes>
       </Router>

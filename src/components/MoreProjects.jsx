@@ -2,7 +2,8 @@ import React from 'react';
 import { useMode } from '../ModeProvider';
 import { Link } from 'react-router-dom';
 import eatablesImage from '../assets/images/eatablesImage.webp'
-import extratimeMore from '../assets/images/extratimeMore.webp'
+import compositepng from '../assets/images/compositepngog.png'
+import semaphorepng from '../assets/images/semaphore.png'
 import qikfixerMore from '../assets/images/qikfixerMore.webp'
 import portfolioMockup from '../assets/images/portfolioMockup.webp'
 import busWatchMore from '../assets/images/busWatchMore.png'
@@ -57,17 +58,6 @@ function MoreProjects() {
               <img className='duration-300  group-hover:scale-[1.02]' alt='Qikfixer: Servicemen finder app' src={qikfixerMore} width="640" height="360" />
             </div>
           </Link>
-          {/* 
-           */}
-          <Link to={"/"} className={`group flex items-center justify-center hover:bg-portfoilo card py-28 ${(mode == "light") ? ('bg-light-mode-secondary text-dark-mode-secondary') : ('bg-dark-mode-secondary text-light-mode-primary')}`}>
-            <div className='flex items-center justify-center flex-col pb-4 text-center'>
-              <h1 className='font-mono-space font-bold tracking-wider text-[1.65rem] md:text-4xl'>Portfolio</h1>
-              <h2 className='font-mono-space font-medium tracking-wider text-lg md:text-xl'>Personal Portfolio Website</h2>
-            </div>
-            <div className='w-[15rem] md:w-[12rem] lg:w-[20rem]'>
-              <img className='duration-300  group-hover:scale-[1.02]' alt='Extratime: Turf Booking App' src={portfolioMockup} width="640" height="360" />
-            </div>
-          </Link>
           <Link to="/case-study/buswatch-3" className={`group flex items-center justify-center hover:bg-buswatch card py-8 ${(mode == "light") ? ('bg-light-mode-secondary text-dark-mode-secondary') : ('bg-dark-mode-secondary text-light-mode-primary')}`}>
             <div className='flex items-center justify-center flex-col pb-4 text-center'>
               <h1 className='font-mono-space font-bold tracking-wider text-[1.65rem] md:text-4xl'>BusWatch</h1>
@@ -77,9 +67,37 @@ function MoreProjects() {
               <img className='duration-300  group-hover:scale-[1.02]' alt='BusWatch: Bus timing Checker' src={busWatchMore} width="640" height="360" />
             </div>
           </Link>
+          <Link to={"/"} className={`group flex items-center justify-center hover:bg-portfoilo card py-28 ${(mode == "light") ? ('bg-light-mode-secondary text-dark-mode-secondary') : ('bg-dark-mode-secondary text-light-mode-primary')}`}>
+            <div className='flex items-center justify-center flex-col pb-4 text-center'>
+              <h1 className='font-mono-space font-bold tracking-wider text-[1.65rem] md:text-4xl'>Portfolio</h1>
+              <h2 className='font-mono-space font-medium tracking-wider text-lg md:text-xl'>Personal Portfolio Website</h2>
+            </div>
+            <div className='w-[15rem] md:w-[12rem] lg:w-[20rem]'>
+              <img className='duration-300  group-hover:scale-[1.02]' alt='Extratime: Turf Booking App' src={portfolioMockup} width="640" height="360" />
+            </div>
+          </Link>
+          {/* <a href='https://compositefest.vercel.app/' className={`group flex items-center justify-center hover:bg-portfoilo card py-8 ${(mode == "light") ? ('bg-light-mode-secondary text-dark-mode-secondary') : ('bg-dark-mode-secondary text-light-mode-primary')}`}>
+            <div className='flex items-center justify-center flex-col pb-4 text-center'>
+              <h1 className='font-mono-space font-bold tracking-wider text-[1.65rem] md:text-4xl'>Composite Fest 2023</h1>
+              <h2 className='font-mono-space font-medium tracking-wider text-lg md:text-xl'>College Fest Website</h2>
+            </div>
+            <div className='w-[15rem] md:w-[12rem] lg:w-[20rem]'>
+              <img className='duration-300  group-hover:scale-[1.02]' alt='BusWatch: Bus timing Checker' src={compositepng} width="640" height="360" />
+            </div>
+          </a>
+          <a href='https://www.semaphoreignite2k23.in/' className={`group flex items-center justify-center hover:bg-portfoilo card py-8 ${(mode == "light") ? ('bg-light-mode-secondary text-dark-mode-secondary') : ('bg-dark-mode-secondary text-light-mode-primary')}`}>
+            <div className='flex items-center justify-center flex-col pb-4 text-center'>
+              <h1 className='font-mono-space font-bold tracking-wider text-[1.65rem] md:text-4xl'>Semaphore 2k23</h1>
+              <h2 className='font-mono-space font-medium tracking-wider text-lg md:text-xl'>College Fest Website</h2>
+            </div>
+            <div className='w-[15rem] md:w-[12rem] lg:w-[20rem]'>
+              <img className='duration-300  group-hover:scale-[1.02]' alt='BusWatch: Bus timing Checker' src={semaphorepng} width="640" height="360" />
+            </div>
+          </a> */}
+
         </div>
       </div>
-      <div className={ `py-4 lg:py-8 px-4 flex items-center flex-col lg:flex-row space-y-3 lg:space-y-0 justify-around rounded-xl ${mode == "light" ? "bg-light-mode-secondary" : "bg-dark-mode-secondary"}`}>
+      <div className={`py-4 lg:py-8 px-4 flex items-center flex-col lg:flex-row space-y-3 lg:space-y-0 justify-around rounded-xl ${mode == "light" ? "bg-light-mode-secondary" : "bg-dark-mode-secondary"}`}>
         <h1 className='text-xl text-center'>Did you like what you saw?</h1>
         <a href='mailto:imdelbingeorge@gmail.com' className={` px-10 text-md lg:text-lg text-center rounded-lg tracking-wider font-bold py-2 ${mode == "light" ? "bg-dark-mode-primary text-light-mode-secondary" : "text-dark-mode-primary bg-light-mode-secondary"}`}>Hire Me</a>
       </div>

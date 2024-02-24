@@ -9,6 +9,7 @@ import News from './components/News';
 import Loading from './components/Loading';
 import IIndex from './IIndex';
 import { SpeedInsights } from '@vercel/speed-insights/react';
+import Video from './components/Video';
 
 function Index() {
      const [showLoading, setShowLoading] = useState(true);
@@ -16,19 +17,20 @@ function Index() {
      useEffect(() => {
           const timeoutId = setTimeout(() => {
                setShowLoading(false);
-          }, 3000);
+          }, 2000);
 
           return () => clearTimeout(timeoutId);
      }, []);
 
      return (
-          <div className='px-6  lg:px-40'>
+          <div className='px-6 lg:px-40'>
                {showLoading ? (
                     <Loading />
                ) : (
                     <>
                          <NavBar />
                          <Hero />
+                         {/* <Video /> */}
                          <CaseStudies />
                          <Skills />
                          <Socials />
@@ -36,10 +38,7 @@ function Index() {
                     </>
                )}
           </div>
-          // <>
-          //      <SpeedInsights />
-          //      <IIndex />
-          // </>
+
      );
 }
 
