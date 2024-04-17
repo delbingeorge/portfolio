@@ -43,7 +43,7 @@ function Resume() {
                </div>
                <div className='pt-12 pb-6 space-y-3'>
                     <h1 className='text-5xl font-bold'>Delbin George</h1>
-                    <h2 className='text-xl'>UI/UX & Frontend Developer</h2>
+                    <h2 className='text-xl'>UI/UX & Web Developer</h2>
                </div>
                <div>
                     <div>
