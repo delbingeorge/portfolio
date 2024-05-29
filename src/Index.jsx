@@ -23,24 +23,22 @@ function Index() {
      }, []);
 
      return (
-          // <div className='px-6 lg:px-40'>
-          //      {showLoading ? (
-          //           <Loading />
-          //      ) : (
-          //           <>
-          //                <NavBar />
-          //                <Hero />
-          //                {/* <Video /> */}
-          //                <CaseStudies />
-          //                <Skills />
-          //                <Socials />
-          //                <Footer />
-          //           </>
-          //      )}
-          // </div>
-          <div className='flex items-center justify-center min-h-screen'> 
-               <h1>This website is under maintenance.</h1>
-          </div>
+           <div className='px-6 lg:px-40'>
+                {showLoading ? (
+                     <Loading />
+                ) : (
+                   <>
+                         <NavBar />
+                          <Hero />
+                         {/* <Video /> */}
+                         <CaseStudies />
+                          <Skills />
+                          <Socials />
+                         <Footer />
+                     </>
+                )}
+           </div>
+      
      );
 }
 
