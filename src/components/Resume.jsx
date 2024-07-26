@@ -43,14 +43,15 @@ function Resume() {
                </div>
                <div className='pt-12 pb-6 space-y-3'>
                     <h1 className='text-5xl font-bold'>Delbin George</h1>
-                    <h2 className='text-xl'>UI/UX & Web Developer</h2>
+                    <h2 className='text-xl'>Software Developer & UI/UX Designer</h2>
                </div>
                <div>
                     <div>
                          <h1 className='text-xl font-bold uppercase py-4'>about me</h1>
                     </div>
                     <div className='pb-8'>
-                         <p className='text-[1.60rem] font-bold text-left md:text-justify'>I'm a front-end developer with a strong understanding of UI/UX
+                         <p className='text-[1.60rem] font-bold text-left md:text-justify'>
+                              I'm a front-end developer with a strong understanding of UI/UX
                               principles and a passion for creating visually appealing and
                               user-friendly web experiences. I love working with HTML, CSS, and
                               JavaScript and have a strong grasp of responsive design and mobile optimization. </p>
@@ -60,6 +61,34 @@ function Resume() {
                     <h1 className='text-xl font-bold uppercase py-4'>Projects</h1>
                </div>
                <div className='space-y-8'>
+                    <div className=''>
+                         <h2 className='text-[1.65rem] font-bold'>Brevity: The Developer Console</h2>
+                         <h3 className='text-2xl'>React Native Project</h3>
+                         <ul className='list-disc list-inside text-lg pl-2 md:pl-6 pt-4  text-left md:text-justify space-y-2'>
+                              <li>Q&A platform that helps for problem-solving and knowledge sharing for developers.</li>
+                              <li>React Native for mobile app and Recoil for state management.</li>
+                              <li>Laravel, ensuring robust and scalable server-side logic.</li>
+                              <li>Google Firebase for secure user authentication.</li>
+                         </ul>
+                    </div>
+                    <div className=''>
+                         <h2 className='text-[1.65rem] font-bold'>Student Mentorship & Assessment Platform (NMAMIT, Nitte)</h2>
+                         <h3 className='text-2xl'>Laravel Web Project</h3>
+                         <ul className='list-disc list-inside text-lg pl-2 md:pl-6 pt-4  text-left md:text-justify space-y-2'>
+                              <li>Build on top of Laravel for efficient and robust development.</li>
+                              <li>Applied frontend best practices for scalability and maintainability</li>
+                              <li>Managed project codebase efficiently with Git & Github</li>
+                         </ul>
+                    </div>
+                    <div className=''>
+                         <h2 className='text-[1.65rem] font-bold'>Bus Watch App Using React Native</h2>
+                         <h3 className='text-2xl'>React Native Project</h3>
+                         <ul className='list-disc list-inside text-lg pl-2 md:pl-6 pt-4  text-left md:text-justify space-y-2'>
+                              <li>Facilitating easier access to bus timings for students, travelers and local passengers.</li>
+                              <li>Intuitive design for enhanced user engagement.</li>
+                              <li>Version control using Git & GitHub.</li>
+                         </ul>
+                    </div>
                     <div className=''>
                          <h2 className='text-[1.65rem] font-bold'>Eatables Food Discovery & Review Platform using HTML, Tailwind CSS and PHP</h2>
                          <h3 className='text-2xl'>Final Year Project</h3>
@@ -134,6 +163,24 @@ function Resume() {
                     </div>
                </div>
                <div className='flex md:flex-row flex-col  items-start justify-between pb-12'>
+
+                    <div>
+                         <div>
+                              <h1 className='text-xl font-bold uppercase py-8'>PROGRAMMING LANG.</h1>
+                         </div>
+                         <ul className='list-disc list-inside pl-2 text-lg md:pl-6 text-justify space-y-2'>
+                              <li>HTML</li>
+                              <li>CSS</li>
+                              <li>JavaScript</li>
+                              <li>React JS</li>
+                              <li>React Native</li>
+                              <li>Laravel</li>
+                              <li>Git & Github</li>
+                              <li>Tailwind CSS</li>
+                              <li>Bootstrap</li>
+                         </ul>
+                    </div>
+
                     <div>
                          <div>
                               <h1 className='text-xl font-bold uppercase py-8'>Industry Knowledge  </h1>
@@ -162,20 +209,7 @@ function Resume() {
                               <li>Illustrator</li>
                          </ul>
                     </div>
-                    <div>
-                         <div>
-                              <h1 className='text-xl font-bold uppercase py-8'>Other Skills</h1>
-                         </div>
-                         <ul className='list-disc list-inside pl-2 text-lg md:pl-6 text-justify space-y-2'>
-                              <li>HTML</li>
-                              <li>CSS</li>
-                              <li>JavaScript</li>
-                              <li>React JS</li>
-                              <li>Git & Github</li>
-                              <li>Tailwind CSS</li>
-                              <li>Bootstrap</li>
-                         </ul>
-                    </div>
+
                </div>
           </div>
      )
