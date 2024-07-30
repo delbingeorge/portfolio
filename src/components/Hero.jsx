@@ -12,7 +12,7 @@ function Hero() {
                <div className={`py-6 md:py-8 rounded-2xl pl-4 md:pl-8 w-full lg:w-[74%] flex flex-col items-start justify-between ${mode == "light" ? 'bg-light-mode-secondary' : 'bg-dark-mode-secondary'}`}>
                     <div className='pb-28 md:pb-0'>
                          <h1 className='font-mono-space font-bold text-3xl lg:text-5xl pb-4'>Hello, I'm  Delbin George,<br /> a UI/UX Designer who <br /> loves to code!</h1>
-                         <h2 className='font-inter font-medium tracking-wider text-xl'>Talented web developer with strong UI/UX skills.</h2>
+                         <h2 className='font-inter font-medium tracking-wider text-xl'>Talented developer with strong UI/UX skills.</h2>
                     </div>
                     <div className='flex items-center space-x-5 md:space-x-7'>
                          <Link to="resume"

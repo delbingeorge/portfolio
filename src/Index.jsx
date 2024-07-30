@@ -17,7 +17,7 @@ function Index() {
      useEffect(() => {
           const timeoutId = setTimeout(() => {
                setShowLoading(false);
-          }, 100);
+          }, 800);
 
           return () => clearTimeout(timeoutId);
      }, []);

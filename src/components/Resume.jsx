@@ -166,7 +166,7 @@ function Resume() {
 
                     <div>
                          <div>
-                              <h1 className='text-xl font-bold uppercase py-8'>PROGRAMMING LANG.</h1>
+                              <h1 className='text-xl font-bold uppercase py-8'>TOOLS & TECHNOLOGIES</h1>
                          </div>
                          <ul className='list-disc list-inside pl-2 text-lg md:pl-6 text-justify space-y-2'>
                               <li>HTML</li>
@@ -199,7 +199,7 @@ function Resume() {
                     </div>
                     <div>
                          <div>
-                              <h1 className='text-xl font-bold uppercase py-8'>Tools & Technologies</h1>
+                              <h1 className='text-xl font-bold uppercase py-8'>OTHER SKILLS</h1>
                          </div>
                          <ul className='list-disc list-inside pl-2 text-lg md:pl-6 text-justify space-y-2'>
                               <li>Figma</li>

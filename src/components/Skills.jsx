@@ -1,7 +1,8 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBootstrap, faCss3, faFigma, faGitAlt, faGithub, faHtml5, faJs, faJsSquare, faReact } from '@fortawesome/free-brands-svg-icons';
+import { faBootstrap, faCss3, faFigma, faGitAlt, faGithub, faHtml5, faJava, faJs, faJsSquare, faLaravel, faPhp, faReact } from '@fortawesome/free-brands-svg-icons';
 import { useMode } from '../ModeProvider';
+import { faDatabase } from '@fortawesome/free-solid-svg-icons';
 
 
 function Skills() {
@@ -31,6 +32,12 @@ function Skills() {
                          <FontAwesomeIcon className='text-5xl' icon={faReact} />
                     </div>
                     <div className={`skill-card ${mode == "light" ? 'bg-light-mode-secondary ' : 'bg-dark-mode-secondary '}`}>
+                         <FontAwesomeIcon className='text-5xl' icon={faLaravel} />
+                    </div>
+                    <div className={`skill-card ${mode == "light" ? 'bg-light-mode-secondary ' : 'bg-dark-mode-secondary '}`}>
+                         <FontAwesomeIcon className='text-5xl' icon={faPhp} />
+                    </div>
+                    <div className={`skill-card ${mode == "light" ? 'bg-light-mode-secondary ' : 'bg-dark-mode-secondary '}`}>
                          <FontAwesomeIcon className='text-5xl' icon={faGitAlt} />
                     </div>
                     <div className={`skill-card ${mode == "light" ? 'bg-light-mode-secondary ' : 'bg-dark-mode-secondary '}`}>
@@ -38,6 +45,9 @@ function Skills() {
                     </div>
                     <div className={`skill-card ${mode == "light" ? 'bg-light-mode-secondary ' : 'bg-dark-mode-secondary '}`}>
                          <FontAwesomeIcon className='text-5xl' icon={faFigma} />
+                    </div>
+                    <div className={`skill-card ${mode == "light" ? 'bg-light-mode-secondary ' : 'bg-dark-mode-secondary '}`}>
+                         <FontAwesomeIcon className='text-5xl' icon={faDatabase} />
                     </div>
                     <div className={`skill-card ${mode == "light" ? 'bg-light-mode-secondary ' : 'bg-dark-mode-secondary '}`}>
                          <svg width="56" height="38" viewBox="0 0 56 38" fill="none" xmlns="http://www.w3.org/2000/svg">
